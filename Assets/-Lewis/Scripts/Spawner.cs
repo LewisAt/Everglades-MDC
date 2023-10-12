@@ -5,6 +5,7 @@ using UnityEngine;
 public class Spawner : MonoBehaviour
 {
     public GameObject aligator;
+    public GameObject Python;
 
     void Update()
     {
@@ -16,6 +17,10 @@ public class Spawner : MonoBehaviour
     public void spawnAligator()
     {
         Instantiate(aligator, Vector3.zero, Quaternion.identity);
+
+    }public void spawnPython()
+    {
+        Instantiate(Python, Vector3.zero, Quaternion.identity);
 
     }
 }
