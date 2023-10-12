@@ -13,7 +13,7 @@ public class Spawner : MonoBehaviour
             Instantiate(aligator,Vector3.zero,Quaternion.identity);
         }
     }
-    void spawnAligator()
+    public void spawnAligator()
     {
         Instantiate(aligator, Vector3.zero, Quaternion.identity);
 
