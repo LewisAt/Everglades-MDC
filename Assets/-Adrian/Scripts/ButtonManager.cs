@@ -7,7 +7,12 @@ using UnityEngine.UI;
 public class ButtonManager : MonoBehaviour
 {
     public int sceneNum;
-    public Image instructions;
+    public GameObject instructions;
+    public GameObject main;
+    public GameObject animal;
+    public GameObject time;
+    public GameObject source;
+    public GameObject croc;
 
     public void NextScene()
     {
@@ -20,10 +25,31 @@ public class ButtonManager : MonoBehaviour
 
     public void EnableInstructions()
     {
-        instructions.enabled = true;
+        instructions.SetActive(true);
     }
     public void DisableInstructions()
     {
-        instructions.enabled = false;
+        instructions.SetActive(false);
+    }
+
+    public void ToMainMenu()
+    {
+        source.SetActive(false);
+        main.SetActive(true);
+    }
+    public void ToAnimalMenu()
+    {
+        main.SetActive(false);
+        animal.SetActive(true);
+    }
+    public void ToTimeMenu()
+    {
+        main.SetActive(false);
+        time.SetActive(true);
+    }
+
+    public void SpawnCroc()
+    {
+        //Input Code
     }
 }
