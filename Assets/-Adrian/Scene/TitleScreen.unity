@@ -1065,7 +1065,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneNum: 0
-  instructions: {fileID: 0}
+  instructions: {fileID: 994146102}
   main: {fileID: 0}
   animal: {fileID: 0}
   time: {fileID: 0}
