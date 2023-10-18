@@ -21,6 +21,5 @@ public class Spawner : MonoBehaviour
     }public void spawnPython()
     {
         Instantiate(Python, Vector3.zero, Quaternion.identity);
-
     }
 }
