@@ -330,7 +330,7 @@ GameObject:
   - component: {fileID: 5129620636298342944}
   m_Layer: 0
   m_Name: AligatorSAN
-  m_TagString: Untagged
+  m_TagString: Aligator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

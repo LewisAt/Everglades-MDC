@@ -10,7 +10,6 @@ public class PickRandomDestination : MonoBehaviour
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
-        agent.destination = new Vector3 (Random.Range(0, 500), transform.position.y, Random.Range(0,500));
     }
 
 
