@@ -10,6 +10,11 @@ public class ButtonManager : MonoBehaviour
     public GameObject currMenu;
     public GameObject nextMenu;
 
+    public GameObject currInfo;
+    public GameObject OtherInfoA;
+    public GameObject OtherInfoB;
+    public GameObject OtherInfoC;
+
     public void NextScene()
     {
         SceneManager.LoadScene(sceneNum);
@@ -23,5 +28,12 @@ public class ButtonManager : MonoBehaviour
     {
         currMenu.SetActive(false);
         nextMenu.SetActive(true);
+    }
+    public void SummonAnimalInfo()
+    {
+        OtherInfoA.SetActive(false);
+        OtherInfoB.SetActive(false);
+        OtherInfoC.SetActive(false);
+        currInfo.SetActive(true);
     }
 }
