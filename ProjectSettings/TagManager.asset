@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Fish
   - Aligator
+  - Frog
+  - Python
   layers:
   - Default
   - TransparentFX

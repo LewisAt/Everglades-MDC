@@ -4,22 +4,15 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    public GameObject aligator;
-    public GameObject Python;
+    public GameObject Animal;
+    public int spawnRange = 25;
 
-    void Update()
+    public void SpawnSpecificAnimals()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            Instantiate(aligator,Vector3.zero,Quaternion.identity);
-        }
-    }
-    public void spawnAligator()
-    {
-        Instantiate(aligator, Vector3.zero, Quaternion.identity);
+        float x = Random.Range(-spawnRange + transform.position.x, spawnRange + transform.position.x);
+        float z = Random.Range(-spawnRange + transform.position.z, spawnRange + transform.position.z);
+        Instantiate(Animal, new Vector3(x,50,z), Quaternion.identity);
 
-    }public void spawnPython()
-    {
-        Instantiate(Python, Vector3.zero, Quaternion.identity);
     }
 }
+
