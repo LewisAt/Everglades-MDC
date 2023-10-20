@@ -7,12 +7,13 @@ using UnityEngine.UI;
 public class ButtonManager : MonoBehaviour
 {
     public int sceneNum;
-    public GameObject instructions;
-    public GameObject main;
-    public GameObject animal;
-    public GameObject time;
-    public GameObject source;
-    public GameObject croc;
+    public GameObject currMenu;
+    public GameObject nextMenu;
+
+    public GameObject currInfo;
+    public GameObject OtherInfoA;
+    public GameObject OtherInfoB;
+    public GameObject OtherInfoC;
 
     public void NextScene()
     {
@@ -23,33 +24,16 @@ public class ButtonManager : MonoBehaviour
         Application.Quit();
     }
 
-    public void EnableInstructions()
+    public void ToNextMenu()
     {
-        instructions.SetActive(true);
+        currMenu.SetActive(false);
+        nextMenu.SetActive(true);
     }
-    public void DisableInstructions()
+    public void SummonAnimalInfo()
     {
-        instructions.SetActive(false);
-    }
-
-    public void ToMainMenu()
-    {
-        source.SetActive(false);
-        main.SetActive(true);
-    }
-    public void ToAnimalMenu()
-    {
-        main.SetActive(false);
-        animal.SetActive(true);
-    }
-    public void ToTimeMenu()
-    {
-        main.SetActive(false);
-        time.SetActive(true);
-    }
-
-    public void SpawnCroc()
-    {
-        //Input Code
+        OtherInfoA.SetActive(false);
+        OtherInfoB.SetActive(false);
+        OtherInfoC.SetActive(false);
+        currInfo.SetActive(true);
     }
 }
