@@ -39,6 +39,10 @@ public class TrashPlacer : MonoBehaviour
             numberActive = i;
         }
     }
+    public void increasePolution()
+    {
+        pollution += 0.1f;
+    }
 
     //this is out of date can needs to be rewriten to work.
     void GeneraterandomGarbage()
