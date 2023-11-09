@@ -42,6 +42,14 @@ public class TrashPlacer : MonoBehaviour
     public void increasePolution()
     {
         pollution += 0.1f;
+        pollution = Mathf.Clamp(pollution, 0f, 1f);
+
+    }
+    public void DecreasePolution()
+    {
+        
+        pollution -= 0.1f;
+        pollution = Mathf.Clamp(pollution, 0f, 1f);
     }
 
     //this is out of date can needs to be rewriten to work.
