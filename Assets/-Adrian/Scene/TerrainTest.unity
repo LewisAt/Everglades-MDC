@@ -1176,7 +1176,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AligatorCountText: {fileID: 1304339918}
-  PythonCountText: {fileID: 514367219}
+  PythonCountText: {fileID: 1949923871}
   FrogCountText: {fileID: 2023025302}
   FishCountText: {fileID: 1690228590}
 --- !u!114 &203955930
@@ -4280,6 +4280,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Python (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2280803181176488795, guid: 9cb9ccefe85e7ba419927ffcf46bd198, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3352536400930435332, guid: 9cb9ccefe85e7ba419927ffcf46bd198, type: 3}
       propertyPath: m_LocalPosition.x
       value: -15.96
@@ -7017,6 +7021,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Python (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2280803181176488795, guid: 9cb9ccefe85e7ba419927ffcf46bd198, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3352536400930435332, guid: 9cb9ccefe85e7ba419927ffcf46bd198, type: 3}
       propertyPath: m_LocalPosition.x
       value: -19.68
@@ -7162,6 +7170,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FakeAligator (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4125165904258225585, guid: a3b1ee91478cae047bb98c55871133c3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4233918503155090740, guid: a3b1ee91478cae047bb98c55871133c3, type: 3}
       propertyPath: speed
       value: 0.1
@@ -7279,7 +7291,7 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: 3499354176188127041, guid: a3b1ee91478cae047bb98c55871133c3, type: 3}
+    - {fileID: 0}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -8906,54 +8918,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6694859719628777211, guid: 3cedce30bae62764fbd7c1adc5884115, type: 3}
-      propertyPath: m_AgentTypeID
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 3659923564825678541, guid: 3cedce30bae62764fbd7c1adc5884115, type: 3}
-    m_RemovedGameObjects:
-    - {fileID: 5344137151959595957, guid: 3cedce30bae62764fbd7c1adc5884115, type: 3}
-    - {fileID: 4996617121548532114, guid: 3cedce30bae62764fbd7c1adc5884115, type: 3}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5422143329291831726, guid: 3cedce30bae62764fbd7c1adc5884115, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1823792076}
-    - targetCorrespondingSourceObject: {fileID: 5422143329291831726, guid: 3cedce30bae62764fbd7c1adc5884115, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1823792075}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3cedce30bae62764fbd7c1adc5884115, type: 3}
 --- !u!1 &1823792074 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5422143329291831726, guid: 3cedce30bae62764fbd7c1adc5884115, type: 3}
   m_PrefabInstance: {fileID: 1823792073}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1823792075
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1823792074}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 419939a216dbc1a46a44a13ab2ea23a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1823792076
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1823792074}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b925aa83479fc6e4995a9ad32f238c6b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  navMeshMaskNumber: 0
 --- !u!1001 &1829642117
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9503,6 +9477,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44d21d6aaecdfe84e92815205198f59a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1949923871 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7147977973867045207, guid: ed6258626ec2bf84d9135f211cd30b3d, type: 3}
+  m_PrefabInstance: {fileID: 680780620}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1963998696
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9685,6 +9670,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FakeAligator (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4125165904258225585, guid: a3b1ee91478cae047bb98c55871133c3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4233918503155090740, guid: a3b1ee91478cae047bb98c55871133c3, type: 3}
       propertyPath: speed
       value: 0.1
@@ -9746,7 +9735,7 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: 3499354176188127041, guid: a3b1ee91478cae047bb98c55871133c3, type: 3}
+    - {fileID: 0}
     m_RemovedGameObjects:
     - {fileID: 5436718857037893236, guid: a3b1ee91478cae047bb98c55871133c3, type: 3}
     - {fileID: 2164697953621187556, guid: a3b1ee91478cae047bb98c55871133c3, type: 3}
@@ -10103,6 +10092,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Python
       objectReference: {fileID: 0}
+    - target: {fileID: 2280803181176488795, guid: 9cb9ccefe85e7ba419927ffcf46bd198, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3352536400930435332, guid: 9cb9ccefe85e7ba419927ffcf46bd198, type: 3}
       propertyPath: m_LocalPosition.x
       value: -12.8
@@ -10253,6 +10246,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FakeAligator
       objectReference: {fileID: 0}
+    - target: {fileID: 4125165904258225585, guid: a3b1ee91478cae047bb98c55871133c3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4233918503155090740, guid: a3b1ee91478cae047bb98c55871133c3, type: 3}
       propertyPath: speed
       value: 0.1
@@ -10314,7 +10311,7 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: 3499354176188127041, guid: a3b1ee91478cae047bb98c55871133c3, type: 3}
+    - {fileID: 0}
     m_RemovedGameObjects:
     - {fileID: 5436718857037893236, guid: a3b1ee91478cae047bb98c55871133c3, type: 3}
     - {fileID: 2164697953621187556, guid: a3b1ee91478cae047bb98c55871133c3, type: 3}
