@@ -677,6 +677,7 @@ GameObject:
   - component: {fileID: 3722638319692186353}
   - component: {fileID: 4233918503155090740}
   - component: {fileID: -922505438375086930}
+  - component: {fileID: 444630961095467730}
   m_Layer: 0
   m_Name: FakeAligator
   m_TagString: Aligator
@@ -734,7 +735,7 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
@@ -910,22 +911,8 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  speed: 0.05
-  RotationSpeed: 1.5
+  speed: 0.1
+  RotationSpeed: 1
 --- !u!114 &-922505438375086930
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -938,6 +925,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 419939a216dbc1a46a44a13ab2ea23a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &444630961095467730
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4125165904258225585}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1.2629776, z: 7.3457336}
+  m_Center: {x: 0, y: 0.1314888, z: 1.08078}
 --- !u!1 &6051683861756395239
 GameObject:
   m_ObjectHideFlags: 0
