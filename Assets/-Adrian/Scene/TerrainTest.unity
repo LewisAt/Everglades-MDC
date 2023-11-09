@@ -4086,6 +4086,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4419663351512334668, guid: 9cb9ccefe85e7ba419927ffcf46bd198, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9041686826447652417, guid: 9cb9ccefe85e7ba419927ffcf46bd198, type: 3}
       propertyPath: speed
       value: 0.1
@@ -4134,7 +4138,15 @@ PrefabInstance:
       propertyPath: waypoints.Array.data[9]
       value: 
       objectReference: {fileID: 338177676}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 461189066147625136, guid: 9cb9ccefe85e7ba419927ffcf46bd198, type: 3}
+    - {fileID: 4223826041188735280, guid: 9cb9ccefe85e7ba419927ffcf46bd198, type: 3}
+    - {fileID: 933302397210196170, guid: 9cb9ccefe85e7ba419927ffcf46bd198, type: 3}
+    - {fileID: 6408623314093557032, guid: 9cb9ccefe85e7ba419927ffcf46bd198, type: 3}
+    - {fileID: 4468079874301449691, guid: 9cb9ccefe85e7ba419927ffcf46bd198, type: 3}
+    - {fileID: 2396276981502975976, guid: 9cb9ccefe85e7ba419927ffcf46bd198, type: 3}
+    - {fileID: 8463587181660454394, guid: 9cb9ccefe85e7ba419927ffcf46bd198, type: 3}
+    - {fileID: 7763079545779625694, guid: 9cb9ccefe85e7ba419927ffcf46bd198, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -6657,6 +6669,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4419663351512334668, guid: 9cb9ccefe85e7ba419927ffcf46bd198, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9041686826447652417, guid: 9cb9ccefe85e7ba419927ffcf46bd198, type: 3}
       propertyPath: speed
       value: 0.1
@@ -6705,7 +6721,15 @@ PrefabInstance:
       propertyPath: waypoints.Array.data[9]
       value: 
       objectReference: {fileID: 934370787}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 461189066147625136, guid: 9cb9ccefe85e7ba419927ffcf46bd198, type: 3}
+    - {fileID: 4223826041188735280, guid: 9cb9ccefe85e7ba419927ffcf46bd198, type: 3}
+    - {fileID: 933302397210196170, guid: 9cb9ccefe85e7ba419927ffcf46bd198, type: 3}
+    - {fileID: 6408623314093557032, guid: 9cb9ccefe85e7ba419927ffcf46bd198, type: 3}
+    - {fileID: 4468079874301449691, guid: 9cb9ccefe85e7ba419927ffcf46bd198, type: 3}
+    - {fileID: 2396276981502975976, guid: 9cb9ccefe85e7ba419927ffcf46bd198, type: 3}
+    - {fileID: 8463587181660454394, guid: 9cb9ccefe85e7ba419927ffcf46bd198, type: 3}
+    - {fileID: 7763079545779625694, guid: 9cb9ccefe85e7ba419927ffcf46bd198, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -9602,6 +9626,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4419663351512334668, guid: 9cb9ccefe85e7ba419927ffcf46bd198, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9041686826447652417, guid: 9cb9ccefe85e7ba419927ffcf46bd198, type: 3}
       propertyPath: speed
       value: 0.1
@@ -9650,7 +9678,15 @@ PrefabInstance:
       propertyPath: waypoints.Array.data[9]
       value: 
       objectReference: {fileID: 559556209}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 461189066147625136, guid: 9cb9ccefe85e7ba419927ffcf46bd198, type: 3}
+    - {fileID: 4223826041188735280, guid: 9cb9ccefe85e7ba419927ffcf46bd198, type: 3}
+    - {fileID: 933302397210196170, guid: 9cb9ccefe85e7ba419927ffcf46bd198, type: 3}
+    - {fileID: 6408623314093557032, guid: 9cb9ccefe85e7ba419927ffcf46bd198, type: 3}
+    - {fileID: 4468079874301449691, guid: 9cb9ccefe85e7ba419927ffcf46bd198, type: 3}
+    - {fileID: 2396276981502975976, guid: 9cb9ccefe85e7ba419927ffcf46bd198, type: 3}
+    - {fileID: 8463587181660454394, guid: 9cb9ccefe85e7ba419927ffcf46bd198, type: 3}
+    - {fileID: 7763079545779625694, guid: 9cb9ccefe85e7ba419927ffcf46bd198, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
