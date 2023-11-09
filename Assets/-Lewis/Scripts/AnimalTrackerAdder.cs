@@ -6,6 +6,12 @@ public class AnimalTrackerAdder : MonoBehaviour
 {
     private void Awake()
     {
-        AnimalTracker.addAnimal(this.gameObject);
+        addAnima();
+
+    }
+    void addAnima()
+    {
+        TrackAnimalCount.addtoPopulationCount(this.gameObject.tag);
+
     }
 }

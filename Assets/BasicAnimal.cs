@@ -7,6 +7,9 @@ public class BasicAnimal : MonoBehaviour
 {
     NavMeshAgent agent;
     public int navMeshMaskNumber;
+
+
+
     private void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
@@ -16,14 +19,9 @@ public class BasicAnimal : MonoBehaviour
         Roam();
 
         StartCoroutine(startRoam());
-    }
-    private void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.F))
-        {
 
-        }
     }
+
     IEnumerator startRoam()
     {
         while (true)
@@ -32,7 +30,7 @@ public class BasicAnimal : MonoBehaviour
             Roam();
         }
     }
-
+    
     private void Roam()
     {
         float randomX = Random.Range(-75, 75) + transform.position.x;

@@ -11,21 +11,25 @@ public class BasicAnimalSpawner : MonoBehaviour
         GameObject clone = Instantiate(Animals[0].AnimalToSpawn);
         clone.transform.position = Animals[0].SpawnPosition.transform.position;
     }
-    public void spawnPython()
+    public void spawnFish()
     {
         GameObject clone = Instantiate(Animals[1].AnimalToSpawn);
         clone.transform.position = Animals[1].SpawnPosition.transform.position;
     }
+   
     public void spawnAFrog()
     {
         GameObject clone = Instantiate(Animals[2].AnimalToSpawn);
         clone.transform.position = Animals[2].SpawnPosition.transform.position;
+        Debug.Log("Frog was spawned");
+        Debug.Log(clone.name);
     }
-    public void spawnFish()
+    public void spawnPython()
     {
         GameObject clone = Instantiate(Animals[3].AnimalToSpawn);
         clone.transform.position = Animals[3].SpawnPosition.transform.position;
     }
+
 
     private void Update()
     {
@@ -33,6 +37,11 @@ public class BasicAnimalSpawner : MonoBehaviour
         {
             spawnAligator();
         }
+    }
+
+    void AnimalToCount()
+    {
+        TrackAnimalCount.addtoPopulationCount(this.gameObject.tag);
     }
 
     [Serializable]
