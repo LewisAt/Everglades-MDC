@@ -4,41 +4,31 @@ using UnityEngine;
 
 public class AnimalTracker : MonoBehaviour
 {
-    public static List<GameObject> fishCount;
-    public static List<GameObject> AligatorCount;
-    public static List<GameObject> FrogCount;
-    public static List<GameObject> PythonCount;
+    public static int fishCount;
+    public static int AligatorCount;
+    public static int  FrogCount;
+    public static int PythonCount;
     public static void addAnimal(GameObject AnimalObject)
     {
         if (AnimalObject.tag == "Fish")
         {
 
-            fishCount.Add(AnimalObject);
+            fishCount ++ ;
         }
         else if (AnimalObject.tag == "Aligator")
         {
-            AligatorCount.Add(AnimalObject);
+            AligatorCount++;
 
         }
         else if (AnimalObject.tag == "Frog")
         {
-            FrogCount.Add(AnimalObject);
+            FrogCount++;
 
         }
         else if (AnimalObject.tag == "Python")
         {
-            PythonCount.Add(AnimalObject);
+            PythonCount++;
 
         }
-    }
-    public static void RemoveAnimal(GameObject AnimalObject)
-    {
-
-        
-    }
-    
-    public static void FindAnimal()
-    {
-
     }
 }
