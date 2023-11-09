@@ -17,6 +17,13 @@ public class BasicAnimal : MonoBehaviour
 
         StartCoroutine(startRoam());
     }
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.F))
+        {
+
+        }
+    }
     IEnumerator startRoam()
     {
         while (true)

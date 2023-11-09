@@ -26,6 +26,15 @@ public class BasicAnimalSpawner : MonoBehaviour
         GameObject clone = Instantiate(Animals[3].AnimalToSpawn);
         clone.transform.position = Animals[3].SpawnPosition.transform.position;
     }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            spawnAligator();
+        }
+    }
+
     [Serializable]
 
     public class AnimalSpawner
