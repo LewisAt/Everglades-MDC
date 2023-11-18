@@ -3047,6 +3047,63 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9d424fdb83e8b148a50a5cb31021e27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &649050877
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 37af450383e66604ebdfe87f93289172, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 564.87225
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 37af450383e66604ebdfe87f93289172, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 62.577454
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 37af450383e66604ebdfe87f93289172, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 818.0001
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 37af450383e66604ebdfe87f93289172, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 37af450383e66604ebdfe87f93289172, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 37af450383e66604ebdfe87f93289172, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 37af450383e66604ebdfe87f93289172, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 37af450383e66604ebdfe87f93289172, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 37af450383e66604ebdfe87f93289172, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 37af450383e66604ebdfe87f93289172, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 37af450383e66604ebdfe87f93289172, type: 3}
+      propertyPath: m_Name
+      value: SM_Env_Mangrove_Tree_02
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 37af450383e66604ebdfe87f93289172, type: 3}
 --- !u!1 &658927141
 GameObject:
   m_ObjectHideFlags: 0
@@ -7632,7 +7689,7 @@ Terrain:
   serializedVersion: 6
   m_TerrainData: {fileID: 15600000, guid: b65c40b65f043e54c832bd12b4ed0a45, type: 2}
   m_TreeDistance: 5000
-  m_TreeBillboardDistance: 50
+  m_TreeBillboardDistance: 1533
   m_TreeCrossFadeLength: 5
   m_TreeMaximumFullLODCount: 50
   m_DetailObjectDistance: 80
@@ -10371,3 +10428,4 @@ SceneRoots:
   - {fileID: 1823792073}
   - {fileID: 91799864}
   - {fileID: 1209983484}
+  - {fileID: 649050877}
