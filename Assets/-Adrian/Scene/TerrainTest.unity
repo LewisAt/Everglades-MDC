@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.5811952, g: 0.6229193, b: 0.7306387, a: 1}
+  m_IndirectSpecularColor: {r: 0.830959, g: 0.82427293, b: 0.9033839, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4627,7 +4627,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b53a1b164dee78041b9763a82705a894, type: 2}
+  - {fileID: 2100000, guid: b37b5f867eca35f4bbd80ca6a86dd223, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7740,10 +7740,10 @@ Terrain:
   serializedVersion: 6
   m_TerrainData: {fileID: 15600000, guid: b65c40b65f043e54c832bd12b4ed0a45, type: 2}
   m_TreeDistance: 5000
-  m_TreeBillboardDistance: 2000
-  m_TreeCrossFadeLength: 5
+  m_TreeBillboardDistance: 5
+  m_TreeCrossFadeLength: 1.8
   m_TreeMaximumFullLODCount: 50
-  m_DetailObjectDistance: 325
+  m_DetailObjectDistance: 442
   m_DetailObjectDensity: 1
   m_HeightmapPixelError: 1
   m_SplatMapDistance: 1111
@@ -7756,7 +7756,7 @@ Terrain:
   m_IgnoreQualitySettings: 0
   m_ReflectionProbeUsage: 1
   m_MaterialTemplate: {fileID: 2100000, guid: 594ea882c5a793440b60ff72d896021e, type: 2}
-  m_BakeLightProbesForTrees: 1
+  m_BakeLightProbesForTrees: 0
   m_PreserveTreePrototypeLayers: 0
   m_DeringLightProbesForTrees: 1
   m_ReceiveGI: 1
@@ -7765,7 +7765,7 @@ Terrain:
   m_GroupingID: 0
   m_RenderingLayerMask: 1
   m_AllowAutoConnect: 1
-  m_EnableHeightmapRayTracing: 1
+  m_EnableHeightmapRayTracing: 0
   m_EnableTreesAndDetailsRayTracing: 0
   m_TreeMotionVectorModeOverride: 3
 --- !u!4 &1555010483
