@@ -20,13 +20,13 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.7311321, g: 0.8362236, b: 1, a: 1}
+  m_AmbientSkyColor: {r: 0.8254717, g: 0.89376533, b: 1, a: 1}
   m_AmbientEquatorColor: {r: 0.9056604, g: 0.8970475, b: 0.8843005, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
   m_AmbientMode: 1
-  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 5da7ba8d6041cc94d94e25c23100eb8e, type: 2}
+  m_SubtractiveShadowColor: {r: 0.33922213, g: 0.4114251, b: 0.5943396, a: 1}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 5f8bf7e6af5d18740bed3c44fd0e8172, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -37,8 +37,8 @@ RenderSettings:
   m_ReflectionBounces: 1
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
-  m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.830959, g: 0.82427293, b: 0.9033839, a: 1}
+  m_Sun: {fileID: 1836701614}
+  m_IndirectSpecularColor: {r: 0.44264582, g: 0.4820444, b: 0.37435436, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 0}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: d576ac44347e1ea4f9a2d2bdf04118e3, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -673,7 +673,7 @@ Terrain:
   serializedVersion: 6
   m_TerrainData: {fileID: 15600000, guid: 8392d2095e9cc5d4383271ddfadc5b87, type: 2}
   m_TreeDistance: 5000
-  m_TreeBillboardDistance: 50
+  m_TreeBillboardDistance: 5
   m_TreeCrossFadeLength: 5
   m_TreeMaximumFullLODCount: 50
   m_DetailObjectDistance: 80
@@ -2543,6 +2543,50 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8649861389021161922, guid: 153ff1f6edbe48246acb9e16d33e343d, type: 3}
   m_PrefabInstance: {fileID: 464661911}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &489174138
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 489174139}
+  - component: {fileID: 489174140}
+  m_Layer: 0
+  m_Name: TimeManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &489174139
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 489174138}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -588.7859, y: 197.76216, z: 750.23157}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &489174140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 489174138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d7caa398f485644ab409ec442b93ef6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &506303120
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9395,13 +9439,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1836701613}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalRotation: {x: 0.046188496, y: -0.17565626, z: 0.19008502, w: 0.9648208}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 8.969, y: -18.988, z: 20.788}
 --- !u!114 &1836701616
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10539,6 +10583,7 @@ SceneRoots:
   - {fileID: 1781755457}
   - {fileID: 1836701615}
   - {fileID: 1373637321}
+  - {fileID: 489174139}
   - {fileID: 203955931}
   - {fileID: 551653707}
   - {fileID: 1405707969}
