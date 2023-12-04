@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Experimental.GlobalIllumination;
 using UnityEngine.Rendering;
+using Random = UnityEngine.Random;
 
 public class TimeAndGameManager : MonoBehaviour
 {
@@ -45,6 +46,7 @@ public class TimeAndGameManager : MonoBehaviour
     float timeElapsed;
     float TheCurrentTimeInRotation;
     float HoursInAMinut;
+    bool nightMode;
 
     //on the first frame of the game this acitvates and does some simple math for us before contining to the rest of the code.
     private void Awake()
@@ -62,7 +64,50 @@ public class TimeAndGameManager : MonoBehaviour
     private void FixedUpdate()
     {
         //SkyColorTransitioning();
-
+        if (timeElapsed % 60 == 0)
+        {
+            //Spawn New Animal
+        }
+        if (timeElapsed % 120 == 0)
+        {
+            if (GameObject.FindGameObjectsWithTag("Python").Length != 0)
+            {
+                for (int i = 0; i < GameObject.FindGameObjectsWithTag("Python").Length; i++)
+                {
+                    if (Random.Range(1, 100) >= 80)
+                    {
+                        Destroy(GameObject.FindGameObjectsWithTag("Rabbit")[Random.Range(0, GameObject.FindGameObjectsWithTag("Rabbit").Length)]);
+                    }
+                    else if (Random.Range(1, 100) >= 70)
+                    {
+                        Destroy(GameObject.FindGameObjectsWithTag("Frog")[Random.Range(0, GameObject.FindGameObjectsWithTag("Frog").Length)]);
+                    }
+                    else if (Random.Range(1, 100) >= 50)
+                    {
+                        Destroy(GameObject.FindGameObjectsWithTag("Cat")[Random.Range(0, GameObject.FindGameObjectsWithTag("Cat").Length)]);
+                    }
+                    else if (Random.Range(1, 100) >= 60)
+                    {
+                        Destroy(GameObject.FindGameObjectsWithTag("Bass")[Random.Range(0, GameObject.FindGameObjectsWithTag("Bass").Length)]);
+                    }
+                    else if (Random.Range(1, 100) >= 20)
+                    {
+                        Destroy(GameObject.FindGameObjectsWithTag("Alligator")[Random.Range(0, GameObject.FindGameObjectsWithTag("Alligator").Length)]);
+                    }
+                }
+            }
+        }
+        if (timeElapsed % 60 == 0)
+        {
+            //Spawn Invasive
+        }
+        if (CurrentTime > )
+        {
+            //Change Night bool
+            //Activitate the bloodmoon
+            //Call forth the hunt
+            //Release the bog
+        }
     }
 
 
