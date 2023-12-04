@@ -104,7 +104,7 @@ public class TimeAndGameManager : MonoBehaviour
         {
             //Spawn Invasive
         }
-        if (CurrentTime > )
+        if (CurrentTime > 0)
         {
             //Change Night bool
             //Activitate the bloodmoon
