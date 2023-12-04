@@ -8,6 +8,8 @@ TagManager:
   - Aligator
   - Frog
   - Python
+  - Rabbit
+  - Cat
   layers:
   - Default
   - TransparentFX

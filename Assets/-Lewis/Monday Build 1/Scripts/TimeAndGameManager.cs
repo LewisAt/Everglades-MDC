@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Experimental.GlobalIllumination;
 using UnityEngine.Rendering;
+using Random = UnityEngine.Random;
 
 public class TimeAndGameManager : MonoBehaviour
 {
@@ -43,6 +44,8 @@ public class TimeAndGameManager : MonoBehaviour
 
     float CurrentTime;
     float timeElapsed;
+
+
     float TheCurrentTimeInRotation;
     float HoursInAMinut;
 
@@ -54,6 +57,7 @@ public class TimeAndGameManager : MonoBehaviour
 
     public void Update()
     {
+        Random.ReferenceEquals(CurrentTime, Time.time);
         internalclock();
         GetCurrentSkyInfo();
         Debug.Log("The time is " + CurrentTime);

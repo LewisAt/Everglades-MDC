@@ -21,13 +21,21 @@ public class BasicAnimalSpawner : MonoBehaviour
     {
         GameObject clone = Instantiate(Animals[2].AnimalToSpawn);
         clone.transform.position = Animals[2].SpawnPosition.transform.position;
-        Debug.Log("Frog was spawned");
-        Debug.Log(clone.name);
     }
     public void spawnPython()
     {
         GameObject clone = Instantiate(Animals[3].AnimalToSpawn);
         clone.transform.position = Animals[3].SpawnPosition.transform.position;
+    }
+    public void spawnRabbit()
+    {
+        GameObject clone = Instantiate(Animals[4].AnimalToSpawn);
+        clone.transform.position = Animals[4].SpawnPosition.transform.position;
+    }
+    public void spawnCat()
+    {
+        GameObject clone = Instantiate(Animals[5].AnimalToSpawn);
+        clone.transform.position = Animals[5].SpawnPosition.transform.position;
     }
 
 
