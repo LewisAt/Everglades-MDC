@@ -61,7 +61,7 @@ public class TimeAndGameManager : MonoBehaviour
     bool nightMode;
     int dayBonus;
     int nightBonus;
-    public GameObject[] buttons;
+    //public GameObject[] buttons;
 
     //on the first frame of the game this acitvates and does some simple math for us before contining to the rest of the code.
     private void Awake()
@@ -96,13 +96,13 @@ public class TimeAndGameManager : MonoBehaviour
 
 
 
-        if (animalSpawner.GetComponent<BasicAnimalSpawner>().animalsSpawned >= animalSpawner.GetComponent<BasicAnimalSpawner>().maxAnimals)
+        /*if (animalSpawner.GetComponent<BasicAnimalSpawner>().animalsSpawned >= animalSpawner.GetComponent<BasicAnimalSpawner>().maxAnimals)
         {
             for (int i = 0; i < buttons.Length; i++)
             {
                 buttons[i].SetActive(false);
             }
-        }
+        }*/
         if (CurrentTime >= 20 && CurrentTime <= 6)
         {
             nightBonus = huntingBonus;
@@ -122,71 +122,38 @@ public class TimeAndGameManager : MonoBehaviour
             //SPAWN FISH
             if (GameObject.FindGameObjectsWithTag("Fish").Length != 0)
             {
-                if (Random.Range(1, 100) >= 80 + trashSpawner.GetComponent<TrashPlacer>().pollution)
-                {
-                    animalSpawner.GetComponent<BasicAnimalSpawner>().spawnFish();
-                    animalSpawner.GetComponent<BasicAnimalSpawner>().spawnFish();
-
-                }
+                animalSpawner.GetComponent<BasicAnimalSpawner>().spawnFish();
+                
             }
             //SPAWN RABBIT
             if (GameObject.FindGameObjectsWithTag("Rabbit").Length != 0)
             {
                 animalSpawner.GetComponent<BasicAnimalSpawner>().spawnRabbit();
-                animalSpawner.GetComponent<BasicAnimalSpawner>().spawnRabbit();
-                if (Random.Range(1, 100) >= 80 + trashSpawner.GetComponent<TrashPlacer>().pollution)
-                {
-                    
-
-                }
+              
             }
             //SPAWN FROG
             if (GameObject.FindGameObjectsWithTag("Frog").Length != 0)
             {
-                for (int i = 0; i < GameObject.FindGameObjectsWithTag("Frog").Length / 2; i++)
-                {
-                    animalSpawner.GetComponent<BasicAnimalSpawner>().spawnAFrog();
-                    animalSpawner.GetComponent<BasicAnimalSpawner>().spawnAFrog();
+                animalSpawner.GetComponent<BasicAnimalSpawner>().spawnAFrog();
 
-                    if (Random.Range(1, 100) >= 80 + trashSpawner.GetComponent<TrashPlacer>().pollution)
-                    {
-                        
-
-                    }
-                }
             }
             //SPAWN CROCIDLE 
             if (GameObject.FindGameObjectsWithTag("Aligator").Length != 0)
             {
                 animalSpawner.GetComponent<BasicAnimalSpawner>().spawnAligator();
-                animalSpawner.GetComponent<BasicAnimalSpawner>().spawnAligator();
-                if (Random.Range(1, 100) >= 80 + trashSpawner.GetComponent<TrashPlacer>().pollution)
-                {
-                    
-
-                }
+                
             }
             //SPAWN CAT
             if (GameObject.FindGameObjectsWithTag("Cat").Length != 0)
             {
                 animalSpawner.GetComponent<BasicAnimalSpawner>().spawnCat();
-                animalSpawner.GetComponent<BasicAnimalSpawner>().spawnCat();
-                if (Random.Range(1, 100) >= 80 + trashSpawner.GetComponent<TrashPlacer>().pollution)
-                {
-                    
-
-                }
+               
             }
             //SPAWN PYTHON
             if (GameObject.FindGameObjectsWithTag("Python").Length != 0)
             {
                 animalSpawner.GetComponent<BasicAnimalSpawner>().spawnPython();
-                animalSpawner.GetComponent<BasicAnimalSpawner>().spawnPython();
-                if (Random.Range(1, 100) >= 80 + trashSpawner.GetComponent<TrashPlacer>().pollution)
-                {
-                    
-
-                }
+                
             }
         }
         if (HuntcurrentValue < HuntpreviousValue)
@@ -266,10 +233,11 @@ public class TimeAndGameManager : MonoBehaviour
                     }
                 }
             }
+            /*
             for (int i = 0; i < buttons.Length; i++)
             {
                 buttons[i].SetActive(true);
-            }
+            }*/
             animalSpawner.GetComponent<BasicAnimalSpawner>().animalsSpawned = 0;
         }
         if (InvasivecurrentValue < InvasivepreviousValue)

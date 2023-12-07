@@ -66,6 +66,7 @@ public class BasicAnimalSpawner : MonoBehaviour
     }
     public void playerIncrement()
     {
+        if (animalsSpawned >= maxAnimals) return;
         animalsSpawned++;
     }
 
