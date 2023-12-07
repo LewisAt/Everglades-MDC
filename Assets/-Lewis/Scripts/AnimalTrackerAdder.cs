@@ -14,4 +14,8 @@ public class AnimalTrackerAdder : MonoBehaviour
         TrackAnimalCount.addtoPopulationCount(this.gameObject.tag);
 
     }
+    void KillAnimal()
+    {
+        TrackAnimalCount.RemoveFromCount(this.gameObject.tag);
+    }
 }

@@ -6,14 +6,19 @@ public class TrashPlacer : MonoBehaviour
 {
     public GameObject[] TrashObjects;
     public Transform trashlayer;
-    [Range(0f, 1f)]
     public int pollution;
+    [Range(0f, 1f)]
+    private float Incrementpollution;
     int iterations;
     int numberActive;
     // Start is called before the first frame update
+    private void Start()
+    {
+    }
     private void Update()
     {
         iterations = (int)(TrashObjects.Length * pollution);
+        
         revealGarbage();
     }
     void revealGarbage()
@@ -43,6 +48,9 @@ public class TrashPlacer : MonoBehaviour
     {
         pollution += 5;
         pollution = Mathf.Clamp(pollution, 1, 20);
+        Incrementpollution += 0.1f;
+        Incrementpollution = Mathf.Clamp(pollution, 0, 1);
+
 
     }
     public void DecreasePolution()
@@ -50,6 +58,10 @@ public class TrashPlacer : MonoBehaviour
         
         pollution -= 5;
         pollution = Mathf.Clamp(pollution, 1, 20);
+        Incrementpollution -= 0.1f;
+        Incrementpollution = Mathf.Clamp(pollution, 0, 1);
+
+
     }
 
     //this is out of date can needs to be rewriten to work.
@@ -57,8 +69,9 @@ public class TrashPlacer : MonoBehaviour
     {
         for (int i = 0; i < iterations; i++)
         {
-            Vector3 randomPosition = new Vector3(Random.Range(-500, 500), .2f, Random.Range(-500, 500));
-            GameObject boop = Instantiate(TrashObjects[Random.Range(0, 4)], randomPosition, Quaternion.identity, trashlayer);
+            Debug.Log("????");
+            Vector3 randomPosition = new Vector3(Random.Range(-1500, 1500), 0, Random.Range(-1500, 1500));
+            GameObject boop = Instantiate(TrashObjects[Random.Range(0, 3)], randomPosition, Quaternion.identity, trashlayer);
             boop.transform.localScale = Vector3.one * Random.Range(0.1f, 0.6f);
         }
     }

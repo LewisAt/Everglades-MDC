@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Experimental.GlobalIllumination;
 using UnityEngine.Rendering;
+using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
 public class TimeAndGameManager : MonoBehaviour
@@ -40,6 +41,14 @@ public class TimeAndGameManager : MonoBehaviour
     //the current skybox we are manipulating to make change our sky color
     public Material _ourSkybox;
 
+    public Text TimeLeft;
+    public Text NextInvasiveSpawnText;
+    public Text NextHuntText;
+    public Text NextAnimalText;
+    public Text TotalSpawnedText;
+
+
+    private int animalspawned;
 
     int hour;
     int Minutes;
@@ -63,12 +72,30 @@ public class TimeAndGameManager : MonoBehaviour
     public void Update()
     {
         internalclock();
-        GetCurrentSkyInfo();
-        Debug.Log("The time is " + CurrentTime);
+        //GetCurrentSkyInfo();
+        setGameTimeUI();
 
     }
+    float SpawnpreviousValue = 0;
+    float SpawncurrentValue = 0;
+
+    float HuntpreviousValue = 0;
+    float HuntcurrentValue = 0; 
+    
+    float InvasivepreviousValue = 0;
+    float InvasivecurrentValue = 0;
+
     private void FixedUpdate()
     {
+        SpawnpreviousValue = SpawncurrentValue;
+        SpawncurrentValue = timeElapsed % NextAnimalSpawnDelay;
+        HuntpreviousValue = HuntcurrentValue;
+        HuntcurrentValue = timeElapsed % NextHuntDelay;
+        InvasivepreviousValue = InvasivecurrentValue;
+        InvasivecurrentValue = timeElapsed % invasiveSpawnDelay;
+
+
+
         if (animalSpawner.GetComponent<BasicAnimalSpawner>().animalsSpawned >= animalSpawner.GetComponent<BasicAnimalSpawner>().maxAnimals)
         {
             for (int i = 0; i < buttons.Length; i++)
@@ -87,28 +114,30 @@ public class TimeAndGameManager : MonoBehaviour
             nightBonus = 0;
         }
         //SkyColorTransitioning();
-        if (timeElapsed % 60 == 0)
+        if (SpawncurrentValue < SpawnpreviousValue)
         {
+            animalSpawner.GetComponent<BasicAnimalSpawner>().animalsSpawned = 0;
+            Debug.Log("Spawn func was called");
+
             //SPAWN FISH
             if (GameObject.FindGameObjectsWithTag("Fish").Length != 0)
             {
-                for (int i = 0; i < GameObject.FindGameObjectsWithTag("Fish").Length / 2; i++)
+                if (Random.Range(1, 100) >= 80 + trashSpawner.GetComponent<TrashPlacer>().pollution)
                 {
-                    if (Random.Range(1, 100) >= 80 + trashSpawner.GetComponent<TrashPlacer>().pollution)
-                    {
-                        animalSpawner.GetComponent<BasicAnimalSpawner>().spawnFish();
-                    }
+                    animalSpawner.GetComponent<BasicAnimalSpawner>().spawnFish();
+                    animalSpawner.GetComponent<BasicAnimalSpawner>().spawnFish();
+
                 }
             }
             //SPAWN RABBIT
             if (GameObject.FindGameObjectsWithTag("Rabbit").Length != 0)
             {
-                for (int i = 0; i < GameObject.FindGameObjectsWithTag("Rabbit").Length / 2; i++)
+                animalSpawner.GetComponent<BasicAnimalSpawner>().spawnRabbit();
+                animalSpawner.GetComponent<BasicAnimalSpawner>().spawnRabbit();
+                if (Random.Range(1, 100) >= 80 + trashSpawner.GetComponent<TrashPlacer>().pollution)
                 {
-                    if (Random.Range(1, 100) >= 80 + trashSpawner.GetComponent<TrashPlacer>().pollution)
-                    {
-                        animalSpawner.GetComponent<BasicAnimalSpawner>().spawnRabbit();
-                    }
+                    
+
                 }
             }
             //SPAWN FROG
@@ -116,48 +145,54 @@ public class TimeAndGameManager : MonoBehaviour
             {
                 for (int i = 0; i < GameObject.FindGameObjectsWithTag("Frog").Length / 2; i++)
                 {
+                    animalSpawner.GetComponent<BasicAnimalSpawner>().spawnAFrog();
+                    animalSpawner.GetComponent<BasicAnimalSpawner>().spawnAFrog();
+
                     if (Random.Range(1, 100) >= 80 + trashSpawner.GetComponent<TrashPlacer>().pollution)
                     {
-                        animalSpawner.GetComponent<BasicAnimalSpawner>().spawnAFrog();
+                        
+
                     }
                 }
             }
             //SPAWN CROCIDLE 
-            if (GameObject.FindGameObjectsWithTag("Alligator").Length != 0)
+            if (GameObject.FindGameObjectsWithTag("Aligator").Length != 0)
             {
-                for (int i = 0; i < GameObject.FindGameObjectsWithTag("Alligator").Length / 2; i++)
+                animalSpawner.GetComponent<BasicAnimalSpawner>().spawnAligator();
+                animalSpawner.GetComponent<BasicAnimalSpawner>().spawnAligator();
+                if (Random.Range(1, 100) >= 80 + trashSpawner.GetComponent<TrashPlacer>().pollution)
                 {
-                    if (Random.Range(1, 100) >= 80 + trashSpawner.GetComponent<TrashPlacer>().pollution)
-                    {
-                        animalSpawner.GetComponent<BasicAnimalSpawner>().spawnAligator();
-                    }
+                    
+
                 }
             }
             //SPAWN CAT
             if (GameObject.FindGameObjectsWithTag("Cat").Length != 0)
             {
-                for (int i = 0; i < GameObject.FindGameObjectsWithTag("Cat").Length / 2; i++)
+                animalSpawner.GetComponent<BasicAnimalSpawner>().spawnCat();
+                animalSpawner.GetComponent<BasicAnimalSpawner>().spawnCat();
+                if (Random.Range(1, 100) >= 80 + trashSpawner.GetComponent<TrashPlacer>().pollution)
                 {
-                    if (Random.Range(1, 100) >= 80 + trashSpawner.GetComponent<TrashPlacer>().pollution)
-                    {
-                        animalSpawner.GetComponent<BasicAnimalSpawner>().spawnCat();
-                    }
+                    
+
                 }
             }
             //SPAWN PYTHON
             if (GameObject.FindGameObjectsWithTag("Python").Length != 0)
             {
-                for (int i = 0; i < GameObject.FindGameObjectsWithTag("Python").Length / 2; i++)
+                animalSpawner.GetComponent<BasicAnimalSpawner>().spawnPython();
+                animalSpawner.GetComponent<BasicAnimalSpawner>().spawnPython();
+                if (Random.Range(1, 100) >= 80 + trashSpawner.GetComponent<TrashPlacer>().pollution)
                 {
-                    if (Random.Range(1, 100) >= 80 + trashSpawner.GetComponent<TrashPlacer>().pollution)
-                    {
-                        animalSpawner.GetComponent<BasicAnimalSpawner>().spawnPython();
-                    }
+                    
+
                 }
             }
         }
-        if (timeElapsed % 120 == 0)
+        if (HuntcurrentValue < HuntpreviousValue)
         {
+            Debug.Log("Hunt func was called");
+
             //PYTHON HUNTING
             if (GameObject.FindGameObjectsWithTag("Python").Length != 0)
             {
@@ -181,7 +216,7 @@ public class TimeAndGameManager : MonoBehaviour
                     }
                     else if (Random.Range(1, 100) >= 20 - nightBonus)
                     {
-                        Destroy(GameObject.FindGameObjectsWithTag("Alligator")[Random.Range(0, GameObject.FindGameObjectsWithTag("Alligator").Length)]);
+                        Destroy(GameObject.FindGameObjectsWithTag("Aligator")[Random.Range(0, GameObject.FindGameObjectsWithTag("Aligator").Length)]);
                     }
                 }
             }
@@ -205,9 +240,9 @@ public class TimeAndGameManager : MonoBehaviour
                 }
             }
             //ALLIGATOR HUNTING
-            if (GameObject.FindGameObjectsWithTag("Alligator").Length != 0)
+            if (GameObject.FindGameObjectsWithTag("Aligator").Length != 0)
             {
-                for (int i = 0; i < GameObject.FindGameObjectsWithTag("Alligator").Length; i++)
+                for (int i = 0; i < GameObject.FindGameObjectsWithTag("Aligator").Length; i++)
                 {
                     if (Random.Range(1, 100) >= 80 - dayBonus)
                     {
@@ -237,8 +272,9 @@ public class TimeAndGameManager : MonoBehaviour
             }
             animalSpawner.GetComponent<BasicAnimalSpawner>().animalsSpawned = 0;
         }
-        if (timeElapsed % 180 == 0)
+        if (InvasivecurrentValue < InvasivepreviousValue)
         {
+            Debug.Log("Invasive func was called");
             //Spawn Invasive
             for (int i = 0; i <= Random.Range(0, 3); i++)
             {
@@ -249,6 +285,48 @@ public class TimeAndGameManager : MonoBehaviour
                 animalSpawner.GetComponent<BasicAnimalSpawner>().spawnCat();
             }
         }
+    }
+    public float GameTimeInSeconds = 720;
+    public float invasiveSpawnDelay = 180;
+    public float NextHuntDelay = 120;
+    public float NextAnimalSpawnDelay = 60;
+    void setGameTimeUI()
+    {
+
+        float invasiveSpawnTime = invasiveSpawnDelay - (timeElapsed % invasiveSpawnDelay);
+        float NextHuntTime = NextHuntDelay - (timeElapsed % NextHuntDelay);
+        float NextAnimalSpawn = NextAnimalSpawnDelay - (timeElapsed % NextAnimalSpawnDelay);
+
+        float GameLeftInseconds = GameTimeInSeconds - (timeElapsed % GameTimeInSeconds);
+
+        int GameMinutes = (int)(GameLeftInseconds / 60);
+        int Gameseconds = (int)(GameLeftInseconds - (GameMinutes * 60));
+        TimeLeft.text = "Time Left: " + GameMinutes + ":" + Gameseconds;
+
+        int invasiveMinutes = (int)(invasiveSpawnTime / 60);
+        int Invasiveseconds = (int)(invasiveSpawnTime - (invasiveMinutes * 60));
+        NextInvasiveSpawnText.text = "Next Invasive Spawn: " + invasiveMinutes + ":" + Invasiveseconds;
+
+        int NextHuntMinutes = (int)(NextHuntTime / 60);
+        int nextHuntSeconds = (int)(NextHuntTime - (NextHuntMinutes * 60));
+        NextHuntText.text = "Next Hunt: " + NextHuntMinutes + ":" + nextHuntSeconds;
+
+        int NextAnimalMinutes = (int)(NextAnimalSpawn / 60);
+        int NextAnimalSeconds = (int)(NextAnimalSpawn - (NextAnimalMinutes * 60));
+        NextAnimalText.text = "Next Animal Spawn: " + NextAnimalMinutes + ":" + NextAnimalSeconds;
+
+
+        //this should not be here
+        //this should not be here
+        BasicAnimalSpawner Spawner = animalSpawner.GetComponent<BasicAnimalSpawner>();
+
+        animalspawned = Spawner.maxAnimals - Spawner.animalsSpawned;
+        TotalSpawnedText.text = animalspawned.ToString();
+
+    }
+    void resetSpawn()
+    {
+
     }
 
 
@@ -264,7 +342,6 @@ public class TimeAndGameManager : MonoBehaviour
         SunSizeConvergence = _ourSkybox.GetFloat("_SunSizeConvergence");
         AtmosphereThickness = _ourSkybox.GetFloat("_AtmosphereThickness");
         SkyTint = _ourSkybox.GetColor("_SkyTint");
-        GroundTint = _ourSkybox.GetColor("_Ground");
         Exposure = _ourSkybox.GetFloat("_Exposure");
         //print(SunSize);
         //print(SunSizeConvergence);

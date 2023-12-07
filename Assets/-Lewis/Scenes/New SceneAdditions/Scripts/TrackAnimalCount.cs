@@ -8,10 +8,8 @@ public class TrackAnimalCount : MonoBehaviour
     public static int AligatorCount = 0;
     public static int FrogCount = 0;
     public static int PythonCount = 0;
-    public void Awake()
-    {
-        
-    }
+    public static int CatCount = 0;
+    public static int RabbitCount = 0;
     public static void RemoveFromCount(string animalTagName)
     {
         if(animalTagName == "Fish")
@@ -29,6 +27,14 @@ public class TrackAnimalCount : MonoBehaviour
         else if (animalTagName == "Python")
         {
             PythonCount--;
+        }
+        else if (animalTagName == "Cat")
+        {
+            CatCount--;
+        }
+        else if (animalTagName == "Rabbit")
+        {
+            RabbitCount--;
         }
     }
     public static void addtoPopulationCount(string animalTagName)
@@ -48,6 +54,14 @@ public class TrackAnimalCount : MonoBehaviour
         else if (animalTagName == "Python")
         {
             PythonCount++;
+        }
+        else if (animalTagName == "Cat")
+        {
+            CatCount++;
+        }
+        else if (animalTagName == "Rabbit")
+        {
+            RabbitCount++;
         }
     }
 
