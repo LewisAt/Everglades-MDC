@@ -28,6 +28,8 @@ public class TimeAndGameManager : MonoBehaviour
     [SerializeField]
     [Range(0, 24)]
     public float timeInRange = 0;
+    public int huntingBonus;
+    public GameObject animalSpawner;
 
     //this is math done before hand so it does not lag  but 15f represents the number of degrees the sun must move in an hour to do a full 360 after 24 hours
     private float RotationPerHour = 15f;
@@ -44,11 +46,11 @@ public class TimeAndGameManager : MonoBehaviour
 
     float CurrentTime;
     float timeElapsed;
-
-
     float TheCurrentTimeInRotation;
     float HoursInAMinut;
     bool nightMode;
+    int dayBonus;
+    int nightBonus;
 
     //on the first frame of the game this acitvates and does some simple math for us before contining to the rest of the code.
     private void Awake()
@@ -58,7 +60,6 @@ public class TimeAndGameManager : MonoBehaviour
 
     public void Update()
     {
-        Random.ReferenceEquals(CurrentTime, Time.time);
         internalclock();
         GetCurrentSkyInfo();
         Debug.Log("The time is " + CurrentTime);
@@ -66,50 +67,155 @@ public class TimeAndGameManager : MonoBehaviour
     }
     private void FixedUpdate()
     {
+        if (CurrentTime >= 20 && CurrentTime <= 6)
+        {
+            nightBonus = huntingBonus;
+            dayBonus = 0;
+        }
+        else
+        {
+            dayBonus = huntingBonus;
+            nightBonus = 0;
+        }
         //SkyColorTransitioning();
         if (timeElapsed % 60 == 0)
         {
-            //Spawn New Animal
+            //SPAWN FISH
+            if (GameObject.FindGameObjectsWithTag("Fish").Length != 0)
+            {
+                for (int i = 0; i < GameObject.FindGameObjectsWithTag("Fish").Length / 2; i++)
+                {
+                    animalSpawner.GetComponent<BasicAnimalSpawner>().spawnFish();
+                }
+            }
+            //SPAWN RABBIT
+            if (GameObject.FindGameObjectsWithTag("Rabbit").Length != 0)
+            {
+                for (int i = 0; i < GameObject.FindGameObjectsWithTag("Rabbit").Length / 2; i++)
+                {
+                    animalSpawner.GetComponent<BasicAnimalSpawner>().spawnRabbit();
+                }
+            }
+            //SPAWN FROG
+            if (GameObject.FindGameObjectsWithTag("Frog").Length != 0)
+            {
+                for (int i = 0; i < GameObject.FindGameObjectsWithTag("Frog").Length / 2; i++)
+                {
+                    animalSpawner.GetComponent<BasicAnimalSpawner>().spawnAFrog();
+                }
+            }
+            //SPAWN CROCIDLE 
+            if (GameObject.FindGameObjectsWithTag("Alligator").Length != 0)
+            {
+                for (int i = 0; i < GameObject.FindGameObjectsWithTag("Alligator").Length / 2; i++)
+                {
+                    animalSpawner.GetComponent<BasicAnimalSpawner>().spawnAligator();
+                }
+            }
+            //SPAWN CAT
+            if (GameObject.FindGameObjectsWithTag("Cat").Length != 0)
+            {
+                for (int i = 0; i < GameObject.FindGameObjectsWithTag("Cat").Length / 2; i++)
+                {
+                    animalSpawner.GetComponent<BasicAnimalSpawner>().spawnCat();
+                }
+            }
+            //SPAWN PYTHON
+            if (GameObject.FindGameObjectsWithTag("Python").Length != 0)
+            {
+                for (int i = 0; i < GameObject.FindGameObjectsWithTag("Python").Length / 2; i++)
+                {
+                    animalSpawner.GetComponent<BasicAnimalSpawner>().spawnPython();
+                }
+            }
         }
         if (timeElapsed % 120 == 0)
         {
+            //PYTHON HUNTING
             if (GameObject.FindGameObjectsWithTag("Python").Length != 0)
             {
                 for (int i = 0; i < GameObject.FindGameObjectsWithTag("Python").Length; i++)
                 {
-                    if (Random.Range(1, 100) >= 80)
+                    if (Random.Range(1, 100) >= 80 - nightBonus)
                     {
                         Destroy(GameObject.FindGameObjectsWithTag("Rabbit")[Random.Range(0, GameObject.FindGameObjectsWithTag("Rabbit").Length)]);
                     }
-                    else if (Random.Range(1, 100) >= 70)
+                    else if (Random.Range(1, 100) >= 70 - nightBonus)
                     {
                         Destroy(GameObject.FindGameObjectsWithTag("Frog")[Random.Range(0, GameObject.FindGameObjectsWithTag("Frog").Length)]);
                     }
-                    else if (Random.Range(1, 100) >= 50)
+                    else if (Random.Range(1, 100) >= 50 - nightBonus)
                     {
                         Destroy(GameObject.FindGameObjectsWithTag("Cat")[Random.Range(0, GameObject.FindGameObjectsWithTag("Cat").Length)]);
                     }
-                    else if (Random.Range(1, 100) >= 60)
+                    else if (Random.Range(1, 100) >= 60 - nightBonus)
                     {
                         Destroy(GameObject.FindGameObjectsWithTag("Bass")[Random.Range(0, GameObject.FindGameObjectsWithTag("Bass").Length)]);
                     }
-                    else if (Random.Range(1, 100) >= 20)
+                    else if (Random.Range(1, 100) >= 20 - nightBonus)
                     {
                         Destroy(GameObject.FindGameObjectsWithTag("Alligator")[Random.Range(0, GameObject.FindGameObjectsWithTag("Alligator").Length)]);
                     }
                 }
             }
+            //CAT HUNTING
+            if (GameObject.FindGameObjectsWithTag("Cat").Length != 0)
+            {
+                for (int i = 0; i < GameObject.FindGameObjectsWithTag("Cat").Length; i++)
+                {
+                    if (Random.Range(1, 100) >= 80 - nightBonus)
+                    {
+                        Destroy(GameObject.FindGameObjectsWithTag("Bass")[Random.Range(0, GameObject.FindGameObjectsWithTag("Bass").Length)]);
+                    }
+                    else if (Random.Range(1, 100) >= 70 - nightBonus)
+                    {
+                        Destroy(GameObject.FindGameObjectsWithTag("Rabbit")[Random.Range(0, GameObject.FindGameObjectsWithTag("Rabbit").Length)]);
+                    }
+                    else if (Random.Range(1, 100) >= 60 - nightBonus)
+                    {
+                        Destroy(GameObject.FindGameObjectsWithTag("Frog")[Random.Range(0, GameObject.FindGameObjectsWithTag("Frog").Length)]);
+                    }
+                }
+            }
+            //ALLIGATOR HUNTING
+            if (GameObject.FindGameObjectsWithTag("Alligator").Length != 0)
+            {
+                for (int i = 0; i < GameObject.FindGameObjectsWithTag("Alligator").Length; i++)
+                {
+                    if (Random.Range(1, 100) >= 80 - dayBonus)
+                    {
+                        Destroy(GameObject.FindGameObjectsWithTag("Rabbit")[Random.Range(0, GameObject.FindGameObjectsWithTag("Rabbit").Length)]);
+                    }
+                    else if (Random.Range(1, 100) >= 70 - dayBonus)
+                    {
+                        Destroy(GameObject.FindGameObjectsWithTag("Frog")[Random.Range(0, GameObject.FindGameObjectsWithTag("Frog").Length)]);
+                    }
+                    else if (Random.Range(1, 100) >= 50 - dayBonus)
+                    {
+                        Destroy(GameObject.FindGameObjectsWithTag("Cat")[Random.Range(0, GameObject.FindGameObjectsWithTag("Cat").Length)]);
+                    }
+                    else if (Random.Range(1, 100) >= 60 - dayBonus)
+                    {
+                        Destroy(GameObject.FindGameObjectsWithTag("Bass")[Random.Range(0, GameObject.FindGameObjectsWithTag("Bass").Length)]);
+                    }
+                    else if (Random.Range(1, 100) >= 20 - dayBonus)
+                    {
+                        Destroy(GameObject.FindGameObjectsWithTag("Python")[Random.Range(0, GameObject.FindGameObjectsWithTag("Python").Length)]);
+                    }
+                }
+            }
         }
-        if (timeElapsed % 60 == 0)
+        if (timeElapsed % 180 == 0)
         {
             //Spawn Invasive
-        }
-        if (CurrentTime > )
-        {
-            //Change Night bool
-            //Activitate the bloodmoon
-            //Call forth the hunt
-            //Release the bog
+            for (int i = 0; i <= Random.Range(0, 3); i++)
+            {
+                animalSpawner.GetComponent<BasicAnimalSpawner>().spawnPython();
+            }
+            for (int i = 0; i <= Random.Range(0, 5); i++)
+            {
+                animalSpawner.GetComponent<BasicAnimalSpawner>().spawnCat();
+            }
         }
     }
 
