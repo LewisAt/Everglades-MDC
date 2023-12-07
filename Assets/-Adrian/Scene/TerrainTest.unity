@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.21733129, g: 0.19764477, b: 0.100835465, a: 1}
+  m_IndirectSpecularColor: {r: 0.12263391, g: 0.23593011, b: 0.4062855, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2401,7 +2401,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1405707970}
         m_TargetAssemblyTypeName: BasicAnimalSpawner, Assembly-CSharp
-        m_MethodName: spawnFish
+        m_MethodName: spawnRabbit
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5191,7 +5191,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &844239693
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6515,7 +6515,7 @@ GameObject:
   - component: {fileID: 1119312866}
   - component: {fileID: 1119312865}
   m_Layer: 5
-  m_Name: CatInfo
+  m_Name: RabbitInfo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10339,7 +10339,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1405707970}
         m_TargetAssemblyTypeName: BasicAnimalSpawner, Assembly-CSharp
-        m_MethodName: spawnFish
+        m_MethodName: spawnCat
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10580,7 +10580,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!23 &1835219249
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11217,7 +11217,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Size: {x: 1000, y: 7, z: 1000}
+  m_Size: {x: 3000, y: 8.99, z: 3000}
   m_Center: {x: 0, y: 0, z: 0}
   m_Area: 3
   m_AffectedAgents: ffffffff

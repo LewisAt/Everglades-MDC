@@ -208,6 +208,7 @@ public class TimeAndGameManager : MonoBehaviour
         if (timeElapsed % 180 == 0)
         {
             //Spawn Invasive
+<<<<<<< HEAD
             for (int i = 0; i <= Random.Range(0, 3); i++)
             {
                 animalSpawner.GetComponent<BasicAnimalSpawner>().spawnPython();
@@ -216,6 +217,15 @@ public class TimeAndGameManager : MonoBehaviour
             {
                 animalSpawner.GetComponent<BasicAnimalSpawner>().spawnCat();
             }
+=======
+        }
+        if (CurrentTime > 0)
+        {
+            //Change Night bool
+            //Activitate the bloodmoon
+            //Call forth the hunt
+            //Release the bog
+>>>>>>> 38b4eedfd427738b7e9b57aaa5b1abb531af2ce1
         }
     }
 
