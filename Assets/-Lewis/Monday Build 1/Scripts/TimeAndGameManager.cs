@@ -30,6 +30,7 @@ public class TimeAndGameManager : MonoBehaviour
     public float timeInRange = 0;
     public int huntingBonus;
     public GameObject animalSpawner;
+    public GameObject trashSpawner;
 
     //this is math done before hand so it does not lag  but 15f represents the number of degrees the sun must move in an hour to do a full 360 after 24 hours
     private float RotationPerHour = 15f;
@@ -51,6 +52,7 @@ public class TimeAndGameManager : MonoBehaviour
     bool nightMode;
     int dayBonus;
     int nightBonus;
+    public GameObject[] buttons;
 
     //on the first frame of the game this acitvates and does some simple math for us before contining to the rest of the code.
     private void Awake()
@@ -67,6 +69,13 @@ public class TimeAndGameManager : MonoBehaviour
     }
     private void FixedUpdate()
     {
+        if (animalSpawner.GetComponent<BasicAnimalSpawner>().animalsSpawned >= animalSpawner.GetComponent<BasicAnimalSpawner>().maxAnimals)
+        {
+            for (int i = 0; i < buttons.Length; i++)
+            {
+                buttons[i].SetActive(false);
+            }
+        }
         if (CurrentTime >= 20 && CurrentTime <= 6)
         {
             nightBonus = huntingBonus;
@@ -85,7 +94,10 @@ public class TimeAndGameManager : MonoBehaviour
             {
                 for (int i = 0; i < GameObject.FindGameObjectsWithTag("Fish").Length / 2; i++)
                 {
-                    animalSpawner.GetComponent<BasicAnimalSpawner>().spawnFish();
+                    if (Random.Range(1, 100) >= 80 + trashSpawner.GetComponent<TrashPlacer>().pollution)
+                    {
+                        animalSpawner.GetComponent<BasicAnimalSpawner>().spawnFish();
+                    }
                 }
             }
             //SPAWN RABBIT
@@ -93,7 +105,10 @@ public class TimeAndGameManager : MonoBehaviour
             {
                 for (int i = 0; i < GameObject.FindGameObjectsWithTag("Rabbit").Length / 2; i++)
                 {
-                    animalSpawner.GetComponent<BasicAnimalSpawner>().spawnRabbit();
+                    if (Random.Range(1, 100) >= 80 + trashSpawner.GetComponent<TrashPlacer>().pollution)
+                    {
+                        animalSpawner.GetComponent<BasicAnimalSpawner>().spawnRabbit();
+                    }
                 }
             }
             //SPAWN FROG
@@ -101,7 +116,10 @@ public class TimeAndGameManager : MonoBehaviour
             {
                 for (int i = 0; i < GameObject.FindGameObjectsWithTag("Frog").Length / 2; i++)
                 {
-                    animalSpawner.GetComponent<BasicAnimalSpawner>().spawnAFrog();
+                    if (Random.Range(1, 100) >= 80 + trashSpawner.GetComponent<TrashPlacer>().pollution)
+                    {
+                        animalSpawner.GetComponent<BasicAnimalSpawner>().spawnAFrog();
+                    }
                 }
             }
             //SPAWN CROCIDLE 
@@ -109,7 +127,10 @@ public class TimeAndGameManager : MonoBehaviour
             {
                 for (int i = 0; i < GameObject.FindGameObjectsWithTag("Alligator").Length / 2; i++)
                 {
-                    animalSpawner.GetComponent<BasicAnimalSpawner>().spawnAligator();
+                    if (Random.Range(1, 100) >= 80 + trashSpawner.GetComponent<TrashPlacer>().pollution)
+                    {
+                        animalSpawner.GetComponent<BasicAnimalSpawner>().spawnAligator();
+                    }
                 }
             }
             //SPAWN CAT
@@ -117,7 +138,10 @@ public class TimeAndGameManager : MonoBehaviour
             {
                 for (int i = 0; i < GameObject.FindGameObjectsWithTag("Cat").Length / 2; i++)
                 {
-                    animalSpawner.GetComponent<BasicAnimalSpawner>().spawnCat();
+                    if (Random.Range(1, 100) >= 80 + trashSpawner.GetComponent<TrashPlacer>().pollution)
+                    {
+                        animalSpawner.GetComponent<BasicAnimalSpawner>().spawnCat();
+                    }
                 }
             }
             //SPAWN PYTHON
@@ -125,7 +149,10 @@ public class TimeAndGameManager : MonoBehaviour
             {
                 for (int i = 0; i < GameObject.FindGameObjectsWithTag("Python").Length / 2; i++)
                 {
-                    animalSpawner.GetComponent<BasicAnimalSpawner>().spawnPython();
+                    if (Random.Range(1, 100) >= 80 + trashSpawner.GetComponent<TrashPlacer>().pollution)
+                    {
+                        animalSpawner.GetComponent<BasicAnimalSpawner>().spawnPython();
+                    }
                 }
             }
         }
@@ -204,11 +231,15 @@ public class TimeAndGameManager : MonoBehaviour
                     }
                 }
             }
+            for (int i = 0; i < buttons.Length; i++)
+            {
+                buttons[i].SetActive(true);
+            }
+            animalSpawner.GetComponent<BasicAnimalSpawner>().animalsSpawned = 0;
         }
         if (timeElapsed % 180 == 0)
         {
             //Spawn Invasive
-<<<<<<< HEAD
             for (int i = 0; i <= Random.Range(0, 3); i++)
             {
                 animalSpawner.GetComponent<BasicAnimalSpawner>().spawnPython();
@@ -217,15 +248,6 @@ public class TimeAndGameManager : MonoBehaviour
             {
                 animalSpawner.GetComponent<BasicAnimalSpawner>().spawnCat();
             }
-=======
-        }
-        if (CurrentTime > 0)
-        {
-            //Change Night bool
-            //Activitate the bloodmoon
-            //Call forth the hunt
-            //Release the bog
->>>>>>> 38b4eedfd427738b7e9b57aaa5b1abb531af2ce1
         }
     }
 

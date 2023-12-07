@@ -6,21 +6,27 @@ using UnityEngine;
 public class BasicAnimalSpawner : MonoBehaviour
 {
     public AnimalSpawner[] Animals;
+    public int maxAnimals;
+    public int animalsSpawned;
+
     public void spawnAligator()
     {
         GameObject clone = Instantiate(Animals[0].AnimalToSpawn);
         clone.transform.position = Animals[0].SpawnPosition.transform.position;
+        animalsSpawned++;
     }
     public void spawnFish()
     {
         GameObject clone = Instantiate(Animals[1].AnimalToSpawn);
         clone.transform.position = Animals[1].SpawnPosition.transform.position;
+        animalsSpawned++;
     }
    
     public void spawnAFrog()
     {
         GameObject clone = Instantiate(Animals[2].AnimalToSpawn);
         clone.transform.position = Animals[2].SpawnPosition.transform.position;
+        animalsSpawned++;
     }
     public void spawnPython()
     {
@@ -31,6 +37,7 @@ public class BasicAnimalSpawner : MonoBehaviour
     {
         GameObject clone = Instantiate(Animals[4].AnimalToSpawn);
         clone.transform.position = Animals[4].SpawnPosition.transform.position;
+        animalsSpawned++;
     }
     public void spawnCat()
     {

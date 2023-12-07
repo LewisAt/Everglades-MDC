@@ -7,7 +7,7 @@ public class TrashPlacer : MonoBehaviour
     public GameObject[] TrashObjects;
     public Transform trashlayer;
     [Range(0f, 1f)]
-    public float pollution;
+    public int pollution;
     int iterations;
     int numberActive;
     // Start is called before the first frame update
@@ -18,7 +18,7 @@ public class TrashPlacer : MonoBehaviour
     }
     void revealGarbage()
     {
-        if (!TrashObjects[0].activeSelf && pollution == 0f) return;
+        if (!TrashObjects[0].activeSelf && pollution == 0) return;
         if(iterations == numberActive)
         {
             return;
@@ -41,15 +41,15 @@ public class TrashPlacer : MonoBehaviour
     }
     public void increasePolution()
     {
-        pollution += 0.1f;
-        pollution = Mathf.Clamp(pollution, 0f, 1f);
+        pollution += 5;
+        pollution = Mathf.Clamp(pollution, 1, 20);
 
     }
     public void DecreasePolution()
     {
         
-        pollution -= 0.1f;
-        pollution = Mathf.Clamp(pollution, 0f, 1f);
+        pollution -= 5;
+        pollution = Mathf.Clamp(pollution, 1, 20);
     }
 
     //this is out of date can needs to be rewriten to work.
