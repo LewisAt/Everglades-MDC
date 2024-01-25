@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: Everglades-MDC04
+  productName: Everglades-MDC-B01
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -133,8 +133,11 @@ PlayerSettings:
   vulkanEnableLateAcquireNextImage: 0
   vulkanEnableCommandBufferRecycling: 1
   loadStoreDebugModeEnabled: 0
-  bundleVersion: A04
-  preloadedAssets: []
+  bundleVersion: B02
+  preloadedAssets:
+  - {fileID: 8556320736955934372, guid: ae2737e582d28e040a9c1bc0b61037b3, type: 2}
+  - {fileID: 11400000, guid: 6db0497d8a0282e4492b3068f48df175, type: 2}
+  - {fileID: 8150153665171859457, guid: 2275a56f2a6328c4da2d5e02078395a7, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -153,7 +156,8 @@ PlayerSettings:
   resetResolutionOnWindowResize: 0
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
-  applicationIdentifier: {}
+  applicationIdentifier:
+    Android: com.DefaultCompany.EvergladesMDCB01
   buildNumber:
     Standalone: 0
     VisionOS: 0
@@ -766,7 +770,7 @@ PlayerSettings:
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
   metroPackageName: Everglades-MDC
-  metroPackageVersion: 
+  metroPackageVersion: 1.0.0.0
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
@@ -774,7 +778,7 @@ PlayerSettings:
   metroCertificateNotAfter: 0000000000000000
   metroApplicationDescription: Everglades-MDC
   wsaImages: {}
-  metroTileShortName: 
+  metroTileShortName: Everglades-MDC04
   metroTileShowName: 0
   metroMediumTileShowName: 0
   metroLargeTileShowName: 0
