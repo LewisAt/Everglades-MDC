@@ -8,10 +8,24 @@ public class IntroStarted : MonoBehaviour
     public float FadeWallRate = 1.0f;  
     public GameObject FadeWall;
     public GameObject Blackwall;
+    private bool startIt = false;
+    private void Awake()
+    {
+        StartCoroutine(startDelay());
+    }
     private void FixedUpdate()
     {
-        TranisitonBlackWall();
-        ColorTransition();
+        if(startIt)
+        {
+            TranisitonBlackWall();
+            ColorTransition();
+        }
+        
+    }
+    IEnumerator startDelay() 
+    {
+        yield return new WaitForSeconds(3);
+        startIt = true;
     }
     void TranisitonBlackWall()
     {
