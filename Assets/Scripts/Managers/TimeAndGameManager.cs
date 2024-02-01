@@ -103,7 +103,6 @@ public class TimeAndGameManager : MonoBehaviour
         InvasivepreviousValue = InvasivecurrentValue;
         InvasivecurrentValue = timeElapsed % invasiveSpawnDelay;
 
-        Debug.Log(CurrentTime);
 
 
 
