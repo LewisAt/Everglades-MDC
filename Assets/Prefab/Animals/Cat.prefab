@@ -70,6 +70,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   navMeshMaskNumber: 0
+  MovementStrength: 0
+  waddle: 0
 --- !u!114 &6344591620923318888
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -108,11 +110,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c3a3ea28a06c246488129c5b2a6fa1a4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.83
+      value: 1.24
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c3a3ea28a06c246488129c5b2a6fa1a4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.44
+      value: -1.93
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c3a3ea28a06c246488129c5b2a6fa1a4, type: 3}
       propertyPath: m_LocalRotation.w
