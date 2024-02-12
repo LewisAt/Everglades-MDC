@@ -70,6 +70,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   navMeshMaskNumber: 0
+  MovementStrength: 1
+  waddle: 0
 --- !u!114 &2541607569920325073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -133,11 +135,15 @@ PrefabInstance:
     - target: {fileID: -6067185528594298527, guid: 110cb39d03d7d244e99fb5bf830dc1d2, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 3aa9cadc6ca71b6429881013b9dabcfc, type: 2}
+      objectReference: {fileID: 2100000, guid: f870ac1572013d2469e1480730912572, type: 2}
     - target: {fileID: 919132149155446097, guid: 110cb39d03d7d244e99fb5bf830dc1d2, type: 3}
       propertyPath: m_Name
       value: python 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3605451226459851451, guid: 110cb39d03d7d244e99fb5bf830dc1d2, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 4068373912626513877, guid: 5defba08813bf024c90c01a46b7b0c83, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

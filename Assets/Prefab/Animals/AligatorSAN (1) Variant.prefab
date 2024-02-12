@@ -8,10 +8,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1878128311399455253, guid: e9e6624e47dc228459f3bc6031d66d9d, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 4068373912626513877, guid: 5f0ea802e1a294c44a4e912d9d5f77d9, type: 3}
     - target: {fileID: 3277809621131922200, guid: e9e6624e47dc228459f3bc6031d66d9d, type: 3}
       propertyPath: m_Name
       value: AligatorSAN (1) Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 4464339324632133343, guid: e9e6624e47dc228459f3bc6031d66d9d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a6ec47e7ae8fb1f4ba03f62ded1b38f2, type: 2}
     - target: {fileID: 8830099619552879450, guid: e9e6624e47dc228459f3bc6031d66d9d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 308.71
