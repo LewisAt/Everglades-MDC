@@ -220,7 +220,7 @@ public class TimeAndGameManager : MonoBehaviour
                 {
                     if (Random.Range(1, 100) >= 80 - dayBonus)
                     {
-                        GameObject.FindGameObjectsWithTag("Rabbit")[Random.Range(0, GameObject.FindGameObjectsWithTag("Rabbit").Length)]);
+                        Destroy(GameObject.FindGameObjectsWithTag("Rabbit")[Random.Range(0, GameObject.FindGameObjectsWithTag("Rabbit").Length)]);
                     }
                     else if (Random.Range(1, 100) >= 70 - dayBonus)
                     {
