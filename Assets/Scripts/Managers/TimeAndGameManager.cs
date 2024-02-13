@@ -163,8 +163,12 @@ public class TimeAndGameManager : MonoBehaviour
                 animalSpawner.GetComponent<BasicAnimalSpawner>().spawnCat();
             }
         }
+        //HUNTING
         if (HuntcurrentValue < HuntpreviousValue)
         {
+            //CHANGES TEXT TO ZERO
+            animalSpawner.GetComponent<BasicAnimalSpawner>().animalsSpawned = 0;
+
             Debug.Log("Hunt func was called");
 
             //PYTHON HUNTING
@@ -245,8 +249,11 @@ public class TimeAndGameManager : MonoBehaviour
             {
                 buttons[i].SetActive(true);
             }*/
-            animalSpawner.GetComponent<BasicAnimalSpawner>().animalsSpawned = 0;
+            //animalSpawner.GetComponent<BasicAnimalSpawner>().animalsSpawned = 0;
         }
+
+
+
         if (InvasivecurrentValue < InvasivepreviousValue)
         {
             Debug.Log("Invasive func was called");
@@ -299,7 +306,7 @@ public class TimeAndGameManager : MonoBehaviour
         //this should not be here
         BasicAnimalSpawner Spawner = animalSpawner.GetComponent<BasicAnimalSpawner>();
 
-        animalspawned = Spawner.maxAnimals - Spawner.animalsSpawned;
+        //animalspawned = Spawner.maxAnimals - Spawner.animalsSpawned;
         TotalSpawnedText.text = animalspawned.ToString();
 
     }
