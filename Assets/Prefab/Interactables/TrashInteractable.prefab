@@ -772,6 +772,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9098085665024499910, guid: bfd425cbf95fe154f91211928b339311, type: 3}
+      propertyPath: infoTodisplay
+      value: Marine debris, including abandoned fishing gear such as lobster and
+        crab traps, rope, and other debris, everything from plastics to pallets,
+        is an overwhelming problem that harms both animals and habitats throughout
+        south Florida and the world.
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
