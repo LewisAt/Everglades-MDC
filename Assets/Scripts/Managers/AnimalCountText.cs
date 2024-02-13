@@ -5,6 +5,13 @@ using UnityEngine.UI;
 
 public class AnimalCountText : MonoBehaviour
 {
+    public Slider AligatorCountText;
+    public Slider PythonCountText;
+    public Slider FrogCountText;
+    public Slider FishCountText;
+    public Slider CatCountText;
+    public Slider RabbitCountText;
+
     private int AligatorCountNumber;
     private int PythonCountNumber;
     private int FrogCountNumber;
@@ -14,25 +21,28 @@ public class AnimalCountText : MonoBehaviour
 
     private void Update()
     {
-
-        if(AligatorCountText != null)
-        {
-            updateAnimalCountText();
-
-        }
-
+        updateAnimalCountText();
     }
     private void FixedUpdate()
     {
-        AligatorCountNumber = TrackAnimalCount.ReturnCount("Aligator");
-        PythonCountNumber = TrackAnimalCount.ReturnCount("Python");
-        FrogCountNumber = TrackAnimalCount.ReturnCount("Frog");
-        FishCountNumber = TrackAnimalCount.ReturnCount("Fish");
-        CatCountNumber = TrackAnimalCount.ReturnCount("Cat");
-        RabbitCountNumber = TrackAnimalCount.ReturnCount("Rabbit");
+        AligatorCountNumber = GameObject.FindGameObjectsWithTag("Aligator").Length;
+        PythonCountNumber = GameObject.FindGameObjectsWithTag("Python").Length;
+        FrogCountNumber = GameObject.FindGameObjectsWithTag("Frog").Length;
+        FishCountNumber = GameObject.FindGameObjectsWithTag("Fish").Length;
+        CatCountNumber = GameObject.FindGameObjectsWithTag("Cat").Length;
+        RabbitCountNumber = GameObject.FindGameObjectsWithTag("Rabbit").Length;
+    }
+    void getNumberOfAnimals()
+    {
+
     }
     void updateAnimalCountText()
     {
-        
+        AligatorCountText.value = AligatorCountNumber;
+        PythonCountText.value = PythonCountNumber;
+        FrogCountText.value = FrogCountNumber;
+        FishCountText.value = FishCountNumber;
+        CatCountText.value = CatCountNumber;
+        RabbitCountText.value = RabbitCountNumber;
     }   
 }       
