@@ -22,22 +22,21 @@ public class AnimalCountText : MonoBehaviour
     private void Update()
     {
 
+        if(AligatorCountText != null)
+        {
+            updateAnimalCountText();
 
-        updateAnimalCountText();
+        }
 
     }
     private void FixedUpdate()
     {
-        AligatorCountNumber = GameObject.FindGameObjectsWithTag("Aligator").Length;
-        PythonCountNumber = GameObject.FindGameObjectsWithTag("Python").Length;
-        FrogCountNumber = GameObject.FindGameObjectsWithTag("Frog").Length;
-        FishCountNumber = GameObject.FindGameObjectsWithTag("Fish").Length;
-        CatCountNumber = GameObject.FindGameObjectsWithTag("Cat").Length;
-        RabbitCountNumber = GameObject.FindGameObjectsWithTag("Rabbit").Length;
-    }
-    void getNumberOfAnimals()
-    {
-
+        AligatorCountNumber = TrackAnimalCount.ReturnCount("Aligator");
+        PythonCountNumber = TrackAnimalCount.ReturnCount("Python");
+        FrogCountNumber = TrackAnimalCount.ReturnCount("Frog");
+        FishCountNumber = TrackAnimalCount.ReturnCount("Fish");
+        CatCountNumber = TrackAnimalCount.ReturnCount("Cat");
+        RabbitCountNumber = TrackAnimalCount.ReturnCount("Rabbit");
     }
     void updateAnimalCountText()
     {
