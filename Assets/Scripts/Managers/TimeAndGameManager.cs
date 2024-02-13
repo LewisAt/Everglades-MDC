@@ -278,9 +278,13 @@ public class TimeAndGameManager : MonoBehaviour
         int Gameseconds = (int)(GameLeftInseconds - (GameMinutes * 60));
         TimeLeft.text = "Time Left: " + GameMinutes + ":" + Gameseconds;
 
-        int invasiveMinutes = (int)(invasiveSpawnTime / 60);
-        int Invasiveseconds = (int)(invasiveSpawnTime - (invasiveMinutes * 60));
-        NextInvasiveSpawnText.text = "Next Invasive Spawn: " + invasiveMinutes + ":" + Invasiveseconds;
+        if(NextInvasiveSpawnText != null)
+        {
+            int invasiveMinutes = (int)(invasiveSpawnTime / 60);
+            int Invasiveseconds = (int)(invasiveSpawnTime - (invasiveMinutes * 60));
+            NextInvasiveSpawnText.text = "Next Invasive Spawn: " + invasiveMinutes + ":" + Invasiveseconds;
+        }
+        
 
         int NextHuntMinutes = (int)(NextHuntTime / 60);
         int nextHuntSeconds = (int)(NextHuntTime - (NextHuntMinutes * 60));
