@@ -73,9 +73,29 @@ public class BasicAnimalSpawner : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F))
+        if (Input.GetKeyDown(KeyCode.A))
         {
             spawnAligator();
+        }
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            spawnRabbit();
+        }
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            spawnPython();
+        }
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            spawnCat();
+        }
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            spawnAFrog();
+        }
+        if (Input.GetKeyDown(KeyCode.B))
+        {
+            spawnFish();
         }
     }
 

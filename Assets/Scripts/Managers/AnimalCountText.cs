@@ -15,11 +15,7 @@ public class AnimalCountText : MonoBehaviour
     private void Update()
     {
 
-        if(AligatorCountText != null)
-        {
             updateAnimalCountText();
-
-        }
 
     }
     private void FixedUpdate()
