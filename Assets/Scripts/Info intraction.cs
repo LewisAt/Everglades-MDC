@@ -8,8 +8,13 @@ public class Infointraction : MonoBehaviour
     [TextArea(15, 20)]
     public string infoTodisplay;
     public Text TextBoxToReveal;
+    private GameObject Player;
     public GameObject CanvasBase;
 
+    private void Awake()
+    {
+        Player = GameObject.FindGameObjectWithTag("Player");
+    }
     // Start is called before the first frame update
     public void enableAll()
     {
@@ -31,4 +36,5 @@ public class Infointraction : MonoBehaviour
 
         }
     }
+
 }
