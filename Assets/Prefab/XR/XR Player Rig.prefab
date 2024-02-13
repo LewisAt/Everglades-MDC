@@ -421,12 +421,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneNum: 0
-  currMenu: {fileID: 1166031087406287272}
-  nextMenu: {fileID: 7137422988120978146}
-  currInfo: {fileID: 0}
-  OtherInfoA: {fileID: 0}
-  OtherInfoB: {fileID: 0}
-  OtherInfoC: {fileID: 0}
+  animalMenu: {fileID: 0}
+  interactableMenu: {fileID: 0}
 --- !u!1 &455094621587736145
 GameObject:
   m_ObjectHideFlags: 0
@@ -1106,12 +1102,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneNum: 0
-  currMenu: {fileID: 1166031087406287272}
-  nextMenu: {fileID: 8508238967283008660}
-  currInfo: {fileID: 0}
-  OtherInfoA: {fileID: 0}
-  OtherInfoB: {fileID: 0}
-  OtherInfoC: {fileID: 0}
+  animalMenu: {fileID: 0}
+  interactableMenu: {fileID: 0}
 --- !u!1 &1166031087406287272
 GameObject:
   m_ObjectHideFlags: 0
@@ -1323,12 +1315,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneNum: 0
-  currMenu: {fileID: 0}
-  nextMenu: {fileID: 0}
-  currInfo: {fileID: 0}
-  OtherInfoA: {fileID: 0}
-  OtherInfoB: {fileID: 0}
-  OtherInfoC: {fileID: 0}
+  animalMenu: {fileID: 0}
+  interactableMenu: {fileID: 0}
 --- !u!1 &1309293160807593089
 GameObject:
   m_ObjectHideFlags: 0
@@ -2056,12 +2044,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneNum: 0
-  currMenu: {fileID: 8508238967283008660}
-  nextMenu: {fileID: 1166031087406287272}
-  currInfo: {fileID: 0}
-  OtherInfoA: {fileID: 0}
-  OtherInfoB: {fileID: 0}
-  OtherInfoC: {fileID: 0}
+  animalMenu: {fileID: 0}
+  interactableMenu: {fileID: 0}
 --- !u!1 &2025009931312998667
 GameObject:
   m_ObjectHideFlags: 0
@@ -2287,12 +2271,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneNum: 0
-  currMenu: {fileID: 1166031087406287272}
-  nextMenu: {fileID: 4805642378062141358}
-  currInfo: {fileID: 0}
-  OtherInfoA: {fileID: 0}
-  OtherInfoB: {fileID: 0}
-  OtherInfoC: {fileID: 0}
+  animalMenu: {fileID: 0}
+  interactableMenu: {fileID: 0}
 --- !u!1 &2289111504206024426
 GameObject:
   m_ObjectHideFlags: 0
@@ -2691,12 +2671,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneNum: 0
-  currMenu: {fileID: 0}
-  nextMenu: {fileID: 0}
-  currInfo: {fileID: 0}
-  OtherInfoA: {fileID: 0}
-  OtherInfoB: {fileID: 0}
-  OtherInfoC: {fileID: 0}
+  animalMenu: {fileID: 0}
+  interactableMenu: {fileID: 0}
 --- !u!1 &2818976524071822365
 GameObject:
   m_ObjectHideFlags: 0
@@ -3070,12 +3046,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneNum: 0
-  currMenu: {fileID: 4944157632841492815}
-  nextMenu: {fileID: 7137422988120978146}
-  currInfo: {fileID: 0}
-  OtherInfoA: {fileID: 0}
-  OtherInfoB: {fileID: 0}
-  OtherInfoC: {fileID: 0}
+  animalMenu: {fileID: 0}
+  interactableMenu: {fileID: 0}
 --- !u!1 &2959771690476131471
 GameObject:
   m_ObjectHideFlags: 0
@@ -3605,12 +3577,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneNum: 0
-  currMenu: {fileID: 1541409159831603399}
-  nextMenu: {fileID: 7137422988120978146}
-  currInfo: {fileID: 0}
-  OtherInfoA: {fileID: 0}
-  OtherInfoB: {fileID: 0}
-  OtherInfoC: {fileID: 0}
+  animalMenu: {fileID: 0}
+  interactableMenu: {fileID: 0}
 --- !u!1 &3072525088017715289
 GameObject:
   m_ObjectHideFlags: 0
@@ -4134,12 +4102,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneNum: 0
-  currMenu: {fileID: 176945699240956425}
-  nextMenu: {fileID: 4805642378062141358}
-  currInfo: {fileID: 0}
-  OtherInfoA: {fileID: 0}
-  OtherInfoB: {fileID: 0}
-  OtherInfoC: {fileID: 0}
+  animalMenu: {fileID: 0}
+  interactableMenu: {fileID: 0}
 --- !u!1 &3629293061992577489
 GameObject:
   m_ObjectHideFlags: 0
@@ -4333,12 +4297,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneNum: 0
-  currMenu: {fileID: 0}
-  nextMenu: {fileID: 0}
-  currInfo: {fileID: 4944157632841492815}
-  OtherInfoA: {fileID: 1541409159831603399}
-  OtherInfoB: {fileID: 6287836957187993481}
-  OtherInfoC: {fileID: 7674170858562164752}
+  animalMenu: {fileID: 0}
+  interactableMenu: {fileID: 0}
 --- !u!1 &3853928008615225562
 GameObject:
   m_ObjectHideFlags: 0
@@ -4618,12 +4578,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneNum: 0
-  currMenu: {fileID: 6287836957187993481}
-  nextMenu: {fileID: 7137422988120978146}
-  currInfo: {fileID: 0}
-  OtherInfoA: {fileID: 0}
-  OtherInfoB: {fileID: 0}
-  OtherInfoC: {fileID: 0}
+  animalMenu: {fileID: 0}
+  interactableMenu: {fileID: 0}
 --- !u!1 &3901028170431907041
 GameObject:
   m_ObjectHideFlags: 0
@@ -5498,12 +5454,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneNum: 0
-  currMenu: {fileID: 7674170858562164752}
-  nextMenu: {fileID: 7137422988120978146}
-  currInfo: {fileID: 0}
-  OtherInfoA: {fileID: 0}
-  OtherInfoB: {fileID: 0}
-  OtherInfoC: {fileID: 0}
+  animalMenu: {fileID: 0}
+  interactableMenu: {fileID: 0}
 --- !u!1 &4569196556114107295
 GameObject:
   m_ObjectHideFlags: 0
@@ -6652,12 +6604,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneNum: 0
-  currMenu: {fileID: 0}
-  nextMenu: {fileID: 0}
-  currInfo: {fileID: 6287836957187993481}
-  OtherInfoA: {fileID: 4944157632841492815}
-  OtherInfoB: {fileID: 1541409159831603399}
-  OtherInfoC: {fileID: 7674170858562164752}
+  animalMenu: {fileID: 0}
+  interactableMenu: {fileID: 0}
 --- !u!1 &5377605527042239693
 GameObject:
   m_ObjectHideFlags: 0
@@ -7699,12 +7647,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneNum: 0
-  currMenu: {fileID: 7137422988120978146}
-  nextMenu: {fileID: 1166031087406287272}
-  currInfo: {fileID: 0}
-  OtherInfoA: {fileID: 0}
-  OtherInfoB: {fileID: 0}
-  OtherInfoC: {fileID: 0}
+  animalMenu: {fileID: 0}
+  interactableMenu: {fileID: 0}
 --- !u!1 &6374618070226285857
 GameObject:
   m_ObjectHideFlags: 0
@@ -8379,12 +8323,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneNum: 0
-  currMenu: {fileID: 0}
-  nextMenu: {fileID: 0}
-  currInfo: {fileID: 7674170858562164752}
-  OtherInfoA: {fileID: 6287836957187993481}
-  OtherInfoB: {fileID: 4944157632841492815}
-  OtherInfoC: {fileID: 1541409159831603399}
+  animalMenu: {fileID: 0}
+  interactableMenu: {fileID: 0}
 --- !u!1 &7446201474791816913
 GameObject:
   m_ObjectHideFlags: 0
@@ -8531,12 +8471,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneNum: 0
-  currMenu: {fileID: 9008585663907381594}
-  nextMenu: {fileID: 1166031087406287272}
-  currInfo: {fileID: 0}
-  OtherInfoA: {fileID: 0}
-  OtherInfoB: {fileID: 0}
-  OtherInfoC: {fileID: 0}
+  animalMenu: {fileID: 0}
+  interactableMenu: {fileID: 0}
 --- !u!1 &7457799091680040966
 GameObject:
   m_ObjectHideFlags: 0
@@ -9777,12 +9713,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneNum: 0
-  currMenu: {fileID: 0}
-  nextMenu: {fileID: 0}
-  currInfo: {fileID: 1541409159831603399}
-  OtherInfoA: {fileID: 4944157632841492815}
-  OtherInfoB: {fileID: 6287836957187993481}
-  OtherInfoC: {fileID: 7674170858562164752}
+  animalMenu: {fileID: 0}
+  interactableMenu: {fileID: 0}
 --- !u!1 &8077713472335168282
 GameObject:
   m_ObjectHideFlags: 0
@@ -10092,12 +10024,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneNum: 0
-  currMenu: {fileID: 1166031087406287272}
-  nextMenu: {fileID: 9008585663907381594}
-  currInfo: {fileID: 0}
-  OtherInfoA: {fileID: 0}
-  OtherInfoB: {fileID: 0}
-  OtherInfoC: {fileID: 0}
+  animalMenu: {fileID: 0}
+  interactableMenu: {fileID: 0}
 --- !u!1 &8444456075035856491
 GameObject:
   m_ObjectHideFlags: 0
@@ -10843,12 +10771,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneNum: 0
-  currMenu: {fileID: 4805642378062141358}
-  nextMenu: {fileID: 1166031087406287272}
-  currInfo: {fileID: 0}
-  OtherInfoA: {fileID: 0}
-  OtherInfoB: {fileID: 0}
-  OtherInfoC: {fileID: 0}
+  animalMenu: {fileID: 0}
+  interactableMenu: {fileID: 0}
 --- !u!1 &8866717390574660536
 GameObject:
   m_ObjectHideFlags: 0

@@ -123,17 +123,37 @@ public class TimeAndGameManager : MonoBehaviour
             dayBonus = huntingBonus;
             nightBonus = 0;
         }
-        //SkyColorTransitioning();
         //Animal Spawnining 
-        if (timeElapsed % 60 == 0)
-        {
 
+        if (timeElapsed % 120 == 0)
+        {
+            int SpawnFrog = Random.Range(1, 6);
+            int SpawnAligator = Random.Range(2, 4);
+            int SpawnRabbit = Random.Range(3, 5);
+            int SpawnBass = Random.Range(2, 6);
+            for (int i = 0; i < SpawnFrog; i++)
+            {
+                animalSpawner.GetComponent<BasicAnimalSpawner>().spawnAFrog();
+            }
+            for (int i = 0; i < SpawnAligator; i++)
+            {
+                animalSpawner.GetComponent<BasicAnimalSpawner>().spawnAligator();
+            }
+            for (int i = 0; i < SpawnRabbit; i++)
+            {
+                animalSpawner.GetComponent<BasicAnimalSpawner>().spawnRabbit();
+            }
+            for (int i = 0; i < SpawnBass; i++)
+            {
+                animalSpawner.GetComponent<BasicAnimalSpawner>().spawnFish();
+            }
         }
         //Every 3 mins spawn invasive species
         if (timeElapsed % 180 == 0)
         {
             int spawnPython = Random.Range(2, 3);
             int spawnCat = Random.Range(3, 5);
+   
             for (int i = 0; i < spawnPython; i++)
             {
                 animalSpawner.GetComponent<BasicAnimalSpawner>().spawnPython();
@@ -258,9 +278,13 @@ public class TimeAndGameManager : MonoBehaviour
         int Gameseconds = (int)(GameLeftInseconds - (GameMinutes * 60));
         TimeLeft.text = "Time Left: " + GameMinutes + ":" + Gameseconds;
 
-        int invasiveMinutes = (int)(invasiveSpawnTime / 60);
-        int Invasiveseconds = (int)(invasiveSpawnTime - (invasiveMinutes * 60));
-        NextInvasiveSpawnText.text = "Next Invasive Spawn: " + invasiveMinutes + ":" + Invasiveseconds;
+        if(NextInvasiveSpawnText != null)
+        {
+            int invasiveMinutes = (int)(invasiveSpawnTime / 60);
+            int Invasiveseconds = (int)(invasiveSpawnTime - (invasiveMinutes * 60));
+            NextInvasiveSpawnText.text = "Next Invasive Spawn: " + invasiveMinutes + ":" + Invasiveseconds;
+        }
+        
 
         int NextHuntMinutes = (int)(NextHuntTime / 60);
         int nextHuntSeconds = (int)(NextHuntTime - (NextHuntMinutes * 60));

@@ -63,6 +63,39 @@ public class TrackAnimalCount : MonoBehaviour
         {
             RabbitCount++;
         }
+       
     }
+    public static int ReturnCount(string animalTagName)
+    {
+        if (animalTagName == "Fish")
+        {
+            return fishCount;
+        }
+        else if (animalTagName == "Aligator")
+        {
+            return AligatorCount;
+
+        }
+        else if (animalTagName == "Frog")
+        {
+            return FrogCount;
+
+        }
+        else if (animalTagName == "Python")
+        {
+            return PythonCount;
+
+        }
+        else if (animalTagName == "Cat")
+        {
+            return CatCount;
+        }
+        else if (animalTagName == "Rabbit")
+        {
+            return RabbitCount;
+        }
+        return 0;
+    }
+
 
 }
