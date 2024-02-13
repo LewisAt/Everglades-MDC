@@ -124,46 +124,23 @@ public class TimeAndGameManager : MonoBehaviour
             nightBonus = 0;
         }
         //SkyColorTransitioning();
-        if (SpawncurrentValue < SpawnpreviousValue)
+        //Animal Spawnining 
+        if (timeElapsed % 60 == 0)
         {
-            animalSpawner.GetComponent<BasicAnimalSpawner>().animalsSpawned = 0;
-            Debug.Log("Spawn func was called");
 
-            //SPAWN FISH
-            if (GameObject.FindGameObjectsWithTag("Fish").Length != 0)
-            {
-                animalSpawner.GetComponent<BasicAnimalSpawner>().spawnFish();
-                
-            }
-            //SPAWN RABBIT
-            if (GameObject.FindGameObjectsWithTag("Rabbit").Length != 0)
-            {
-                animalSpawner.GetComponent<BasicAnimalSpawner>().spawnRabbit();
-              
-            }
-            //SPAWN FROG
-            if (GameObject.FindGameObjectsWithTag("Frog").Length != 0)
-            {
-                animalSpawner.GetComponent<BasicAnimalSpawner>().spawnAFrog();
-
-            }
-            //SPAWN CROCIDLE 
-            if (GameObject.FindGameObjectsWithTag("Aligator").Length != 0)
-            {
-                animalSpawner.GetComponent<BasicAnimalSpawner>().spawnAligator();
-                
-            }
-            //SPAWN CAT
-            if (GameObject.FindGameObjectsWithTag("Cat").Length != 0)
-            {
-                animalSpawner.GetComponent<BasicAnimalSpawner>().spawnCat();
-               
-            }
-            //SPAWN PYTHON
-            if (GameObject.FindGameObjectsWithTag("Python").Length != 0)
+        }
+        //Every 3 mins spawn invasive species
+        if (timeElapsed % 180 == 0)
+        {
+            int spawnPython = Random.Range(2, 3);
+            int spawnCat = Random.Range(3, 5);
+            for (int i = 0; i < spawnPython; i++)
             {
                 animalSpawner.GetComponent<BasicAnimalSpawner>().spawnPython();
-                
+            }
+            for (int i = 0; i < spawnCat; i++)
+            {
+                animalSpawner.GetComponent<BasicAnimalSpawner>().spawnCat();
             }
         }
         if (HuntcurrentValue < HuntpreviousValue)
