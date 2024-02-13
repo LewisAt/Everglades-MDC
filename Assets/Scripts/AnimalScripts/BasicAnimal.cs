@@ -31,7 +31,6 @@ public class BasicAnimal : MonoBehaviour
     void fixStartPosition()
     {
         Ray FixRay = new Ray();
-        Physics.Raycast
     }
     private void Update()
     {
