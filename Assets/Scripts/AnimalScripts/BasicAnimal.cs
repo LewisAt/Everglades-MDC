@@ -35,7 +35,6 @@ public class BasicAnimal : MonoBehaviour
     private void Update()
     {
         CalculateDirection();
-        Debug.Log(MovementDirection);
         waddleAnimation();
     }
 
