@@ -18,36 +18,7 @@ public class SettingMenu : MonoBehaviour
     GameObject settingMenu;
     private GameObject player;
     public GameObject SettingsOffset;// this will normally be located on the XR RIGCamera;
-    private void LockSettingsPanel()
-    {
-        Vector3 SettingspanelPosition = Vector3.Lerp
-        (settingMenu.transform.position, 
-        SettingsOffset.transform.position,1f * Time.deltaTime);
-
-        settingMenu.transform.position = SettingspanelPosition;
-
-        Quaternion Lookrotation = Quaternion.LookRotation(settingMenu.transform.position - player.transform.position,Vector3.up);
-        settingMenu.transform.rotation =  Lookrotation;
-    }
-
-
-    public void OpenSettingMenu()
-    {
-        settingMenu.SetActive(true);
-    }   
-    public void CloseSettingMenu()
-    {
-        settingMenu.SetActive(false);
-    }
-    private bool SmoothTurning = false;
-    public void SmoothTurningOptions()
-    {
-        Debug.Log("SmoothTurning has been toggled and the value is now: " + SmoothTurning );
-        SmoothTurning = !SmoothTurning;
-        GeneralManager.instance.SetTurningOption(SmoothTurning);
-    }
-
-    // Start is called before the first frame update
+    
     void Start()
     {
         player = Camera.main.gameObject;
@@ -58,5 +29,56 @@ public class SettingMenu : MonoBehaviour
     void FixedUpdate()
     {
         LockSettingsPanel();
+        
     }
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            CloseSettingMenu();
+        }
+        if(Input.GetKeyDown(KeyCode.S))
+        {
+            OpenSettingMenu();
+        }
+    }
+
+    public void OpenSettingMenu()
+    {
+        settingMenu.SetActive(true);
+    }   
+    public void CloseSettingMenu()
+    {
+        settingMenu.SetActive(false);
+    }
+    private void LockSettingsPanel()
+    {
+        /*
+        this function will lock the settings panel to the players view
+        it lerps the settings panel to the players view
+        it also keeps the settings panel facing the player
+        and lastly it will keep the settings panel at a fixed distance from the player
+        */
+        if(settingMenu.activeSelf == false)
+        {
+            return;
+        }
+        Vector3 SettingspanelPosition = Vector3.Lerp
+        (settingMenu.transform.position, 
+        SettingsOffset.transform.position,1f * Time.deltaTime);
+
+        settingMenu.transform.position = SettingspanelPosition;
+
+        Quaternion Lookrotation = Quaternion.LookRotation(settingMenu.transform.position - player.transform.position,Vector3.up);
+        settingMenu.transform.rotation =  Lookrotation;
+    }
+    private bool SmoothTurning = false;
+    public void SmoothTurningOptions()
+    {
+        SmoothTurning = !SmoothTurning;
+        GeneralManager.instance.SetTurningOption(SmoothTurning);
+    }
+
+    // Start is called before the first frame update
+    
 }
