@@ -21,6 +21,7 @@ public class SettingMenu : MonoBehaviour
     
     void Start()
     {
+
         player = Camera.main.gameObject;
         settingMenu = gameObject.transform.GetChild(0).gameObject;
         settingMenu.SetActive(false);
@@ -75,6 +76,7 @@ public class SettingMenu : MonoBehaviour
     private bool SmoothTurning = false;
     public void SmoothTurningOptions()
     {
+        //This does not work right now apparently disableing or enabling the speicifc script does not fix it.
         SmoothTurning = !SmoothTurning;
         GeneralManager.instance.SetTurningOption(SmoothTurning);
     }
