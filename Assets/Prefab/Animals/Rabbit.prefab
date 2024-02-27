@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3277012432270870253}
   m_Layer: 0
   m_Name: Rabbit
-  m_TagString: Rabbit
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29,10 +29,11 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 188.4, y: 60.37, z: 619.58}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 3.6880271, y: 3.6880271, z: 3.6880271}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7895064584193987384}
+  - {fileID: 5787100750960702334}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!195 &498264711163494443
@@ -45,7 +46,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 2.96
-  m_Speed: 3.56
+  m_Speed: 20
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -55,8 +56,8 @@ NavMeshAgent:
   m_AutoRepath: 1
   m_Height: 4.62
   m_BaseOffset: 0
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
+  m_WalkableMask: 1
+  m_ObstacleAvoidanceType: 0
 --- !u!114 &4527595167176191484
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70,7 +71,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   navMeshMaskNumber: 0
-  MovementStrength: 1
+  MovementStrength: 100
   waddle: 0
 --- !u!114 &3277012432270870253
 MonoBehaviour:
@@ -84,6 +85,92 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 419939a216dbc1a46a44a13ab2ea23a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &465534652606808531
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 3935076972392182765}
+    m_Modifications:
+    - target: {fileID: 1784187146934487856, guid: bfd425cbf95fe154f91211928b339311, type: 3}
+      propertyPath: m_Name
+      value: InteractableObject (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5600290913000614308, guid: bfd425cbf95fe154f91211928b339311, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 82.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6213278861181530797, guid: bfd425cbf95fe154f91211928b339311, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.14704216
+      objectReference: {fileID: 0}
+    - target: {fileID: 6213278861181530797, guid: bfd425cbf95fe154f91211928b339311, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.14704216
+      objectReference: {fileID: 0}
+    - target: {fileID: 6213278861181530797, guid: bfd425cbf95fe154f91211928b339311, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.14704216
+      objectReference: {fileID: 0}
+    - target: {fileID: 6213278861181530797, guid: bfd425cbf95fe154f91211928b339311, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6213278861181530797, guid: bfd425cbf95fe154f91211928b339311, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6213278861181530797, guid: bfd425cbf95fe154f91211928b339311, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6213278861181530797, guid: bfd425cbf95fe154f91211928b339311, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6213278861181530797, guid: bfd425cbf95fe154f91211928b339311, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6213278861181530797, guid: bfd425cbf95fe154f91211928b339311, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6213278861181530797, guid: bfd425cbf95fe154f91211928b339311, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6213278861181530797, guid: bfd425cbf95fe154f91211928b339311, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6213278861181530797, guid: bfd425cbf95fe154f91211928b339311, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6213278861181530797, guid: bfd425cbf95fe154f91211928b339311, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9098085665024499910, guid: bfd425cbf95fe154f91211928b339311, type: 3}
+      propertyPath: infoTodisplay
+      value: The marsh rabbit (Sylvilagus palustris) is a small cottontail rabbit
+        found in marshes and swamps of coastal regions of the Eastern and Southern
+        United States. It is a strong swimmer and found only near regions of water.
+        It is similar in appearance to the eastern cottontail (Sylvilagus floridanus)
+        but is characterized by smaller ears, legs, and tail.[3]
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bfd425cbf95fe154f91211928b339311, type: 3}
+--- !u!4 &5787100750960702334 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6213278861181530797, guid: bfd425cbf95fe154f91211928b339311, type: 3}
+  m_PrefabInstance: {fileID: 465534652606808531}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7645526764606403795
 PrefabInstance:
   m_ObjectHideFlags: 0

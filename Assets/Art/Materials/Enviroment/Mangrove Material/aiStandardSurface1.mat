@@ -126,7 +126,7 @@ Material:
     - _METALNESS: 0.06
     - _Metallic: 0
     - _Mode: 3
-    - _OPACITY: 1
+    - _OPACITY: 0.709
     - _OcclusionStrength: 1
     - _OpaqueCullMode: 2
     - _Parallax: 0.02

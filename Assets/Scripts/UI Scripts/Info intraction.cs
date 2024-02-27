@@ -33,13 +33,9 @@ public class Infointraction : MonoBehaviour
     {
         if (CanvasBase.activeSelf)
         {
-            RotateTowards();
+            LockInfoPanel();
+
         }
-    }
-    void RotateTowards()
-    {
-        Vector3 Help = Vector3.RotateTowards(transform.position,Camera.main.transform.position,1f,0f);
-        this.transform.rotation = Quaternion.LookRotation(Help);
     }
     IEnumerator Disable()
     {

@@ -33,6 +33,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1354113677069939025}
+  - {fileID: 9040303243857397243}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!195 &2963620416803436882
@@ -56,7 +57,7 @@ NavMeshAgent:
   m_Height: 0.42
   m_BaseOffset: -1.26
   m_WalkableMask: 9
-  m_ObstacleAvoidanceType: 4
+  m_ObstacleAvoidanceType: 0
 --- !u!114 &3012159311759332274
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70,7 +71,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   navMeshMaskNumber: 0
-  MovementStrength: 1
+  MovementStrength: 100
   waddle: 0
 --- !u!114 &2541607569920325073
 MonoBehaviour:
@@ -153,4 +154,100 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 110cb39d03d7d244e99fb5bf830dc1d2, type: 3}
   m_PrefabInstance: {fileID: 1531362731712386746}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3120884399022126934
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7461281201457804445}
+    m_Modifications:
+    - target: {fileID: 1784187146934487856, guid: bfd425cbf95fe154f91211928b339311, type: 3}
+      propertyPath: m_Name
+      value: InteractableObject (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5600290913000614308, guid: bfd425cbf95fe154f91211928b339311, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 74.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6213278861181530797, guid: bfd425cbf95fe154f91211928b339311, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.14704216
+      objectReference: {fileID: 0}
+    - target: {fileID: 6213278861181530797, guid: bfd425cbf95fe154f91211928b339311, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.14704216
+      objectReference: {fileID: 0}
+    - target: {fileID: 6213278861181530797, guid: bfd425cbf95fe154f91211928b339311, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.14704216
+      objectReference: {fileID: 0}
+    - target: {fileID: 6213278861181530797, guid: bfd425cbf95fe154f91211928b339311, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6213278861181530797, guid: bfd425cbf95fe154f91211928b339311, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6213278861181530797, guid: bfd425cbf95fe154f91211928b339311, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6213278861181530797, guid: bfd425cbf95fe154f91211928b339311, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6213278861181530797, guid: bfd425cbf95fe154f91211928b339311, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6213278861181530797, guid: bfd425cbf95fe154f91211928b339311, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6213278861181530797, guid: bfd425cbf95fe154f91211928b339311, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6213278861181530797, guid: bfd425cbf95fe154f91211928b339311, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6213278861181530797, guid: bfd425cbf95fe154f91211928b339311, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6213278861181530797, guid: bfd425cbf95fe154f91211928b339311, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7219356262732716591, guid: bfd425cbf95fe154f91211928b339311, type: 3}
+      propertyPath: m_Text
+      value: "Starting in the 1980s, the swamps of the South Florida Everglades have
+        been overrun by one of the most damaging invasive species the region has
+        ever seen: the Burmese python. These massive snakes, which can grow to 20
+        feet long or more, with telephone-pole-sized girths, have all but decimated
+        the region\u2019s small- and medium-sized mammal population, wreaking havoc
+        with the area\u2019s ecosystem."
+      objectReference: {fileID: 0}
+    - target: {fileID: 9098085665024499910, guid: bfd425cbf95fe154f91211928b339311, type: 3}
+      propertyPath: infoTodisplay
+      value: "Starting in the 1980s, the swamps of the South Florida Everglades have
+        been overrun by one of the most damaging invasive species the region has
+        ever seen: the Burmese python. These massive snakes, which can grow to 20
+        feet long or more, with telephone-pole-sized girths, have all but decimated
+        the region\u2019s small- and medium-sized mammal population, wreaking havoc
+        with the area\u2019s ecosystem."
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bfd425cbf95fe154f91211928b339311, type: 3}
+--- !u!4 &9040303243857397243 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6213278861181530797, guid: bfd425cbf95fe154f91211928b339311, type: 3}
+  m_PrefabInstance: {fileID: 3120884399022126934}
   m_PrefabAsset: {fileID: 0}
