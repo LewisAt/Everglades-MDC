@@ -7,23 +7,17 @@ using UnityEngine.UI;
 public class ButtonManager : MonoBehaviour
 {
     public int sceneNum;
-    public GameObject animalMenu;
-    public GameObject interactableMenu;
+    public GameObject currMenu;
+    public GameObject nextMenu;
 
     public void NextScene()
     {
         SceneManager.LoadScene(sceneNum);
     }
 
-    public void animalTransition()
+    public void menuTransition()
     {
-        animalMenu.SetActive(false);
-        interactableMenu.SetActive(true);
-    }
-
-    public void interactableTranstition()
-    {
-        animalMenu.SetActive(true);
-        interactableMenu.SetActive(false);
+        currMenu.SetActive(false);
+        nextMenu.SetActive(true);
     }
 }
