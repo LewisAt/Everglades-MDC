@@ -12,6 +12,8 @@ TagManager:
   - Aligator
   - Water
   - Land
+  - trash
+  - Oil
   layers:
   - Default
   - TransparentFX

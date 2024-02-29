@@ -13,18 +13,22 @@ public class Infointraction : MonoBehaviour
 
     private void Awake()
     {
+
         CanvasBase.SetActive(false);
         player = Camera.main.gameObject;
 
     }
-    // Start is called before the first frame update
     public void enableAll()
     {
-        if(CanvasBase.activeSelf)
+        /* enables the base canvas and sets the text box to the string
+         * then starts the disable coroutine that will disable the canvas after 15 seconds
+         */
+        if(CanvasBase.activeSelf)//checks if the canvas is already active we do this at start to avoid the canvas being active at the start of the game
         {
             CanvasBase.SetActive(false);
             return;
         }
+        AddItemToChecklist(this.name);
         CanvasBase.SetActive(true);
         TextBoxToReveal.text = infoTodisplay;
         StartCoroutine(Disable());
@@ -62,6 +66,11 @@ public class Infointraction : MonoBehaviour
 
         Quaternion Lookrotation = Quaternion.LookRotation(CanvasBase.transform.position - player.transform.position, Vector3.up);
         CanvasBase.transform.rotation = Lookrotation;
+    }
+
+    private void AddItemToChecklist(string itemName)
+    {
+        Checklist.ReadItem(itemName);
     }
 
 }
