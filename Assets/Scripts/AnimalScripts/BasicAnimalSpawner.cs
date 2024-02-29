@@ -103,7 +103,6 @@ public class BasicAnimalSpawner : MonoBehaviour
     private void Update()
     {
         animalsLeft = maxAnimals - animalsSpawned;
-        animalLeftText.text = animalsLeft.ToString();
         if (Input.GetKeyDown(KeyCode.A))
         {
             spawnAligator();
