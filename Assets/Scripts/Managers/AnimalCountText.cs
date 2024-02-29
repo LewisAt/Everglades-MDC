@@ -19,9 +19,24 @@ public class AnimalCountText : MonoBehaviour
     private int CatCountNumber;
     private int RabbitCountNumber;
 
+    private int[] animalCounts;
+    private int checker = 0;
+
     private void Update()
     {
+        animalCounts[0] = AligatorCountNumber;
+        animalCounts[1] = PythonCountNumber;
+        animalCounts[2] = FrogCountNumber;
+        animalCounts[3] = FishCountNumber;
+        animalCounts[4] = CatCountNumber;
+        animalCounts[5] = RabbitCountNumber;
+
         updateAnimalCountText();
+
+        for (int i = 0; i < animalCounts.Length; i++)
+        {
+            
+        }
     }
     private void FixedUpdate()
     {
@@ -32,10 +47,7 @@ public class AnimalCountText : MonoBehaviour
         CatCountNumber = GameObject.FindGameObjectsWithTag("Cat").Length;
         RabbitCountNumber = GameObject.FindGameObjectsWithTag("Rabbit").Length;
     }
-    void getNumberOfAnimals()
-    {
 
-    }
     void updateAnimalCountText()
     {
         AligatorCountText.value = AligatorCountNumber;

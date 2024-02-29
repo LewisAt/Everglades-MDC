@@ -163,8 +163,13 @@ public class TimeAndGameManager : MonoBehaviour
                 animalSpawner.GetComponent<BasicAnimalSpawner>().spawnCat();
             }
         }
+        if (timeElapsed >= 720)
+        {
+            //Win Condition
+
+        } 
         //HUNTING
-        if (HuntcurrentValue < HuntpreviousValue)
+        if (timeElapsed % 60 == 0)
         {
             //CHANGES TEXT TO ZERO
             animalSpawner.GetComponent<BasicAnimalSpawner>().animalsSpawned = 0;
@@ -251,8 +256,6 @@ public class TimeAndGameManager : MonoBehaviour
             }*/
             //animalSpawner.GetComponent<BasicAnimalSpawner>().animalsSpawned = 0;
         }
-
-
 
         if (InvasivecurrentValue < InvasivepreviousValue)
         {
