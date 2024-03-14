@@ -9,16 +9,16 @@ EditorBuildSettings:
     path: Assets/Scene/TitleScreen.unity
     guid: 55b1490d0b653764aa9c4bd79fd621c0
   - enabled: 1
-    path: Assets/Scene/Main Title Screen.unity
+    path: Assets/Scene/GameScenes/Main Title Screen.unity
     guid: 9b641ade71a26bb498a710019bfa7089
   - enabled: 1
-    path: Assets/Scene/TerrainTest.unity
+    path: Assets/Scene/GameScenes/TerrainTest.unity
     guid: 3592370ac975cc54e841b58fa991cd40
   - enabled: 1
-    path: Assets/Scene/Failed.unity
+    path: Assets/Scene/GameScenes/Failed.unity
     guid: 5429b86b9328c0a47aa8d2f9aea4eaa6
   - enabled: 1
-    path: Assets/Scene/Win.unity
+    path: Assets/Scene/GameScenes/Win.unity
     guid: 4dd193b257401624b894096a34342809
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 6db0497d8a0282e4492b3068f48df175, type: 2}
