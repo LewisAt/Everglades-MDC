@@ -28,7 +28,7 @@ public class Infointraction : MonoBehaviour
             CanvasBase.SetActive(false);
             return;
         }
-        AddItemToChecklist(this.name);
+        AddItemToChecklist(this.gameObject.tag);
         CanvasBase.SetActive(true);
         TextBoxToReveal.text = infoTodisplay;
         StartCoroutine(Disable());
