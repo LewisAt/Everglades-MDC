@@ -15,10 +15,10 @@ EditorBuildSettings:
     path: Assets/Scene/GameScenes/TerrainTest.unity
     guid: 79e390efa56fa54458ac001f03374ba4
   - enabled: 1
-    path: Assets/Scene/GameScenes/Failed.unity
+    path: Assets/Scene/FinalGameScenes/Failed.unity
     guid: 5429b86b9328c0a47aa8d2f9aea4eaa6
   - enabled: 1
-    path: Assets/Scene/GameScenes/Win.unity
+    path: Assets/Scene/FinalGameScenes/Win.unity
     guid: 4dd193b257401624b894096a34342809
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 6db0497d8a0282e4492b3068f48df175, type: 2}
