@@ -48,14 +48,14 @@ public class UIManager : MonoBehaviour
     private void Start()
     {
         collectedInfo = 0;
-        timerValue = 300;
+        timerValue = 600;
 
         DontDestroyOnLoad(this);
 
         alligatorCount = 50;
         toadCount = 50;
         rabbitCount = 50;
-        bassCount = 50;
+        bassCount = 50;  
         catCount = 25;
         pythonCount = 25;
     }
@@ -106,5 +106,6 @@ public class UIManager : MonoBehaviour
         }
 
         // Adjust Animal Sliders according to value (5 states)
+
     }
 }
