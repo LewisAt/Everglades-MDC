@@ -108,4 +108,49 @@ public class UIManager : MonoBehaviour
         // Adjust Animal Sliders according to value (5 states)
 
     }
+    void FixedUpdate()
+    {
+         RecieveChecklistInfo();
+    }
+    void RecieveChecklistInfo()
+    {
+        // Recieve checklist info from Checklist.cs
+        if(Checklist.Croc == true)
+        {
+            alligatorCheck.isOn = true;
+        }
+        if(Checklist.toad == true)
+        {
+            toadCheck.isOn = true;
+        }
+        if(Checklist.Rabbit == true)
+        {
+            rabbitCheck.isOn = true;
+        }
+        if(Checklist.bass == true)
+        {
+            bassCheck.isOn = true;
+        }
+        if(Checklist.cat == true)
+        {
+            catCheck.isOn = true;
+        }
+        if(Checklist.python == true)
+        {
+            pythonCheck.isOn = true;
+        }
+        if(Checklist.oil == true)
+        {
+            oilCheck.isOn = true;
+        }
+        if(Checklist.litter == true)
+        {
+            litterCheck.isOn = true;
+        }
+        if(Checklist.mangroove == true)
+        {
+            mangroovesCheck.isOn = true;
+        }
+
+    }
 }

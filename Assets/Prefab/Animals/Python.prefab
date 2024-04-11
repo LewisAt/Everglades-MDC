@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 2541607569920325073}
   m_Layer: 0
   m_Name: Python
-  m_TagString: Untagged
+  m_TagString: Python
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -115,6 +115,7 @@ Transform:
   m_Children:
   - {fileID: 1354113677069939025}
   - {fileID: 9040303243857397243}
+  - {fileID: 9163505335830342162}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!195 &2963620416803436882
@@ -660,4 +661,74 @@ RectTransform:
 Transform:
   m_CorrespondingSourceObject: {fileID: 6213278861181530797, guid: bfd425cbf95fe154f91211928b339311, type: 3}
   m_PrefabInstance: {fileID: 3120884399022126934}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &9038254709961296296
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7461281201457804445}
+    m_Modifications:
+    - target: {fileID: 163566961130660794, guid: d36bc5134d783b74f97d4a79943621ec, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.7585008
+      objectReference: {fileID: 0}
+    - target: {fileID: 163566961130660794, guid: d36bc5134d783b74f97d4a79943621ec, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.2248032
+      objectReference: {fileID: 0}
+    - target: {fileID: 163566961130660794, guid: d36bc5134d783b74f97d4a79943621ec, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.407546
+      objectReference: {fileID: 0}
+    - target: {fileID: 163566961130660794, guid: d36bc5134d783b74f97d4a79943621ec, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 163566961130660794, guid: d36bc5134d783b74f97d4a79943621ec, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 163566961130660794, guid: d36bc5134d783b74f97d4a79943621ec, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 163566961130660794, guid: d36bc5134d783b74f97d4a79943621ec, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 163566961130660794, guid: d36bc5134d783b74f97d4a79943621ec, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 163566961130660794, guid: d36bc5134d783b74f97d4a79943621ec, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 163566961130660794, guid: d36bc5134d783b74f97d4a79943621ec, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1374864894695980812, guid: d36bc5134d783b74f97d4a79943621ec, type: 3}
+      propertyPath: m_Name
+      value: AnimalSoundProducer
+      objectReference: {fileID: 0}
+    - target: {fileID: 4040357202846408949, guid: d36bc5134d783b74f97d4a79943621ec, type: 3}
+      propertyPath: audioClips.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4040357202846408949, guid: d36bc5134d783b74f97d4a79943621ec, type: 3}
+      propertyPath: audioClips.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 70636a21b291831419171853e92a9a64, type: 3}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d36bc5134d783b74f97d4a79943621ec, type: 3}
+--- !u!4 &9163505335830342162 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 163566961130660794, guid: d36bc5134d783b74f97d4a79943621ec, type: 3}
+  m_PrefabInstance: {fileID: 9038254709961296296}
   m_PrefabAsset: {fileID: 0}

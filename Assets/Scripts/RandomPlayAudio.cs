@@ -9,17 +9,20 @@ public class RandomPlayAudio : MonoBehaviour
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
-        PlayRandomClip();
+        StartCoroutine(PlayRandomClip());
         
     }
     IEnumerator PlayRandomClip()
     {
         while (true)
         {
+            float randomWaitTime = Random.Range(5, 15);
+
+            yield return new WaitForSeconds(randomWaitTime);
+            
             audioSource.clip = audioClips[Random.Range(0, audioClips.Length)];
             audioSource.Play();
-            float randomWaitTime = Random.Range(5, 15);
-            yield return new WaitForSeconds(randomWaitTime);
+            Debug.Log("Animla Sound Played");
         }
     }
 
