@@ -50,7 +50,7 @@ public class UIManager : MonoBehaviour
         collectedInfo = 0;
         timerValue = 600;
 
-        DontDestroyOnLoad(this);
+        //DontDestroyOnLoad(this);
 
         alligatorCount = 50;
         toadCount = 50;
