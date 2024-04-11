@@ -134,7 +134,9 @@ PlayerSettings:
   vulkanEnableCommandBufferRecycling: 1
   loadStoreDebugModeEnabled: 0
   bundleVersion: B12
-  preloadedAssets: []
+  preloadedAssets:
+  - {fileID: 29422908454359855, guid: ae2737e582d28e040a9c1bc0b61037b3, type: 2}
+  - {fileID: -4399935262687845956, guid: 2275a56f2a6328c4da2d5e02078395a7, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -155,6 +157,7 @@ PlayerSettings:
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
     Android: com.DefaultCompany.EvergladesMDCB04
+    Standalone: com.DefaultCompany.Everglades-MDC-B12
   buildNumber:
     Standalone: 0
     VisionOS: 0
@@ -840,7 +843,7 @@ PlayerSettings:
   hmiLogStartupTiming: 0
   hmiCpuConfiguration: 
   apiCompatibilityLevel: 6
-  activeInputHandler: 2
+  activeInputHandler: 1
   windowsGamepadBackendHint: 0
   cloudProjectId: 
   framebufferDepthMemorylessMode: 0

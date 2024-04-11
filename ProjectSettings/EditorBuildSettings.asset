@@ -11,7 +11,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scene/Main Title Screen.unity
     guid: 9b641ade71a26bb498a710019bfa7089
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scene/GameScenes/TerrainTest.unity
     guid: 79e390efa56fa54458ac001f03374ba4
   - enabled: 1
@@ -20,6 +20,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scene/FinalGameScenes/Win.unity
     guid: 4dd193b257401624b894096a34342809
+  - enabled: 1
+    path: Assets/Scene/FinalGameScenes/Night.unity
+    guid: d16d3ec024956f44b99d0d999265ab9b
+  - enabled: 1
+    path: Assets/Scene/FinalGameScenes/Hurricane.unity
+    guid: 26f88e3a6ef0b8342bf9bf2386e36d2e
+  - enabled: 1
+    path: Assets/Scene/FinalGameScenes/TerrainTest.unity
+    guid: 8763adfe723357a4884fa1d7b42d86f2
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 6db0497d8a0282e4492b3068f48df175, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: ae2737e582d28e040a9c1bc0b61037b3, type: 2}
