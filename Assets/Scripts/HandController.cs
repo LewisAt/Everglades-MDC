@@ -43,13 +43,11 @@ public class HandController : MonoBehaviour
     public void onUIHover()
     {
         pointing = true;
-        Debug.Log("Hovering");
         meshFilter.mesh = HandPoint;
     }
     public void onUIExit()
     {
         pointing = false;
-        Debug.Log("Exiting");
         meshFilter.mesh = HandOpen;
     }
 

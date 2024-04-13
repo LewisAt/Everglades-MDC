@@ -22,7 +22,6 @@ public class RandomPlayAudio : MonoBehaviour
             
             audioSource.clip = audioClips[Random.Range(0, audioClips.Length)];
             audioSource.Play();
-            Debug.Log("Animla Sound Played");
         }
     }
 

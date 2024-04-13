@@ -573,6 +573,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: InteractableObject
       objectReference: {fileID: 0}
+    - target: {fileID: 1784187146934487856, guid: bfd425cbf95fe154f91211928b339311, type: 3}
+      propertyPath: m_TagString
+      value: Frog
+      objectReference: {fileID: 0}
     - target: {fileID: 5600290913000614308, guid: bfd425cbf95fe154f91211928b339311, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 53

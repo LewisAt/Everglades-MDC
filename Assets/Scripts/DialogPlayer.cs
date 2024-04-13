@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class DialogPlayer : MonoBehaviour
 {
+   
     private AudioSource audioSource;
     public dialogClip[] dialogClips;
 

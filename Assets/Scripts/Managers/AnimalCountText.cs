@@ -21,7 +21,7 @@ public class AnimalCountText : MonoBehaviour
 
     private void Update()
     {
-        updateAnimalCountText();
+        //updateAnimalCountText();
     }
     private void FixedUpdate()
     {

@@ -62,10 +62,7 @@ public class Checklist : MonoBehaviour
             oil = true;
             Debug.Log("Checked: oil " + oil);
         }
-        if(cat && Croc && bass && toad && python && mangroove && litter && oil)
-        {
-            Debug.Log("You have completed the checklist");
-        }
+
 
     }
 }
