@@ -21,39 +21,63 @@ public class AnimalPool : MonoBehaviour
 
     private UIManager uiManager;
 
-    void Start()
+    void  Awake()
     {
         uiManager = GameObject.FindGameObjectWithTag("Player").GetComponent<UIManager>();
     }
 
-    public void SpawnAligator()
+    public void SpawnAligator(int count = 0)
     {
         ActivateGameObject(aligators);
+        if (count > 0)
+        {
+            ActivateGameobjectWithCount(toads, count);
+        }
     }
 
-    public void SpawnToad()
+    public void SpawnToad(int count = 0)
     {
         ActivateGameObject(toads);
+        if (count > 0)
+        {
+            ActivateGameobjectWithCount(toads, count);
+        }
     }
 
-    public void SpawnRabbit()
+    public void SpawnRabbit(int count = 0)
     {
         ActivateGameObject(rabbits);
+        if (count > 0)
+        {
+            ActivateGameobjectWithCount(rabbits, count);
+        }
     }
 
-    public void SpawnBass()
+    public void SpawnBass(int count = 0)
     {
         ActivateGameObject(bass);
+        if (count > 0)
+        {
+            ActivateGameobjectWithCount(bass, count);
+        }
     }
 
-    public void SpawnCat()
+    public void SpawnCat(int count = 0)
     {
         ActivateGameObject(cats);
+        if (count > 0)
+        {
+            ActivateGameobjectWithCount(cats, count);
+        }
     }
 
-    public void SpawnPython()
+    public void SpawnPython(int count = 0)
     {
         ActivateGameObject(pythons);
+        if (count > 0)
+        {
+            ActivateGameobjectWithCount(pythons, count);
+        }
     }
 
 
@@ -81,10 +105,88 @@ public class AnimalPool : MonoBehaviour
     {
         DeactiveGameObject(pythons);
     }
+    public int returactiveAligator()
+    {
+        int j = 0;
+        for (int i = 0; i < aligators.Length; i++)
+        {
+            if (aligators[i].activeInHierarchy)
+            {
+                j++;
+            }
+        }
+        return j;
+    }
+    public int returactiveToad()
+    {
+        int j = 0;
+        for (int i = 0; i < toads.Length; i++)
+        {
+            if (toads[i].activeInHierarchy)
+            {
+                j++;
+            }
+        }
+        return j;
+    }
+    public int returactiveRabbit()
+    {
+        int j = 0;
+        for (int i = 0; i < rabbits.Length; i++)
+        {
+            if (rabbits[i].activeInHierarchy)
+            {
+                j++;
+            }
+        }
+        return j;
+    }
+    public int returactiveBass()
+    {
+        int j = 0;
+        for (int i = 0; i < bass.Length; i++)
+        {
+            if (bass[i].activeInHierarchy)
+            {
+                j++;
+            }
+        }
+        return j;
+    }
+    public int returactiveCat()
+    {
+        int j = 0;
+        for (int i = 0; i < cats.Length; i++)
+        {
+            if (cats[i].activeInHierarchy)
+            {
+                j++;
+            }
+        }
+        return j;
+    }
+    public int returactivePython()
+    {
+        int j = 0;
+        for (int i = 0; i < pythons.Length; i++)
+        {
+            if (pythons[i].activeInHierarchy)
+            {
+                j++;
+            }
+        }
+        return j;
+    }
+    
 
 
     private void ActivateGameObject(GameObject[] gameObjects)
     {
+        while (gameObjects == null)
+        {
+            Debug.Log("gameObjects is null");
+            break;
+        }
         for (int i = 0; i < gameObjects.Length; i++)
         {
             if (!gameObjects[i].activeInHierarchy)
@@ -105,5 +207,18 @@ public class AnimalPool : MonoBehaviour
                 break;
             }
         }
+    }
+    private void ActivateGameobjectWithCount(GameObject[] gameObjects, int count)
+    {
+        for (int i = 0; i < count; i++)
+        {
+            gameObjects[i].SetActive(true);
+        }
+    }
+
+
+
+    private void SceneTransitionedSetAnimals()
+    {
     }
 }
