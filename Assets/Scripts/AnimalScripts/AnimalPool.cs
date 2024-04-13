@@ -21,7 +21,7 @@ public class AnimalPool : MonoBehaviour
 
     private UIManager uiManager;
 
-    void  Awake()
+    void  Start()
     {
         uiManager = GameObject.FindGameObjectWithTag("Player").GetComponent<UIManager>();
     }
@@ -31,21 +31,35 @@ public class AnimalPool : MonoBehaviour
         ActivateGameObject(aligators);
         if (count > 0)
         {
-            ActivateGameobjectWithCount(toads, count);
+            if(count > aligators.Length)
+            {
+                count = aligators.Length;
+            }
+            ActivateGameobjectWithCount(aligators, count);
         }
     }
 
     public void SpawnToad(int count = 0)
     {
+
+        if(count > toads.Length)
+        {
+            count = toads.Length;
+        }
         ActivateGameObject(toads);
         if (count > 0)
         {
             ActivateGameobjectWithCount(toads, count);
         }
     }
-
+//! currently use a coroutine to fix the async issue of the animals not exisitng
+// you can try changing this so the function keeps calling itself until its no longer null
     public void SpawnRabbit(int count = 0)
     {
+        if(count > rabbits.Length)
+        {
+            count = rabbits.Length;
+        }
         ActivateGameObject(rabbits);
         if (count > 0)
         {
@@ -55,6 +69,10 @@ public class AnimalPool : MonoBehaviour
 
     public void SpawnBass(int count = 0)
     {
+        if(count > bass.Length)
+        {
+            count = bass.Length;
+        }
         ActivateGameObject(bass);
         if (count > 0)
         {
@@ -64,15 +82,23 @@ public class AnimalPool : MonoBehaviour
 
     public void SpawnCat(int count = 0)
     {
+        if(count > cats.Length)
+        {
+            count = cats.Length;
+        }
         ActivateGameObject(cats);
         if (count > 0)
         {
             ActivateGameobjectWithCount(cats, count);
         }
-    }
+    } 
 
     public void SpawnPython(int count = 0)
     {
+        if(count > pythons.Length)
+        {
+            count = pythons.Length;
+        }
         ActivateGameObject(pythons);
         if (count > 0)
         {
@@ -208,17 +234,17 @@ public class AnimalPool : MonoBehaviour
             }
         }
     }
+    //! this should only ever be called after all the pools hav
     private void ActivateGameobjectWithCount(GameObject[] gameObjects, int count)
     {
+        for (int i = 0; i <  gameObjects.Length; i++)
+        {
+            gameObjects[i].SetActive(false);
+        }
+
         for (int i = 0; i < count; i++)
         {
             gameObjects[i].SetActive(true);
         }
-    }
-
-
-
-    private void SceneTransitionedSetAnimals()
-    {
     }
 }

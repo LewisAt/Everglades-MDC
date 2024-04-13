@@ -23,16 +23,14 @@ public class GamePlayDialog : MonoBehaviour
     [SerializeField] private AudioClip EnteredNightSceneFirstTime;
     [SerializeField] private AudioClip EnteredHurricaneSceneFirstTime;
 
-    [SerializeField] private AudioClip gameVictory;
-    [SerializeField] private AudioClip gameLoss;
-
     [SerializeField] private AudioClip SpawnedAlligator;
     [SerializeField] private AudioClip SpawnedToad;
     [SerializeField] private AudioClip SpawnedRabbit;
     [SerializeField] private AudioClip SpawnedBass;
-    [SerializeField] private AudioClip SpawnedCat;
-    [SerializeField] private AudioClip SpawnedPython;
-    [SerializeField] private AudioClip opensettings;
+    [SerializeField] private AudioClip status1;
+
+    [SerializeField] private AudioClip ClickedSoundeffect;
+    [SerializeField] private AudioClip BackSoundeffect;
 
 
 
@@ -40,9 +38,38 @@ public class GamePlayDialog : MonoBehaviour
     {
         playAudioCueONtimedEvent();
     }
-    void playAudioBasedOnObjective()
+    public void spawnBassVoice()
     {
-
+        audioSource.clip = SpawnedBass;
+        audioSource.Play();
+    }
+    public void spawnAlligatorVoice()
+    {
+        audioSource.clip = SpawnedAlligator;
+        audioSource.Play();
+    }
+    public void spawnToadVoice()
+    {
+        audioSource.clip = SpawnedToad;
+        audioSource.Play();
+    }
+    public void spawnRabbitVoice()
+    {
+        audioSource.clip = SpawnedRabbit;
+        audioSource.Play();
+    }
+    public void playStatus()
+    {
+        audioSource.clip = status1;
+        audioSource.Play();
+    }
+    public void ButtonClicked()
+    {
+        audioSource.PlayOneShot(ClickedSoundeffect);
+    }
+    public void BackButtonClicked()
+    {
+        audioSource.PlayOneShot(BackSoundeffect);
     }
     void playAudioCueONtimedEvent()
     {
@@ -86,6 +113,11 @@ public class GamePlayDialog : MonoBehaviour
     public void playerHurricaneSceneEntered()
     {
         audioSource.clip = EnteredHurricaneSceneFirstTime;
+        audioSource.Play();
+    }
+    public void playObjectiveReached()
+    {
+        audioSource.clip = Objectivereached;
         audioSource.Play();
     }
 }

@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.XR.Interaction.Toolkit.Inputs;
 
 public class UIManager : MonoBehaviour
 {
     public Text timerText;
     public Text infoText;
     public GamePlayDialog GameDialog;
+    [SerializeField ] private InputActionManager inputActionManager;
 
     private float timerValue = 0;
     private int collectedInfo;
@@ -62,270 +64,270 @@ public class UIManager : MonoBehaviour
     private int pythonCountHurricane;
     public static UIManager instance;
 
-     //1 = danger 2 = warning 3 = neutral 4 = warning 5 = danger 
+    //1 = danger 2 = warning 3 = neutral 4 = warning 5 = danger 
 
-        public int setAligatorCount
-        {
-            get
-            {
-                if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "TerrainTest")
-                {
-                    return alligatorCountDay;
-                }
-                if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Night")
-                {
-                    return alligatorCountNight;
-                }
-                if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Hurricane")
-                {
-                    return alligatorCountHurricane;
-                }
-                return CurrentalligatorCount;
-            }
-            set
-            {
-                if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "TerrainTest")
-                {
-                    alligatorCountDay = value;
-                    CurrentalligatorCount = alligatorCountDay;
-                    return;
-                }
-                if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Night")
-                {
-                    alligatorCountNight = value;
-                    CurrentalligatorCount = alligatorCountNight;
-                    return;
-                }
-                if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Hurricane")
-                {
-                    alligatorCountHurricane = value;
-                    CurrentalligatorCount = alligatorCountHurricane;
-                    return;
-                }
-                CurrentalligatorCount = value;
-            }
-        }
+       public int setAligatorCount
+       {
+          get
+          {
+             if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "TerrainTest")
+             {
+                return alligatorCountDay;
+             }
+             if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Night")
+             {
+                return alligatorCountNight;
+             }
+             if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Hurricane")
+             {
+                return alligatorCountHurricane;
+             }
+             return CurrentalligatorCount;
+          }
+          set
+          {
+             if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "TerrainTest")
+             {
+                alligatorCountDay = Mathf.Clamp(value, 0, 16);
+                CurrentalligatorCount = alligatorCountDay;
+                return;
+             }
+             if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Night")
+             {
+                alligatorCountNight = Mathf.Clamp(value, 0, 16);
+                CurrentalligatorCount = alligatorCountNight;
+                return;
+             }
+             if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Hurricane")
+             {
+                alligatorCountHurricane = Mathf.Clamp(value, 0, 16);
+                CurrentalligatorCount = alligatorCountHurricane;
+                return;
+             }
+             CurrentalligatorCount = Mathf.Clamp(value, 0, 16);
+          }
+       }
 
-        public int setToadCount
-        {
-            get
-            {
-                if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "TerrainTest")
-                {
-                    return toadCountDay;
-                }
-                if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Night")
-                {
-                    return toadCountNight;
-                }
-                if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Hurricane")
-                {
-                    return toadCountHurricane;
-                }
-                return CurrenttoadCount;
-            }
-            set
-            {
-                if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "TerrainTest")
-                {
-                    toadCountDay = value;
-                    CurrenttoadCount = toadCountDay;
-                    return;
-                }
-                if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Night")
-                {
-                    toadCountNight = value;
-                    CurrenttoadCount = toadCountNight;
-                    return;
-                }
-                if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Hurricane")
-                {
-                    toadCountHurricane = value;
-                    CurrenttoadCount = toadCountHurricane;
-                    return;
-                }
-                CurrenttoadCount = value;
-            }
-        }
+       public int setToadCount
+       {
+          get
+          {
+             if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "TerrainTest")
+             {
+                return toadCountDay;
+             }
+             if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Night")
+             {
+                return toadCountNight;
+             }
+             if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Hurricane")
+             {
+                return toadCountHurricane;
+             }
+             return CurrenttoadCount;
+          }
+          set
+          {
+             if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "TerrainTest")
+             {
+                toadCountDay = Mathf.Clamp(value, 0, 16);
+                CurrenttoadCount = toadCountDay;
+                return;
+             }
+             if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Night")
+             {
+                toadCountNight = Mathf.Clamp(value, 0, 16);
+                CurrenttoadCount = toadCountNight;
+                return;
+             }
+             if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Hurricane")
+             {
+                toadCountHurricane = Mathf.Clamp(value, 0, 16);
+                CurrenttoadCount = toadCountHurricane;
+                return;
+             }
+             CurrenttoadCount = Mathf.Clamp(value, 0, 16);
+          }
+       }
 
-        public int setRabbitCount
-        {
-            get
-            {
-                if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "TerrainTest")
-                {
-                    return rabbitCountDay;
-                }
-                if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Night")
-                {
-                    return rabbitCountNight;
-                }
-                if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Hurricane")
-                {
-                    return rabbitCountHurricane;
-                }
-                return CurrentrabbitCount;
-            }
-            set
-            {
-                if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "TerrainTest")
-                {
-                    rabbitCountDay = value;
-                    CurrentrabbitCount = rabbitCountDay;
-                    return;
-                }
-                if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Night")
-                {
-                    rabbitCountNight = value;
-                    CurrentrabbitCount = rabbitCountNight;
-                    return;
-                }
-                if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Hurricane")
-                {
-                    rabbitCountHurricane = value;
-                    CurrentrabbitCount = rabbitCountHurricane;
-                    return;
-                }
-                CurrentrabbitCount = value;
-            }
-        }
+       public int setRabbitCount
+       {
+          get
+          {
+             if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "TerrainTest")
+             {
+                return rabbitCountDay;
+             }
+             if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Night")
+             {
+                return rabbitCountNight;
+             }
+             if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Hurricane")
+             {
+                return rabbitCountHurricane;
+             }
+             return CurrentrabbitCount;
+          }
+          set
+          {
+             if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "TerrainTest")
+             {
+                rabbitCountDay = Mathf.Clamp(value, 0, 16);
+                CurrentrabbitCount = rabbitCountDay;
+                return;
+             }
+             if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Night")
+             {
+                rabbitCountNight = Mathf.Clamp(value, 0, 16);
+                CurrentrabbitCount = rabbitCountNight;
+                return;
+             }
+             if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Hurricane")
+             {
+                rabbitCountHurricane = Mathf.Clamp(value, 0, 16);
+                CurrentrabbitCount = rabbitCountHurricane;
+                return;
+             }
+             CurrentrabbitCount = Mathf.Clamp(value, 0, 16);
+          }
+       }
 
-        public int setBassCount
-        {
-            get
-            {
-                if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "TerrainTest")
-                {
-                    return bassCountDay;
-                }
-                if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Night")
-                {
-                    return bassCountNight;
-                }
-                if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Hurricane")
-                {
-                    return bassCountHurricane;
-                }
-                return CurrentbassCount;
-            }
-            set
-            {
-                if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "TerrainTest")
-                {
-                    bassCountDay = value;
-                    CurrentbassCount = bassCountDay;
-                    return;
-                }
-                if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Night")
-                {
-                    bassCountNight = value;
-                    CurrentbassCount = bassCountNight;
-                    return;
-                }
-                if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Hurricane")
-                {
-                    bassCountHurricane = value;
-                    CurrentbassCount = bassCountHurricane;
-                    return;
-                }
-                CurrentbassCount = value;
-            }
-        }
+       public int setBassCount
+       {
+          get
+          {
+             if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "TerrainTest")
+             {
+                return bassCountDay;
+             }
+             if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Night")
+             {
+                return bassCountNight;
+             }
+             if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Hurricane")
+             {
+                return bassCountHurricane;
+             }
+             return CurrentbassCount;
+          }
+          set
+          {
+             if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "TerrainTest")
+             {
+                bassCountDay = Mathf.Clamp(value, 0, 16);
+                CurrentbassCount = bassCountDay;
+                return;
+             }
+             if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Night")
+             {
+                bassCountNight = Mathf.Clamp(value, 0, 16);
+                CurrentbassCount = bassCountNight;
+                return;
+             }
+             if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Hurricane")
+             {
+                bassCountHurricane = Mathf.Clamp(value, 0, 16);
+                CurrentbassCount = bassCountHurricane;
+                return;
+             }
+             CurrentbassCount = Mathf.Clamp(value, 0, 16);
+          }
+       }
 
-        public int setCatCount
-        {
-            get
-            {
-                if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "TerrainTest")
-                {
-                    return catCountDay;
-                }
-                if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Night")
-                {
-                    return catCountNight;
-                }
-                if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Hurricane")
-                {
-                    return catCountHurricane;
-                }
-                return CurrentcatCount;
-            }
-            set
-            {
-                if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "TerrainTest")
-                {
-                    catCountDay = value;
-                    CurrentcatCount = catCountDay;
-                    return;
-                }
-                if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Night")
-                {
-                    catCountNight = value;
-                    CurrentcatCount = catCountNight;
-                    return;
-                }
-                if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Hurricane")
-                {
-                    catCountHurricane = value;
-                    CurrentcatCount = catCountHurricane;
-                    return;
-                }
-                CurrentcatCount = value;
-            }
-        }
+       public int setCatCount
+       {
+          get
+          {
+             if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "TerrainTest")
+             {
+                return catCountDay;
+             }
+             if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Night")
+             {
+                return catCountNight;
+             }
+             if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Hurricane")
+             {
+                return catCountHurricane;
+             }
+             return CurrentcatCount;
+          }
+          set
+          {
+             if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "TerrainTest")
+             {
+                catCountDay = Mathf.Clamp(value, 0, 16);
+                CurrentcatCount = catCountDay;
+                return;
+             }
+             if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Night")
+             {
+                catCountNight = Mathf.Clamp(value, 0, 16);
+                CurrentcatCount = catCountNight;
+                return;
+             }
+             if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Hurricane")
+             {
+                catCountHurricane = Mathf.Clamp(value, 0, 16);
+                CurrentcatCount = catCountHurricane;
+                return;
+             }
+             CurrentcatCount = Mathf.Clamp(value, 0, 16);
+          }
+       }
 
-        public int setPythonCount
-        {
-            get
-            {
-                if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "TerrainTest")
-                {
-                    return pythonCountDay;
-                }
-                if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Night")
-                {
-                    return pythonCountNight;
-                }
-                if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Hurricane")
-                {
-                    return pythonCountHurricane;
-                }
-                return CurrentpythonCount;
-            }
-            set
-            {
-                if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "TerrainTest")
-                {
-                    pythonCountDay = value;
-                    CurrentpythonCount = pythonCountDay;
-                    return;
-                }
-                if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Night")
-                {
-                    pythonCountNight = value;
-                    CurrentpythonCount = pythonCountNight;
-                    return;
-                }
-                if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Hurricane")
-                {
-                    pythonCountHurricane = value;
-                    CurrentpythonCount = pythonCountHurricane;
-                    return;
-                }
-                CurrentpythonCount = value;
-            }
-        }
+       public int setPythonCount
+       {
+          get
+          {
+             if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "TerrainTest")
+             {
+                return pythonCountDay;
+             }
+             if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Night")
+             {
+                return pythonCountNight;
+             }
+             if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Hurricane")
+             {
+                return pythonCountHurricane;
+             }
+             return CurrentpythonCount;
+          }
+          set
+          {
+             if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "TerrainTest")
+             {
+                pythonCountDay = Mathf.Clamp(value, 0, 16);
+                CurrentpythonCount = pythonCountDay;
+                return;
+             }
+             if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Night")
+             {
+                pythonCountNight = Mathf.Clamp(value, 0, 16);
+                CurrentpythonCount = pythonCountNight;
+                return;
+             }
+             if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Hurricane")
+             {
+                pythonCountHurricane = Mathf.Clamp(value, 0, 16);
+                CurrentpythonCount = pythonCountHurricane;
+                return;
+             }
+             CurrentpythonCount = Mathf.Clamp(value, 0, 16);
+          }
+       }
 
-        private bool onFirstLoadOfNight = false;
-        private bool onFirstLoadOfHurricane = false;
-        private bool onFirstLoadOfDay = false;
+       private bool onFirstLoadOfNight = false;
+       private bool onFirstLoadOfHurricane = false;
+       private bool onFirstLoadOfDay = false;
 
-        public GameObject mainMenu;
-        public GameObject animalMenu;
-        public GameObject sceneMenu;
-        public GameObject meterMenu;
-        public GameObject finalMenu;
-        private AnimalPool animalPool;
+       public GameObject mainMenu;
+       public GameObject animalMenu;
+       public GameObject sceneMenu;
+       public GameObject meterMenu;
+       public GameObject finalMenu;
+       private AnimalPool animalPool;
     private void Awake()
     {
         collectedInfo = 0;
@@ -368,18 +370,17 @@ public class UIManager : MonoBehaviour
         timerText.text = "Time Left - " + string.Format("{0:00}:{1:00}", min, sec);
 
         infoText.text = collectedInfo.ToString() + "/9 Info Collected";
+        alligatorMeter.value = setAligatorCount;
+        toadMeter.value = setToadCount;
+        rabbitMeter.value = setRabbitCount;
+        bassMeter.value = setBassCount;
+        catMeter.value = setCatCount;
+        pythonMeter.value = setPythonCount;
 
 
 
 
-        if (collectedInfo == 9)
-        {
-            mainMenu.SetActive(false);
-            animalMenu.SetActive(false);
-            sceneMenu.SetActive(false);
-            meterMenu.SetActive(false);
-            finalMenu.SetActive(true);
-        }
+       
 
         if (timerValue <= 0)
         {
@@ -456,6 +457,7 @@ public class UIManager : MonoBehaviour
             Debug.Log(setPythonCount);
             Debug.Log(setCatCount);
             Debug.Log(setToadCount);
+            
             GameDialog.playerDaySceneEntered();
             onFirstLoadOfDay = true;
 
@@ -488,37 +490,153 @@ public class UIManager : MonoBehaviour
         StartCoroutine(delayForAnimalpool(scene.name));
         
     }
+    bool fixedDisabledInput = false;
+    void LateUpdate()
+    {
+        if(SceneManager.GetActiveScene().name == "TerrainTest" && fixedDisabledInput == false)
+        {
+            inputActionManager.enabled = false;
+            inputActionManager.enabled = true;
+            fixedDisabledInput = true;
+        }
+    }
     IEnumerator delayForAnimalpool(string scene)
     {
-        yield return new WaitForSeconds(1);
+        fixedDisabledInput = false;
+        yield return new WaitForSeconds(2);
         if(scene == "TerrainTest" && onFirstLoadOfDay == true)
         {
-            animalPool.SpawnAligator(alligatorCountDay); 
-            animalPool.SpawnToad(toadCountDay);
-            animalPool.SpawnRabbit(rabbitCountDay);
-            animalPool.SpawnBass(bassCountDay);
-            animalPool.SpawnCat(catCountDay);
-            animalPool.SpawnPython(pythonCountDay);
+            Debug.Log("Alligator Array Count: " + animalPool.aligators.Length);
+            Debug.Log("Alligator Variable Count: " + alligatorCountDay);
+            if(animalPool.aligators.Length != alligatorCountDay)
+            {
+                animalPool.SpawnAligator(alligatorCountDay); 
+            }
+            
+            Debug.Log("Toad Array Count: " + animalPool.toads.Length);
+            Debug.Log("Toad Variable Count: " + toadCountDay);
+            if (animalPool.toads.Length != toadCountDay)
+            {
+                animalPool.SpawnToad(toadCountDay);
+            }
+
+            Debug.Log("Rabbit Array Count: " + animalPool.rabbits.Length);
+            Debug.Log("Rabbit Variable Count: " + rabbitCountDay);
+            if (animalPool.rabbits.Length != rabbitCountDay)
+            {
+                animalPool.SpawnRabbit(rabbitCountDay);
+            }
+
+            Debug.Log("Bass Array Count: " + animalPool.bass.Length);
+            Debug.Log("Bass Variable Count: " + bassCountDay);
+            if (animalPool.bass.Length != bassCountDay)
+            {
+                animalPool.SpawnBass(bassCountDay);
+            }
+
+            Debug.Log("Cat Array Count: " + animalPool.cats.Length);
+            Debug.Log("Cat Variable Count: " + catCountDay);
+            if (animalPool.cats.Length != catCountDay)
+            {
+                animalPool.SpawnCat(catCountDay);
+            }
+
+            Debug.Log("Python Array Count: " + animalPool.pythons.Length);
+            Debug.Log("Python Variable Count: " + pythonCountDay);
+            if (animalPool.pythons.Length != pythonCountDay)
+            {
+                animalPool.SpawnPython(pythonCountDay);
+            }
 
         }
         if(scene == "Night" && onFirstLoadOfNight == true)
         {
-            animalPool.SpawnAligator(alligatorCountNight);
-            animalPool.SpawnToad(toadCountNight);
-            animalPool.SpawnRabbit(rabbitCountNight);
-            animalPool.SpawnBass(bassCountNight);
-            animalPool.SpawnCat(catCountNight);
-            animalPool.SpawnPython(pythonCountNight);
+            Debug.Log("Alligator Array Count: " + animalPool.aligators.Length);
+            Debug.Log("Alligator Variable Count: " + alligatorCountNight);
+            if (animalPool.aligators.Length != alligatorCountNight)
+            {
+                animalPool.SpawnAligator(alligatorCountNight);
+            }
+
+            Debug.Log("Toad Array Count: " + animalPool.toads.Length);
+            Debug.Log("Toad Variable Count: " + toadCountNight);
+            if (animalPool.toads.Length != toadCountNight)
+            {
+                animalPool.SpawnToad(toadCountNight);
+            }
+
+            Debug.Log("Rabbit Array Count: " + animalPool.rabbits.Length);
+            Debug.Log("Rabbit Variable Count: " + rabbitCountNight);
+            if (animalPool.rabbits.Length != rabbitCountNight)
+            {
+                animalPool.SpawnRabbit(rabbitCountNight);
+            }
+
+            Debug.Log("Bass Array Count: " + animalPool.bass.Length);
+            Debug.Log("Bass Variable Count: " + bassCountNight);
+            if (animalPool.bass.Length != bassCountNight)
+            {
+                animalPool.SpawnBass(bassCountNight);
+            }
+
+            Debug.Log("Cat Array Count: " + animalPool.cats.Length);
+            Debug.Log("Cat Variable Count: " + catCountNight);
+            if (animalPool.cats.Length != catCountNight)
+            {
+                animalPool.SpawnCat(catCountNight);
+            }
+
+            Debug.Log("Python Array Count: " + animalPool.pythons.Length);
+            Debug.Log("Python Variable Count: " + pythonCountNight);
+            if (animalPool.pythons.Length != pythonCountNight)
+            {
+                animalPool.SpawnPython(pythonCountNight);
+            }
 
         }
         if(scene == "Hurricane" && onFirstLoadOfHurricane == true)
         {
-            animalPool.SpawnAligator(alligatorCountHurricane);
-            animalPool.SpawnToad(toadCountHurricane);
-            animalPool.SpawnRabbit(rabbitCountHurricane);
-            animalPool.SpawnBass(bassCountHurricane);
-            animalPool.SpawnCat(catCountHurricane);
-            animalPool.SpawnPython(pythonCountHurricane);
+            Debug.Log("Alligator Array Count: " + animalPool.aligators.Length);
+            Debug.Log("Alligator Variable Count: " + alligatorCountHurricane);
+            if (animalPool.aligators.Length != alligatorCountHurricane)
+            {
+                animalPool.SpawnAligator(alligatorCountHurricane);
+            }
+
+            Debug.Log("Toad Array Count: " + animalPool.toads.Length);
+            Debug.Log("Toad Variable Count: " + toadCountHurricane);
+            if (animalPool.toads.Length != toadCountHurricane)
+            {
+                animalPool.SpawnToad(toadCountHurricane);
+            }
+
+            Debug.Log("Rabbit Array Count: " + animalPool.rabbits.Length);
+            Debug.Log("Rabbit Variable Count: " + rabbitCountHurricane);
+            if (animalPool.rabbits.Length != rabbitCountHurricane)
+            {
+                animalPool.SpawnRabbit(rabbitCountHurricane);
+            }
+
+            Debug.Log("Bass Array Count: " + animalPool.bass.Length);
+            Debug.Log("Bass Variable Count: " + bassCountHurricane);
+            if (animalPool.bass.Length != bassCountHurricane)
+            {
+                animalPool.SpawnBass(bassCountHurricane);
+            }
+
+            Debug.Log("Cat Array Count: " + animalPool.cats.Length);
+            Debug.Log("Cat Variable Count: " + catCountHurricane);
+            if (animalPool.cats.Length != catCountHurricane)
+            {
+                animalPool.SpawnCat(catCountHurricane);
+            }
+
+            Debug.Log("Python Array Count: " + animalPool.pythons.Length);
+            Debug.Log("Python Variable Count: " + pythonCountHurricane);
+            if (animalPool.pythons.Length != pythonCountHurricane)
+            {
+                animalPool.SpawnPython(pythonCountHurricane);
+            }
 
         }
     }
@@ -570,9 +688,21 @@ public class UIManager : MonoBehaviour
             mangroovesCheck.isOn = true;
             collectedInfo++;
         }
-        
+        CheckIfChecklistIsDone();
+    
 
-
+    }
+    void CheckIfChecklistIsDone()
+    {
+         if (collectedInfo == 9)
+        {
+            mainMenu.SetActive(false);
+            animalMenu.SetActive(false);
+            sceneMenu.SetActive(false);
+            meterMenu.SetActive(false);
+            finalMenu.SetActive(true);
+            GameDialog.playObjectiveReached();
+        }
     }
 
     public void spawnAlligator()
