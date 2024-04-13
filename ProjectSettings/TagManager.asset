@@ -15,6 +15,7 @@ TagManager:
   - trash
   - Oil
   - Animal Pool
+  - Mangrove
   layers:
   - Default
   - TransparentFX

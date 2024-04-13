@@ -641,6 +641,18 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Fish
       objectReference: {fileID: 0}
+    - target: {fileID: 5228753356885249030, guid: bfd425cbf95fe154f91211928b339311, type: 3}
+      propertyPath: m_Radius
+      value: 15.435127
+      objectReference: {fileID: 0}
+    - target: {fileID: 5228753356885249030, guid: bfd425cbf95fe154f91211928b339311, type: 3}
+      propertyPath: m_Center.y
+      value: 1.7566488
+      objectReference: {fileID: 0}
+    - target: {fileID: 5228753356885249030, guid: bfd425cbf95fe154f91211928b339311, type: 3}
+      propertyPath: m_Center.z
+      value: -4.0984797
+      objectReference: {fileID: 0}
     - target: {fileID: 5600290913000614308, guid: bfd425cbf95fe154f91211928b339311, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 42.7

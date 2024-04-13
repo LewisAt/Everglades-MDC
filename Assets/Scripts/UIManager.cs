@@ -499,6 +499,10 @@ public class UIManager : MonoBehaviour
             inputActionManager.enabled = true;
             fixedDisabledInput = true;
         }
+        if(sec == 0 && min == 0)
+        {
+            SceneManager.LoadScene("Failed");
+        }
     }
     IEnumerator delayForAnimalpool(string scene)
     {
@@ -694,7 +698,7 @@ public class UIManager : MonoBehaviour
     }
     void CheckIfChecklistIsDone()
     {
-         if (collectedInfo == 8)
+         if (collectedInfo == 9)
         {
             mainMenu.SetActive(false);
             animalMenu.SetActive(false);

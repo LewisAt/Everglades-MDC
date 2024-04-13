@@ -581,6 +581,14 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Frog
       objectReference: {fileID: 0}
+    - target: {fileID: 5228753356885249030, guid: bfd425cbf95fe154f91211928b339311, type: 3}
+      propertyPath: m_Radius
+      value: 12.175526
+      objectReference: {fileID: 0}
+    - target: {fileID: 5228753356885249030, guid: bfd425cbf95fe154f91211928b339311, type: 3}
+      propertyPath: m_Center.y
+      value: 2.5955274
+      objectReference: {fileID: 0}
     - target: {fileID: 5600290913000614308, guid: bfd425cbf95fe154f91211928b339311, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 53

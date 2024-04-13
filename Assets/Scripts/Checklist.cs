@@ -47,10 +47,10 @@ public class Checklist : MonoBehaviour
             Rabbit = true;
             Debug.Log("Checked: Rabbit");
         }
-        if (Name == "mangroove")
+        if (Name == "Mangrove")
         {
             mangroove = true;
-            Debug.Log("Checked: mangroove");
+            Debug.Log("Checked: Mangrove");
         }
         if (Name == "trash")
         {
