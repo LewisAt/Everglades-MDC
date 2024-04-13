@@ -320,7 +320,12 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: "Starting in the 1980s, the swamps of the South Florida Everglades have
+    been overrun by one of the most damaging invasive species the region has ever
+    seen: the Burmese python. These massive snakes, which can grow to 20 feet long
+    or more, with telephone-pole-sized girths, have all but decimated the region\u2019s
+    small- and medium-sized mammal population, wreaking havoc with the area\u2019s
+    ecosystem."
 --- !u!1 &6759401122543137724
 GameObject:
   m_ObjectHideFlags: 0
@@ -549,6 +554,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7461281201457804445}
     m_Modifications:
+    - target: {fileID: 667070739198947350, guid: bfd425cbf95fe154f91211928b339311, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 60207c1a741884c41af28f6b0dddfd27, type: 3}
     - target: {fileID: 1784187146934487856, guid: bfd425cbf95fe154f91211928b339311, type: 3}
       propertyPath: m_Name
       value: InteractableObject (1)
@@ -634,7 +643,7 @@ PrefabInstance:
     - target: {fileID: 9098085665024499910, guid: bfd425cbf95fe154f91211928b339311, type: 3}
       propertyPath: TextBoxToReveal
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 6014998673551857398}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 5449927872202396979, guid: bfd425cbf95fe154f91211928b339311, type: 3}

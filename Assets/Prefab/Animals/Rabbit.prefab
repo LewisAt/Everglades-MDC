@@ -485,6 +485,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3935076972392182765}
     m_Modifications:
+    - target: {fileID: 667070739198947350, guid: bfd425cbf95fe154f91211928b339311, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: df1ba6fd94e679842a6497417e0c65c2, type: 3}
     - target: {fileID: 1784187146934487856, guid: bfd425cbf95fe154f91211928b339311, type: 3}
       propertyPath: m_Name
       value: InteractableObject (1)
@@ -551,16 +555,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9098085665024499910, guid: bfd425cbf95fe154f91211928b339311, type: 3}
       propertyPath: infoTodisplay
-      value: The marsh rabbit (Sylvilagus palustris) is a small cottontail rabbit
-        found in marshes and swamps of coastal regions of the Eastern and Southern
-        United States. It is a strong swimmer and found only near regions of water.
-        It is similar in appearance to the eastern cottontail (Sylvilagus floridanus)
-        but is characterized by smaller ears, legs, and tail.[3]
+      value: The Marsh Rabbit (Sylvilagus palustris) is a slightly smaller, darker
+        version of the more familiar eastern cottontail rabbit, which is best known
+        for its conspicuous cotton puff tail. In contrast, the marsh rabbit has a
+        small gray-brown tail. It is found throughout Florida and due to being a
+        strong swimmer prefers to make its home near the water. Their diet consists
+        mainly of the various plants found in and around wetlands. Breeding occurs
+        year-round but peaks December through June. On average, a female marsh rabbit
+        produces six or seven litters of two to four young per litter each year.
+        By four weeks of age, the young rabbits are weaned and are foraging for themselves.
+        As nocturnal creatures their most active at dusk and night.
       objectReference: {fileID: 0}
     - target: {fileID: 9098085665024499910, guid: bfd425cbf95fe154f91211928b339311, type: 3}
       propertyPath: TextBoxToReveal
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 4729109017521633939}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 5449927872202396979, guid: bfd425cbf95fe154f91211928b339311, type: 3}

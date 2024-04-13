@@ -569,6 +569,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3157893657594528842}
     m_Modifications:
+    - target: {fileID: 667070739198947350, guid: bfd425cbf95fe154f91211928b339311, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: fa477d50845492945af3c03f29f4b280, type: 3}
     - target: {fileID: 1784187146934487856, guid: bfd425cbf95fe154f91211928b339311, type: 3}
       propertyPath: m_Name
       value: InteractableObject
@@ -635,15 +639,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9098085665024499910, guid: bfd425cbf95fe154f91211928b339311, type: 3}
       propertyPath: infoTodisplay
-      value: " The oak toad can be identified by its light mid-dorsal stripe, variable
-        brown and black spots, and proportionally large parotoid glands. One of the
-        most remarkable features of this species is its small adult size relative
-        to other toads.\r"
+      value: "The Oak Toad (Anaxyrus quercicus) can be found quite commonly throughout
+        Florida, except for the Florida Keys. They are a smaller species of Toad
+        which comes in at a tiny .75\u201D to 1.5\u201D in length. They make their
+        homes among the sandy soils by costal areas. They can be distinguished by
+        their signature bright white, yellowish, or orange stripe that runs from
+        its snout to its tail. Common colors for them are brown, grey, or almost
+        black, often with scattered reddish warts and mottled black spots across
+        their back in sets of 3 or 5. Their diet consists mainly of insects such
+        as beetles, centipedes, spiders, and other invertebrates; although they mainly
+        prefer ants. They are nocturnal creatures spending most of their time chirping
+        away as their ovular vocal sacs inflate, usually serving an indication of
+        breeding season."
       objectReference: {fileID: 0}
     - target: {fileID: 9098085665024499910, guid: bfd425cbf95fe154f91211928b339311, type: 3}
       propertyPath: TextBoxToReveal
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 5847222715429586803}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 5449927872202396979, guid: bfd425cbf95fe154f91211928b339311, type: 3}

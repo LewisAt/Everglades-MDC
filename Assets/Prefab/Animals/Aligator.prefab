@@ -558,6 +558,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -2.1240005
       objectReference: {fileID: 0}
+    - target: {fileID: 667070739198947350, guid: bfd425cbf95fe154f91211928b339311, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 0b4edebd85ec257419931443f6f9de6d, type: 3}
     - target: {fileID: 1784187146934487856, guid: bfd425cbf95fe154f91211928b339311, type: 3}
       propertyPath: m_Name
       value: InteractableObject
@@ -642,6 +646,19 @@ PrefabInstance:
     - target: {fileID: 7219356262732716591, guid: bfd425cbf95fe154f91211928b339311, type: 3}
       propertyPath: m_FontData.m_FontSize
       value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 9098085665024499910, guid: bfd425cbf95fe154f91211928b339311, type: 3}
+      propertyPath: infoTodisplay
+      value: The American alligator (Alligator mississippiensis) resides within the
+        southern extreme of the Florida Everglades. They primarily inhabit freshwater
+        areas such as swamps and marshes or like, rivers and similar smalles bodies
+        of freshwater. Adult male alligators occasionally reach 13 to 15 feet in
+        length. Maximum length for females is approximately 10 feet. Their diet consists
+        mostly of fish, turtles, small mammals, brids and reptiles. Alligators in
+        general are an important part of the ecosystem as their nests serve as important
+        for the creation of peat, with the adandoned nests providing a place for
+        many animals to lay their eggs. Their roles as important consumers in the
+        ecosystems food web also solidifies their importance to the enviornment.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -629,6 +629,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6573705556089246480}
     m_Modifications:
+    - target: {fileID: 667070739198947350, guid: bfd425cbf95fe154f91211928b339311, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 5c6fc8cd42288a14eb7b36ae18b087d0, type: 3}
     - target: {fileID: 1784187146934487856, guid: bfd425cbf95fe154f91211928b339311, type: 3}
       propertyPath: m_Name
       value: InteractableObject
@@ -694,9 +698,23 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9098085665024499910, guid: bfd425cbf95fe154f91211928b339311, type: 3}
+      propertyPath: infoTodisplay
+      value: The Largemouth Bass (Micropterus salmoides) is one of the most important
+        freshwater gamefish in the United States. A member of the sunfish family
+        and a species of black bass native to North america. Able to live for up
+        to 16 years and distinguished by their longer upper jaw, which, when closed,
+        extends beyond the eye. They are the largest of the black basses, with the
+        largest recorded overall length reaching 29.5 inches. Residing in the water
+        of the Everglades their diet consists mainly of smaller fish, snails, crawfish,
+        frogs, snakes, salamanders, bats, and even small water birds, mammals, and
+        baby alligators. As one of the top predators in the waters they play an important
+        job at maintaining the food webs balance. Without bass, the minnow population
+        would soar out of control, and there would be overconsumption of zooplankton.
+      objectReference: {fileID: 0}
+    - target: {fileID: 9098085665024499910, guid: bfd425cbf95fe154f91211928b339311, type: 3}
       propertyPath: TextBoxToReveal
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 514775521992214211}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 5449927872202396979, guid: bfd425cbf95fe154f91211928b339311, type: 3}

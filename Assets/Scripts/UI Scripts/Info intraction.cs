@@ -43,7 +43,7 @@ public class Infointraction : MonoBehaviour
     }
     IEnumerator Disable()
     {
-        yield return new WaitForSeconds(15);
+        yield return new WaitForSeconds(60);
         if(CanvasBase.activeSelf)
         {
             CanvasBase.SetActive(false);

@@ -403,6 +403,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8448969607322977845}
     m_Modifications:
+    - target: {fileID: 667070739198947350, guid: bfd425cbf95fe154f91211928b339311, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 698d430e98a084a41be9e1045ae2b3ce, type: 3}
     - target: {fileID: 1784187146934487856, guid: bfd425cbf95fe154f91211928b339311, type: 3}
       propertyPath: m_Name
       value: InteractableObject
@@ -410,6 +414,34 @@ PrefabInstance:
     - target: {fileID: 1784187146934487856, guid: bfd425cbf95fe154f91211928b339311, type: 3}
       propertyPath: m_TagString
       value: Oil
+      objectReference: {fileID: 0}
+    - target: {fileID: 2521098751831549116, guid: bfd425cbf95fe154f91211928b339311, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2521098751831549116, guid: bfd425cbf95fe154f91211928b339311, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2521098751831549116, guid: bfd425cbf95fe154f91211928b339311, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 2905895461992250976}
+    - target: {fileID: 2521098751831549116, guid: bfd425cbf95fe154f91211928b339311, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2521098751831549116, guid: bfd425cbf95fe154f91211928b339311, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: Play
+      objectReference: {fileID: 0}
+    - target: {fileID: 2521098751831549116, guid: bfd425cbf95fe154f91211928b339311, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UnityEngine.AudioSource, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2521098751831549116, guid: bfd425cbf95fe154f91211928b339311, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 5600290913000614308, guid: bfd425cbf95fe154f91211928b339311, type: 3}
       propertyPath: m_LocalPosition.z
@@ -477,30 +509,38 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9098085665024499910, guid: bfd425cbf95fe154f91211928b339311, type: 3}
       propertyPath: infoTodisplay
-      value: Info fo OIL Please
+      value: An Oil Spill. The Florida Everglades face a huge risk of the risk of
+        oil washing up in and smothering newly laid eggs, contaminating the water
+        of the area killing a multitude of fish as well as the mangrooves which lay
+        root in these waters.
       objectReference: {fileID: 0}
     - target: {fileID: 9098085665024499910, guid: bfd425cbf95fe154f91211928b339311, type: 3}
       propertyPath: TextBoxToReveal
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 8660960373139237250}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 5449927872202396979, guid: bfd425cbf95fe154f91211928b339311, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 957867829353559362, guid: bfd425cbf95fe154f91211928b339311, type: 3}
-      insertIndex: -1
+      insertIndex: 0
       addedObject: {fileID: 1258497483109876489}
     - targetCorrespondingSourceObject: {fileID: 957867829353559362, guid: bfd425cbf95fe154f91211928b339311, type: 3}
-      insertIndex: -1
+      insertIndex: 1
       addedObject: {fileID: 3419047698424926756}
     - targetCorrespondingSourceObject: {fileID: 957867829353559362, guid: bfd425cbf95fe154f91211928b339311, type: 3}
-      insertIndex: -1
+      insertIndex: 2
       addedObject: {fileID: 6313802674418495388}
     - targetCorrespondingSourceObject: {fileID: 957867829353559362, guid: bfd425cbf95fe154f91211928b339311, type: 3}
-      insertIndex: -1
+      insertIndex: 3
       addedObject: {fileID: 8999344290210281417}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bfd425cbf95fe154f91211928b339311, type: 3}
+--- !u!82 &2905895461992250976 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 667070739198947350, guid: bfd425cbf95fe154f91211928b339311, type: 3}
+  m_PrefabInstance: {fileID: 2383030698424733302}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &3195654114538273588 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 957867829353559362, guid: bfd425cbf95fe154f91211928b339311, type: 3}
