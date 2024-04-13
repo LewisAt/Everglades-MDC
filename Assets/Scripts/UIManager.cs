@@ -694,7 +694,7 @@ public class UIManager : MonoBehaviour
     }
     void CheckIfChecklistIsDone()
     {
-         if (collectedInfo == 9)
+         if (collectedInfo == 8)
         {
             mainMenu.SetActive(false);
             animalMenu.SetActive(false);
