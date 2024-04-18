@@ -513,6 +513,10 @@ PrefabInstance:
       value: AnimalSoundProducer
       objectReference: {fileID: 0}
     - target: {fileID: 3886330377041519108, guid: d36bc5134d783b74f97d4a79943621ec, type: 3}
+      propertyPath: m_Volume
+      value: 0.613
+      objectReference: {fileID: 0}
+    - target: {fileID: 3886330377041519108, guid: d36bc5134d783b74f97d4a79943621ec, type: 3}
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 70636a21b291831419171853e92a9a64, type: 3}

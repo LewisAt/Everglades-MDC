@@ -533,6 +533,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AnimalSoundProducer
       objectReference: {fileID: 0}
+    - target: {fileID: 3886330377041519108, guid: d36bc5134d783b74f97d4a79943621ec, type: 3}
+      propertyPath: m_Volume
+      value: 0.653
+      objectReference: {fileID: 0}
     - target: {fileID: 4040357202846408949, guid: d36bc5134d783b74f97d4a79943621ec, type: 3}
       propertyPath: audioClips.Array.size
       value: 1

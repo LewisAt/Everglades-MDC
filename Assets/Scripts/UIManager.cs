@@ -389,14 +389,13 @@ public class UIManager : MonoBehaviour
 
         if (timerValue % 60 == 0)
         {
-            //Destroy native animals
+            //Destroy native animals\
+            deSpawnBass();
+            deSpawnAlligator();
+            deSpawnRabbit();
+            deSpawnToad();
         }
 
-        if (timerValue % 90 == 0)
-        {
-            //Spawn new invasive animals
-        }
-        
 
         
 
@@ -696,9 +695,10 @@ public class UIManager : MonoBehaviour
     
 
     }
+    private bool hasfoindEverything = false;
     void CheckIfChecklistIsDone()
     {
-         if (collectedInfo == 9)
+         if (collectedInfo == 9 && hasfoindEverything == false)
         {
             mainMenu.SetActive(false);
             animalMenu.SetActive(false);
@@ -706,6 +706,7 @@ public class UIManager : MonoBehaviour
             meterMenu.SetActive(false);
             finalMenu.SetActive(true);
             GameDialog.playObjectiveReached();
+            hasfoindEverything = true;
         }
     }
 

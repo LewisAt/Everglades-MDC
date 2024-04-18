@@ -8,12 +8,17 @@ public class Infointraction : MonoBehaviour
     [TextArea(15, 20)]
     public string infoTodisplay;
     public Text TextBoxToReveal;
+    private GameObject canvasParent;
+    private Vector3 initalPositionInsideOfParent;
+    private Vector3 worldPosition;  
     public GameObject CanvasBase;
     private GameObject player;
 
     private void Awake()
     {
-
+        canvasParent = CanvasBase.transform.parent.gameObject;
+        initalPositionInsideOfParent = CanvasBase.transform.localPosition;
+        worldPosition = CanvasBase.transform.position;
         CanvasBase.SetActive(false);
         player = Camera.main.gameObject;
 
@@ -26,8 +31,13 @@ public class Infointraction : MonoBehaviour
         if(CanvasBase.activeSelf)//checks if the canvas is already active we do this at start to avoid the canvas being active at the start of the game
         {
             CanvasBase.SetActive(false);
+            CanvasBase.transform.parent = canvasParent.transform;
+            CanvasBase.transform.localPosition = initalPositionInsideOfParent;
             return;
         }
+        CanvasBase.transform.parent = null;
+        CanvasBase.transform.position = canvasParent.transform.position + new Vector3(0,50,0);
+
         AddItemToChecklist(this.gameObject.tag);
         CanvasBase.SetActive(true);
         TextBoxToReveal.text = infoTodisplay;
@@ -47,7 +57,8 @@ public class Infointraction : MonoBehaviour
         if(CanvasBase.activeSelf)
         {
             CanvasBase.SetActive(false);
-
+            CanvasBase.transform.parent = canvasParent.transform;
+            CanvasBase.transform.localPosition = initalPositionInsideOfParent;
         }
     }
     private void LockInfoPanel()
