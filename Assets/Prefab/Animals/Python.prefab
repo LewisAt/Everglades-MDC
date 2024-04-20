@@ -320,12 +320,16 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Starting in the 1980s, the swamps of the South Florida Everglades have
-    been overrun by one of the most damaging invasive species the region has ever
-    seen: the Burmese python. These massive snakes, which can grow to 20 feet long
-    or more, with telephone-pole-sized girths, have all but decimated the region\u2019s
-    small- and medium-sized mammal population, wreaking havoc with the area\u2019s
-    ecosystem."
+  m_Text: The Burmese Python (Python bivittatus) is an invasive species of predator
+    which has quickly taken over the Everglades. Because of their large size, adult
+    Burmese pythons have few predators, with humans being the exception. They prey
+    upon native species and may reduce their populations locally. Severe declines
+    in mammal populations throughout the Everglades have been linked to Burmese pythons,
+    with the most severe declines in native species having occurred in the remote
+    southernmost regions of the Everglades where pythons have been established the
+    longest. As one of the largest snakes in the world, they can grow to impressive
+    sizes. Adult Burmese pythons caught in Florida average between 6 and 9 feet.
+    Generally their diet consists of various mammals, birds and reptiles.
 --- !u!1 &6759401122543137724
 GameObject:
   m_ObjectHideFlags: 0
@@ -641,12 +645,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9098085665024499910, guid: bfd425cbf95fe154f91211928b339311, type: 3}
       propertyPath: infoTodisplay
-      value: "Starting in the 1980s, the swamps of the South Florida Everglades have
-        been overrun by one of the most damaging invasive species the region has
-        ever seen: the Burmese python. These massive snakes, which can grow to 20
-        feet long or more, with telephone-pole-sized girths, have all but decimated
-        the region\u2019s small- and medium-sized mammal population, wreaking havoc
-        with the area\u2019s ecosystem."
+      value: The Burmese Python (Python bivittatus) is an invasive species of predator
+        which has quickly taken over the Everglades. Because of their large size,
+        adult Burmese pythons have few predators, with humans being the exception.
+        They prey upon native species and may reduce their populations locally. Severe
+        declines in mammal populations throughout the Everglades have been linked
+        to Burmese pythons, with the most severe declines in native species having
+        occurred in the remote southernmost regions of the Everglades where pythons
+        have been established the longest. As one of the largest snakes in the world,
+        they can grow to impressive sizes. Adult Burmese pythons caught in Florida
+        average between 6 and 9 feet. Generally their diet consists of various mammals,
+        birds and reptiles.
       objectReference: {fileID: 0}
     - target: {fileID: 9098085665024499910, guid: bfd425cbf95fe154f91211928b339311, type: 3}
       propertyPath: TextBoxToReveal

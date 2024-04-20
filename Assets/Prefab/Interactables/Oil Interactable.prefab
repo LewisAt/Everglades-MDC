@@ -157,10 +157,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: An Oil Spill. The Florida Everglades face a huge risk of the risk of oil
-    washing up in and smothering newly laid eggs, contaminating the water of the
-    area killing a multitude of fish as well as the mangrooves which lay root in
-    these waters.
+  m_Text: This is an Oil Spill. The Florida Everglades are at risk from large bodies
+    of oil that wash up in and smother newly laid eggs. This contaminates the water,
+    vastly diminishing their living conditions. It has the potential to kill a multitude
+    of fish as well as the mangroves which lay root in these waters.
 --- !u!1 &5435592107921580781
 GameObject:
   m_ObjectHideFlags: 0
@@ -525,10 +525,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9098085665024499910, guid: bfd425cbf95fe154f91211928b339311, type: 3}
       propertyPath: infoTodisplay
-      value: An Oil Spill. The Florida Everglades face a huge risk of the risk of
-        oil washing up in and smothering newly laid eggs, contaminating the water
-        of the area killing a multitude of fish as well as the mangrooves which lay
-        root in these waters.
+      value: This is an Oil Spill. The Florida Everglades are at risk from large
+        bodies of oil that wash up in and smother newly laid eggs. This contaminates
+        the water, vastly diminishing their living conditions. It has the potential
+        to kill a multitude of fish as well as the mangroves which lay root in these
+        waters.
       objectReference: {fileID: 0}
     - target: {fileID: 9098085665024499910, guid: bfd425cbf95fe154f91211928b339311, type: 3}
       propertyPath: TextBoxToReveal

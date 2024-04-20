@@ -34,7 +34,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.70000076, y: -2.1240005}
+  m_AnchoredPosition: {x: 0.70000076, y: 2.1}
   m_SizeDelta: {x: 1358.765, y: 926.687}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4868997008376341255
@@ -67,7 +67,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 5a8ef543591268943a212da7372c3294, type: 3}
-    m_FontSize: 70
+    m_FontSize: 75
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -78,16 +78,16 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Mangroves: Mangrove Forests make up one of the most plentiful plant populations
-    in the Everglade Ecosystem. They are present near the coastal channels and winding
+  m_Text: Mangrove Forests make up one of the most plentiful plant populations in
+    the Everglade Ecosystem. They are present near the coastal channels and winding
     rivers around the tip of South Florida. The term "mangrove" does not refer to
     a particular botanical relation, but rather is used to identify several species
     of salt-tolerant trees that thrive amidst the harsh growing conditions of the
     coast. These come in three varieties; Red mangroves (Rhizophora mangle), known
-    for their stilt-like roots, Black mangroves (Avicennia germinans) and white mangroves
-    (Laguncularia racemosa) which thrive within tidal waters, where freshwater from
-    the Everglades mixes with saltwater.. The Everglades National Park boasts the
-    largest contiguous stand of protected mangrove forest in the Western Hemisphere.'
+    for their stilt-like roots, Black mangroves (Aveciennia germinans) and white
+    mangroves (Laguncularia racemosa) which thrive within tidal waters, where freshwater
+    from the Everglades mixes with saltwater. The Everglades boasts the largest contigious
+    stand of protected mangrove forest in the Western Hemisphere.
 --- !u!1 &3535043033891540175
 GameObject:
   m_ObjectHideFlags: 0
@@ -121,81 +121,6 @@ Transform:
   - {fileID: 6952138521620631814}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &3680205603388855297
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1437300333894956273}
-  - component: {fileID: 8922767115708256013}
-  - component: {fileID: 4082718908087680175}
-  m_Layer: 0
-  m_Name: Image
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1437300333894956273
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3680205603388855297}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 4254761065877755625}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 25, y: 37}
-  m_SizeDelta: {x: 40, y: 20}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &8922767115708256013
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3680205603388855297}
-  m_CullTransparentMesh: 1
---- !u!114 &4082718908087680175
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3680205603388855297}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ac92106801ada8e42b6d834bcacaf270, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &5626807820895266840
 GameObject:
   m_ObjectHideFlags: 0
@@ -230,7 +155,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 7.9019165, y: 34.8}
+  m_AnchoredPosition: {x: -0, y: 36.7}
   m_SizeDelta: {x: 1765.8038, y: 501.629}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2641865435615964408
@@ -263,95 +188,18 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 5a8ef543591268943a212da7372c3294, type: 3}
-    m_FontSize: 125
+    m_FontSize: 200
     m_FontStyle: 3
     m_BestFit: 0
     m_MinSize: 0
-    m_MaxSize: 200
-    m_Alignment: 3
+    m_MaxSize: 250
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Burmese python
-
-    (Python bivittatus)'
---- !u!1 &7030961065028386126
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4292501820232365872}
-  - component: {fileID: 5053268300463710521}
-  - component: {fileID: 6405631201894281464}
-  m_Layer: 0
-  m_Name: Image (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &4292501820232365872
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7030961065028386126}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 4254761065877755625}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -23, y: -38}
-  m_SizeDelta: {x: 42, y: 17}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &5053268300463710521
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7030961065028386126}
-  m_CullTransparentMesh: 1
---- !u!114 &6405631201894281464
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7030961065028386126}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 5ab659d4be896ca449554652e6813841, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_Text: Mangrooves
 --- !u!1 &8664092156828112725
 GameObject:
   m_ObjectHideFlags: 0
@@ -469,8 +317,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 23, y: -38}
-  m_SizeDelta: {x: 42, y: 17}
+  m_AnchoredPosition: {x: 0, y: -36.3}
+  m_SizeDelta: {x: 50, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2274987586462223772
 CanvasRenderer:
@@ -500,7 +348,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6108313666c5ece418444c3f6aafaeec, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f4739366f03d44041be2511b8aaff912, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -605,17 +453,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9098085665024499910, guid: bfd425cbf95fe154f91211928b339311, type: 3}
       propertyPath: infoTodisplay
-      value: 'Mangroves: Mangrove Forests make up one of the most plentiful plant
-        populations in the Everglade Ecosystem. They are present near the coastal
-        channels and winding rivers around the tip of South Florida. The term "mangrove"
-        does not refer to a particular botanical relation, but rather is used to
-        identify several species of salt-tolerant trees that thrive amidst the harsh
-        growing conditions of the coast. These come in three varieties; Red mangroves
-        (Rhizophora mangle), known for their stilt-like roots, Black mangroves (Avicennia
-        germinans) and white mangroves (Laguncularia racemosa) which thrive within
-        tidal waters, where freshwater from the Everglades mixes with saltwater..
-        The Everglades National Park boasts the largest contiguous stand of protected
-        mangrove forest in the Western Hemisphere.'
+      value: Mangrove Forests make up one of the most plentiful plant populations
+        in the Everglade Ecosystem. They are present near the coastal channels and
+        winding rivers around the tip of South Florida. The term "mangrove" does
+        not refer to a particular botanical relation, but rather is used to identify
+        several species of salt-tolerant trees that thrive amidst the harsh growing
+        conditions of the coast. These come in three varieties; Red mangroves (Rhizophora
+        mangle), known for their stilt-like roots, Black mangroves (Aveciennia germinans)
+        and white mangroves (Laguncularia racemosa) which thrive within tidal waters,
+        where freshwater from the Everglades mixes with saltwater. The Everglades
+        boasts the largest contigious stand of protected mangrove forest in the Western
+        Hemisphere.
       objectReference: {fileID: 0}
     - target: {fileID: 9098085665024499910, guid: bfd425cbf95fe154f91211928b339311, type: 3}
       propertyPath: TextBoxToReveal
@@ -631,12 +479,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 957867829353559362, guid: bfd425cbf95fe154f91211928b339311, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1686997563236223382}
-    - targetCorrespondingSourceObject: {fileID: 957867829353559362, guid: bfd425cbf95fe154f91211928b339311, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1437300333894956273}
-    - targetCorrespondingSourceObject: {fileID: 957867829353559362, guid: bfd425cbf95fe154f91211928b339311, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 4292501820232365872}
     - targetCorrespondingSourceObject: {fileID: 957867829353559362, guid: bfd425cbf95fe154f91211928b339311, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8325013803387849611}

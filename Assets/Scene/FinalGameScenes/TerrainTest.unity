@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1836701614}
-  m_IndirectSpecularColor: {r: 0.83805096, g: 0.8493496, b: 0.87435097, a: 1}
+  m_IndirectSpecularColor: {r: 0.8380509, g: 0.84934974, b: 0.8743511, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -28614,6 +28614,38 @@ PrefabInstance:
     - target: {fileID: 290264755011347310, guid: 874998291ebde7c40af4945b9b58edc6, type: 3}
       propertyPath: m_Name
       value: ====Animals====
+      objectReference: {fileID: 0}
+    - target: {fileID: 3537309679993472783, guid: 874998291ebde7c40af4945b9b58edc6, type: 3}
+      propertyPath: m_Text
+      value: The Burmese Python (Python bivittatus) is an invasive species of predator
+        which has quickly taken over the Everglades. Because of their large size,
+        adult Burmese pythons have few predators, with humans being the exception.
+        They prey upon native species and may reduce their populations locally. Severe
+        declines in mammal populations throughout the Everglades have been linked
+        to Burmese pythons, with the most severe declines in native species having
+        occurred in the remote southernmost regions of the Everglades where pythons
+        have been established the longest. As one of the largest snakes in the world,
+        they can grow to impressive sizes. Adult Burmese pythons caught in Florida
+        average between 6 and 9 feet. Generally their diet consists of various mammals,
+        birds and reptiles.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3537309679993472783, guid: 874998291ebde7c40af4945b9b58edc6, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 68
+      objectReference: {fileID: 0}
+    - target: {fileID: 3991282610248648297, guid: 874998291ebde7c40af4945b9b58edc6, type: 3}
+      propertyPath: infoTodisplay
+      value: The Burmese Python (Python bivittatus) is an invasive species of predator
+        which has quickly taken over the Everglades. Because of their large size,
+        adult Burmese pythons have few predators, with humans being the exception.
+        They prey upon native species and may reduce their populations locally. Severe
+        declines in mammal populations throughout the Everglades have been linked
+        to Burmese pythons, with the most severe declines in native species having
+        occurred in the remote southernmost regions of the Everglades where pythons
+        have been established the longest. As one of the largest snakes in the world,
+        they can grow to impressive sizes. Adult Burmese pythons caught in Florida
+        average between 6 and 9 feet. Generally their diet consists of various mammals,
+        birds and reptiles.
       objectReference: {fileID: 0}
     - target: {fileID: 8498716464721672263, guid: 874998291ebde7c40af4945b9b58edc6, type: 3}
       propertyPath: m_Radius
