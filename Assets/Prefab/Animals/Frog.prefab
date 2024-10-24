@@ -585,6 +585,18 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Frog
       objectReference: {fileID: 0}
+    - target: {fileID: 2521098751831549116, guid: bfd425cbf95fe154f91211928b339311, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2521098751831549116, guid: bfd425cbf95fe154f91211928b339311, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 6772595982282637740}
+    - target: {fileID: 2521098751831549116, guid: bfd425cbf95fe154f91211928b339311, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.AudioSource, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 5228753356885249030, guid: bfd425cbf95fe154f91211928b339311, type: 3}
       propertyPath: m_Radius
       value: 12.175526
@@ -697,6 +709,11 @@ Transform:
 --- !u!224 &6482921576589673720 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 957867829353559362, guid: bfd425cbf95fe154f91211928b339311, type: 3}
+  m_PrefabInstance: {fileID: 6106020607968899514}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &6772595982282637740 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 667070739198947350, guid: bfd425cbf95fe154f91211928b339311, type: 3}
   m_PrefabInstance: {fileID: 6106020607968899514}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7043118435460201228

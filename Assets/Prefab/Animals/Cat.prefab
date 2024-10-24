@@ -668,6 +668,18 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Cat
       objectReference: {fileID: 0}
+    - target: {fileID: 2521098751831549116, guid: bfd425cbf95fe154f91211928b339311, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2521098751831549116, guid: bfd425cbf95fe154f91211928b339311, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 4002774792551760035}
+    - target: {fileID: 2521098751831549116, guid: bfd425cbf95fe154f91211928b339311, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.AudioSource, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 5600290913000614308, guid: bfd425cbf95fe154f91211928b339311, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 74.8
@@ -770,6 +782,11 @@ PrefabInstance:
 --- !u!224 &3712752309546616311 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 957867829353559362, guid: bfd425cbf95fe154f91211928b339311, type: 3}
+  m_PrefabInstance: {fileID: 4525377906711277749}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &4002774792551760035 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 667070739198947350, guid: bfd425cbf95fe154f91211928b339311, type: 3}
   m_PrefabInstance: {fileID: 4525377906711277749}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &7563618616026202648 stripped

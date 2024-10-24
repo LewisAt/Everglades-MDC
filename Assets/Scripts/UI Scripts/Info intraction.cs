@@ -14,6 +14,8 @@ public class Infointraction : MonoBehaviour
     public GameObject CanvasBase;
     private GameObject player;
 
+    static GameObject thereCanOnlyBeOne;
+
     private void Awake()
     {
         canvasParent = CanvasBase.transform.parent.gameObject;
@@ -23,8 +25,10 @@ public class Infointraction : MonoBehaviour
         player = Camera.main.gameObject;
 
     }
-    public void enableAll()
+    public void enableAll(AudioSource thisAudio)
     {
+        FindObjectOfType<GamePlayDialog>().GetInteractAudio(thisAudio);
+
         /* enables the base canvas and sets the text box to the string
          * then starts the disable coroutine that will disable the canvas after 15 seconds
          */
@@ -35,6 +39,13 @@ public class Infointraction : MonoBehaviour
             CanvasBase.transform.localPosition = initalPositionInsideOfParent;
             return;
         }
+        if (thereCanOnlyBeOne != null)
+        {
+            thereCanOnlyBeOne.SetActive(false);
+            thereCanOnlyBeOne.transform.parent = thereCanOnlyBeOne.transform.parent.gameObject.transform;
+            thereCanOnlyBeOne.transform.localPosition = thereCanOnlyBeOne.transform.localPosition;
+        }
+        thereCanOnlyBeOne = thisAudio.gameObject;
         CanvasBase.transform.parent = null;
         CanvasBase.transform.position = canvasParent.transform.position + new Vector3(0,50,0);
 
