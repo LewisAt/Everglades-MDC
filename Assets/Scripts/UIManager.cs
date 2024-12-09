@@ -529,9 +529,11 @@ public class UIManager : MonoBehaviour
         bassMeter.value = setBassCount;
         catMeter.value = setCatCount;
         pythonMeter.value = setPythonCount;
+        /*
         heronMeter.value = setHeronCount;
         egretMeter.value = setEgretCount;
         opossumMeter.value = setOpossumCount;
+        */
 
 
         if (timerValue <= 0)
@@ -546,10 +548,11 @@ public class UIManager : MonoBehaviour
             deSpawnAlligator();
             deSpawnRabbit();
             deSpawnToad();
-
+            /*
             deSpawnHeron();
             deSpawnEgret();
             deSpawnOpossum();
+            */
         }
 
 
@@ -577,9 +580,11 @@ public class UIManager : MonoBehaviour
             setBassCount = animalPool.returactiveBass();
             setCatCount =   animalPool.returactiveCat();
             setPythonCount = animalPool.returactivePython();
+            /*
             setHeronCount = animalPool.returactiveHeron();
             setEgretCount = animalPool.returactiveEgret();
             setOpossumCount = animalPool.returactiveOpossum();
+            */
             GameDialog.playerHurricaneSceneEntered();
             onFirstLoadOfHurricane = true;
 
@@ -594,9 +599,11 @@ public class UIManager : MonoBehaviour
             setBassCount = animalPool.returactiveBass();
             setCatCount =   animalPool.returactiveCat();
             setPythonCount = animalPool.returactivePython();
+            /*
             setHeronCount = animalPool.returactiveHeron();
             setEgretCount = animalPool.returactiveEgret();
             setOpossumCount = animalPool.returactiveOpossum();
+            */
             GameDialog.playerNightSceneEntered();
             onFirstLoadOfNight = true;
 
@@ -610,9 +617,11 @@ public class UIManager : MonoBehaviour
             setBassCount = animalPool.returactiveBass();
             setCatCount =   animalPool.returactiveCat();
             setPythonCount = animalPool.returactivePython();
+            /*
             setHeronCount = animalPool.returactiveHeron();
             setEgretCount = animalPool.returactiveEgret();
             setOpossumCount = animalPool.returactiveOpossum();
+            */
             Debug.Log("Day");
             Debug.Log(setAligatorCount);
             Debug.Log(setBassCount);

@@ -78,7 +78,7 @@ public class GamePlayDialog : MonoBehaviour
     }
     void playAudioCueONtimedEvent()
     {
-        print("The audio source" + interactionAudio.name);
+        //print("The audio source" + interactionAudio.name);
         if (uiManager.min == 7 && uiManager.sec == 59 && audioSource.clip != twominutespassed && !interactionAudio.isPlaying)
         {
             audioSource.clip = twominutespassed;
