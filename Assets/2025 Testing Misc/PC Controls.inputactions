@@ -1,0 +1,34 @@
+{
+    "name": "PC Controls",
+    "maps": [
+        {
+            "name": "In Game Controls",
+            "id": "beeb94d2-0944-450a-b5df-3619eb8e90fd",
+            "actions": [
+                {
+                    "name": "Interact",
+                    "type": "Button",
+                    "id": "492b7b2c-90f5-4e03-a302-9b6e8f64bed0",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "9a67bc29-2f61-4456-be13-568e173575dd",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Interact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

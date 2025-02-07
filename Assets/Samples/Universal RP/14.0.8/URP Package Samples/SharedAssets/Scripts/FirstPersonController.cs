@@ -22,7 +22,7 @@ public class FirstPersonController : MonoBehaviour
     {
 #if ENABLE_INPUT_SYSTEM
         Debug.Log("The FirstPersonController uses the legacy input system. Please set it in Project Settings");
-        m_MoveWithMouse = false;
+        //m_MoveWithMouse = false;
 #endif
         if (m_MoveWithMouse)
         {
