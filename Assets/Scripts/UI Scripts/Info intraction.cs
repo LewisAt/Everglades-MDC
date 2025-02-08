@@ -12,6 +12,7 @@ public class Infointraction : MonoBehaviour
     private Vector3 initalPositionInsideOfParent;
     private Vector3 worldPosition;  
     public GameObject CanvasBase;
+    public AudioSource interactAudio;
     private GameObject player;
 
     //Added this static to store the most recent instance of interaction dialogue
@@ -26,8 +27,13 @@ public class Infointraction : MonoBehaviour
         player = Camera.main.gameObject;
 
     }
-    public void enableAll(AudioSource thisAudio)
+    public void enableAll(AudioSource thisAudio = null)
     {
+        if (thisAudio == null)
+        {
+            thisAudio = interactAudio;
+        }
+        //NOTE: You MUST have a GamePlayDialog object in the scene or else the entire method will stall here
         FindObjectOfType<GamePlayDialog>().GetInteractAudio(thisAudio);
 
         /* enables the base canvas and sets the text box to the string

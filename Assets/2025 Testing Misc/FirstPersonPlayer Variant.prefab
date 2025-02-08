@@ -71,6 +71,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2148271877166492642, guid: 8089b5fe6d8304423814ff197221f77d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 9120388403519061381}
+    - targetCorrespondingSourceObject: {fileID: 2148271877166492642, guid: 8089b5fe6d8304423814ff197221f77d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2032274843597385660}
   m_SourcePrefab: {fileID: 100100000, guid: 8089b5fe6d8304423814ff197221f77d, type: 3}
 --- !u!1 &2811874411655571691 stripped
 GameObject:
@@ -89,3 +92,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e76e08c72fc6bf49ae34dc0c47fc73a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2032274843597385660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2811874411655571691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f0144ee9822974458455dbbcb5f5231, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uiManager: {fileID: 0}
+  audioSource: {fileID: 0}
+  gameIntro: {fileID: 0}
+  twominutespassed: {fileID: 0}
+  fourminutespassed: {fileID: 0}
+  sixminutespassed: {fileID: 0}
+  eightminutespassed: {fileID: 0}
+  oneMinuteLeft: {fileID: 0}
+  Objectivereached: {fileID: 0}
+  EnteredDaySceneFirstTime: {fileID: 0}
+  EnteredNightSceneFirstTime: {fileID: 0}
+  EnteredHurricaneSceneFirstTime: {fileID: 0}
+  SpawnedAlligator: {fileID: 0}
+  SpawnedToad: {fileID: 0}
+  SpawnedRabbit: {fileID: 0}
+  SpawnedBass: {fileID: 0}
+  status1: {fileID: 0}
+  ClickedSoundeffect: {fileID: 0}
+  BackSoundeffect: {fileID: 0}

@@ -51,6 +51,7 @@ MonoBehaviour:
   infoTodisplay: 
   TextBoxToReveal: {fileID: 7219356262732716591}
   CanvasBase: {fileID: 5769911627381553908}
+  interactAudio: {fileID: 667070739198947350}
 --- !u!54 &7018428640458346354
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -132,10 +133,10 @@ MonoBehaviour:
       - m_Target: {fileID: 9098085665024499910}
         m_TargetAssemblyTypeName: Infointraction, Assembly-CSharp
         m_MethodName: enableAll
-        m_Mode: 1
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 667070739198947350}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
