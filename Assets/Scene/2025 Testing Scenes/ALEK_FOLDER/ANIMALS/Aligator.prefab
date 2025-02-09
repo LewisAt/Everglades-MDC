@@ -235,9 +235,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4167928978787054714}
-  - component: {fileID: 2385457877710450459}
-  - component: {fileID: 1290621997989124349}
-  - component: {fileID: 8562795549707579033}
   m_Layer: 0
   m_Name: Aligator
   m_TagString: Untagged
@@ -255,7 +252,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 529, y: -59.74836, z: 785}
-  m_LocalScale: {x: 3.6880271, y: 3.6880271, z: 3.6880271}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4965197522255702965}
@@ -263,55 +260,6 @@ Transform:
   - {fileID: 6557762316712568009}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!195 &2385457877710450459
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 977044944434697257}
-  m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 2.61
-  m_Speed: 20
-  m_Acceleration: 20
-  avoidancePriority: 50
-  m_AngularSpeed: 240
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 0.84
-  m_BaseOffset: 0.24
-  m_WalkableMask: 9
-  m_ObstacleAvoidanceType: 0
---- !u!114 &1290621997989124349
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 977044944434697257}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b925aa83479fc6e4995a9ad32f238c6b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  navMeshMaskNumber: 0
-  MovementStrength: 100
-  waddle: 0
---- !u!114 &8562795549707579033
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 977044944434697257}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 419939a216dbc1a46a44a13ab2ea23a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2865345383321703600
 GameObject:
   m_ObjectHideFlags: 0

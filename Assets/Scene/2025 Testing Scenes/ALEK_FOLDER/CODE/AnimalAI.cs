@@ -1,75 +1,81 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.AI;
+using System.Collections;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System;
 
 public class AnimalAI : MonoBehaviour
 {
-    public Transform[] waypoints;  // Array of waypoints for movement
-    private int currentWaypointIndex = 0;
-    private NavMeshAgent agent;
+    public Transform waypointsParent;  // Parent object holding all waypoints
+    private List<Transform> waypoints = new List<Transform>(); // List to store waypoints
 
-    public float pauseTime = 40f; // Time to stop for player interaction
-    private bool isPaused = false;
-    private bool isInteracting = false; // Checks if player is interacting
+    public float moveSpeed = 3.5f;
+    public float stopDuration = 40f;
+
+    private int currentWaypointIndex = 0;
+    private bool movingForward = true;
+    private NavMeshAgent agent;
 
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
-        MoveToNextWaypoint();
-    }
+        agent.speed = moveSpeed;
 
-    void Update()
-    {
-        if (!isPaused && agent.remainingDistance < 1f && !agent.pathPending)
+        if (waypointsParent != null)
         {
-            StartCoroutine(PauseAtWaypoint());
+            foreach (Transform child in waypointsParent)
+            {
+                waypoints.Add(child);
+            }
+        }
+
+        if (waypoints.Count > 0)
+        {
+            agent.SetDestination(waypoints[currentWaypointIndex].position);
+            StartCoroutine(WaypointLoop());
         }
     }
 
-    IEnumerator PauseAtWaypoint()
+    private IEnumerator WaypointLoop()
     {
-        isPaused = true;
-        agent.isStopped = true;
-
-        yield return new WaitForSeconds(pauseTime);
-
-        if (!isInteracting) // Only move if player isn't interacting
+        while (true)
         {
-            MoveToNextWaypoint();
+            if (waypoints.Count == 0) yield break;
+
+            if (!agent.pathPending && agent.remainingDistance <= agent.stoppingDistance)
+            {
+                yield return new WaitForSeconds(stopDuration);
+
+                if (movingForward)
+                {
+                    currentWaypointIndex++;
+                    if (currentWaypointIndex >= waypoints.Count)
+                    {
+                        currentWaypointIndex = waypoints.Count - 2;
+                        movingForward = false;
+                    }
+                }
+                else
+                {
+                    currentWaypointIndex--;
+                    if (currentWaypointIndex < 0)
+                    {
+                        currentWaypointIndex = 1;
+                        movingForward = true;
+                    }
+                }
+
+                agent.SetDestination(waypoints[currentWaypointIndex].position);
+            }
+
+            yield return null;
         }
     }
 
-    void MoveToNextWaypoint()
+    public void MoveToPlayer(Vector3 position)
     {
-        if (waypoints.Length == 0) return;
-
-        agent.destination = waypoints[currentWaypointIndex].position;
-        currentWaypointIndex = (currentWaypointIndex + 1) % waypoints.Length;
-
-        agent.isStopped = false;
-        isPaused = false;
-    }
-
-    public void StartInteraction()
-    {
-        isInteracting = true;
-        agent.isStopped = true;
-    }
-
-    public void EndInteraction()
-    {
-        isInteracting = false;
-        MoveToNextWaypoint();
-    }
-
-    // 🔹 ADD THIS METHOD BELOW (New Method for Moving to Player)
-    public void MoveToPlayer(Vector3 targetPosition)
-    {
-        if (agent != null)
-        {
-            agent.isStopped = false;
-            agent.SetDestination(targetPosition);
-        }
+        StopAllCoroutines();
+        agent.SetDestination(position);
     }
 }
