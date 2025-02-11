@@ -7,12 +7,15 @@ public class Infointraction : MonoBehaviour
 {
     [TextArea(15, 20)]
     public string infoTodisplay;
-    public Text TextBoxToReveal;
+    public Text textBoxToReveal;
+    public GameObject canvasBase;
+    public AudioSource interactAudio;
+    //controls how high the info canvas appears above a given object. Assign in the inspector.
+    public float canvasPopupHeight = 5f; 
+
     private GameObject canvasParent;
     private Vector3 initalPositionInsideOfParent;
     private Vector3 worldPosition;  
-    public GameObject CanvasBase;
-    public AudioSource interactAudio;
     private GameObject player;
 
     //Added this static to store the most recent instance of interaction dialogue
@@ -20,10 +23,10 @@ public class Infointraction : MonoBehaviour
 
     private void Awake()
     {
-        canvasParent = CanvasBase.transform.parent.gameObject;
-        initalPositionInsideOfParent = CanvasBase.transform.localPosition;
-        worldPosition = CanvasBase.transform.position;
-        CanvasBase.SetActive(false);
+        canvasParent = canvasBase.transform.parent.gameObject;
+        initalPositionInsideOfParent = canvasBase.transform.localPosition;
+        worldPosition = canvasBase.transform.position;
+        canvasBase.SetActive(false);
         player = Camera.main.gameObject;
 
     }
@@ -39,11 +42,11 @@ public class Infointraction : MonoBehaviour
         /* enables the base canvas and sets the text box to the string
          * then starts the disable coroutine that will disable the canvas after 15 seconds
          */
-        if(CanvasBase.activeSelf)//checks if the canvas is already active we do this at start to avoid the canvas being active at the start of the game
+        if(canvasBase.activeSelf)//checks if the canvas is already active we do this at start to avoid the canvas being active at the start of the game
         {//This also allows player to toggle off an interaction dialogue by interacting again
-            CanvasBase.SetActive(false);
-            CanvasBase.transform.parent = canvasParent.transform;
-            CanvasBase.transform.localPosition = initalPositionInsideOfParent;
+            canvasBase.SetActive(false);
+            canvasBase.transform.parent = canvasParent.transform;
+            canvasBase.transform.localPosition = initalPositionInsideOfParent;
             return;
         }
         if (thereCanOnlyBeOne != null)
@@ -55,17 +58,18 @@ public class Infointraction : MonoBehaviour
         //assign the new interaction
         thereCanOnlyBeOne = thisAudio.gameObject;
 
-        CanvasBase.transform.parent = null;
-        CanvasBase.transform.position = canvasParent.transform.position + new Vector3(0,50,0);
+        //unparent the canvas and set its dynamic height
+        canvasBase.transform.parent = null;
+        canvasBase.transform.position = canvasParent.transform.position + new Vector3(0,canvasPopupHeight,0);
 
         AddItemToChecklist(this.gameObject.tag);
-        CanvasBase.SetActive(true);
-        TextBoxToReveal.text = infoTodisplay;
+        canvasBase.SetActive(true);
+        textBoxToReveal.text = infoTodisplay;
         StartCoroutine(Disable());
     }
     private void FixedUpdate()
     {
-        if (CanvasBase.activeSelf)
+        if (canvasBase.activeSelf)
         {
             LockInfoPanel();
 
@@ -74,11 +78,11 @@ public class Infointraction : MonoBehaviour
     IEnumerator Disable()
     {
         yield return new WaitForSeconds(60);
-        if(CanvasBase.activeSelf)
+        if(canvasBase.activeSelf)
         {
-            CanvasBase.SetActive(false);
-            CanvasBase.transform.parent = canvasParent.transform;
-            CanvasBase.transform.localPosition = initalPositionInsideOfParent;
+            canvasBase.SetActive(false);
+            canvasBase.transform.parent = canvasParent.transform;
+            canvasBase.transform.localPosition = initalPositionInsideOfParent;
         }
     }
     private void LockInfoPanel()
@@ -89,14 +93,14 @@ public class Infointraction : MonoBehaviour
         it also keeps the settings panel facing the player
         and lastly it will keep the settings panel at a fixed distance from the playe
         */
-        if (CanvasBase.activeSelf == false)
+        if (canvasBase.activeSelf == false)
         {
             return;
         }
 
 
-        Quaternion Lookrotation = Quaternion.LookRotation(CanvasBase.transform.position - player.transform.position, Vector3.up);
-        CanvasBase.transform.rotation = Lookrotation;
+        Quaternion Lookrotation = Quaternion.LookRotation(canvasBase.transform.position - player.transform.position, Vector3.up);
+        canvasBase.transform.rotation = Lookrotation;
     }
 
     private void AddItemToChecklist(string itemName)
