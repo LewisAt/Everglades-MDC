@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 1784187146934487856}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 103.575775, y: 60.128983, z: 1256.7268}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -49,9 +49,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   infoTodisplay: 
-  TextBoxToReveal: {fileID: 7219356262732716591}
-  CanvasBase: {fileID: 5769911627381553908}
+  textBoxToReveal: {fileID: 0}
+  canvasBase: {fileID: 0}
   interactAudio: {fileID: 667070739198947350}
+  canvasPopupHeight: 5
 --- !u!54 &7018428640458346354
 Rigidbody:
   m_ObjectHideFlags: 0
