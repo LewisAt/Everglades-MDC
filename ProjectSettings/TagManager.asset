@@ -16,6 +16,7 @@ TagManager:
   - Oil
   - Animal Pool
   - Mangrove
+  - Skybox
   layers:
   - Default
   - TransparentFX
