@@ -241,20 +241,6 @@
         {
             "m_OutputSlot": {
                 "m_Node": {
-                    "m_Id": "6289221da79f40ea804ec889d93b2590"
-                },
-                "m_SlotId": 0
-            },
-            "m_InputSlot": {
-                "m_Node": {
-                    "m_Id": "be4989711d2a46e7ac3b6fab51bca91c"
-                },
-                "m_SlotId": 1
-            }
-        },
-        {
-            "m_OutputSlot": {
-                "m_Node": {
                     "m_Id": "97ff4fa441974f10933c78a409208d02"
                 },
                 "m_SlotId": 0
@@ -291,7 +277,7 @@
                 "m_Node": {
                     "m_Id": "be4989711d2a46e7ac3b6fab51bca91c"
                 },
-                "m_SlotId": 2
+                "m_SlotId": 1
             }
         },
         {
@@ -847,10 +833,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 766.3999633789063,
-            "y": 1225.5999755859375,
-            "width": 208.0001220703125,
-            "height": 325.5999755859375
+            "x": 706.4999389648438,
+            "y": 1246.4998779296875,
+            "width": 208.0,
+            "height": 326.0
         }
     },
     "m_Slots": [
@@ -2287,10 +2273,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 748.7999877929688,
-            "y": -242.39999389648438,
-            "width": 208.0001220703125,
-            "height": 325.5999755859375
+            "x": 753.0,
+            "y": -205.49996948242188,
+            "width": 208.0,
+            "height": 325.99993896484377
         }
     },
     "m_Slots": [
@@ -2514,10 +2500,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 1069.37353515625,
-            "y": 1605.5150146484375,
-            "width": 0.0,
-            "height": 0.0
+            "x": 1111.0,
+            "y": 1540.5,
+            "width": 208.0,
+            "height": 326.0001220703125
         }
     },
     "m_Slots": [
