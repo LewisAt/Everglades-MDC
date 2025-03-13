@@ -4,6 +4,7 @@
 
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -35,6 +36,8 @@ public class GameDataManager : MonoBehaviour
     //...but this is what you access the data through
     private Dictionary<string, DataValues> dataDictionary = new();
 
+    [HideInInspector] public int trashRemaining = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -55,5 +58,9 @@ public class GameDataManager : MonoBehaviour
 
             tempStruct.checklistToggle.isOn = true;
         }
+
+        //set trash remaining to amount of trash in scene
+        trashRemaining = GameObject.FindGameObjectsWithTag("trash").Length;
+        Debug.Log("Trash in scene: " + trashRemaining);
     }
 }
