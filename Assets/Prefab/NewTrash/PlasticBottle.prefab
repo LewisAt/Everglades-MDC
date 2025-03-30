@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6589901323602310228}
   m_Layer: 0
   m_Name: Bottle
-  m_TagString: Untagged
+  m_TagString: trash
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -118,7 +118,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 586829117427854024, guid: 571b351f0dae9a740bf17e4e18f1ed5a, type: 3}
       propertyPath: m_Name
-      value: PlasticBottle Variant
+      value: PlasticBottle
       objectReference: {fileID: 0}
     - target: {fileID: 5476063472665219180, guid: 571b351f0dae9a740bf17e4e18f1ed5a, type: 3}
       propertyPath: m_LocalPosition.x
