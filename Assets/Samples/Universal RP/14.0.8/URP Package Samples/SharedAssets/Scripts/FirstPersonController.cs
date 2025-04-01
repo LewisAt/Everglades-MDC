@@ -5,7 +5,10 @@ using Cursor = UnityEngine.Cursor;
 public class FirstPersonController : MonoBehaviour
 {
     [SerializeField] private float m_MouseSensitivity = 100f;
-    [SerializeField] private float m_MovementSpeed = 5f;
+    [SerializeField] private float m_WalkSpeed = 5f;
+    [SerializeField] private float m_RunSpeed = 10f;
+    [SerializeField] private float m_Gravity = 8f;
+
     [SerializeField] private Transform m_PlayerCamera = null;
     [SerializeField] private bool m_MoveWithMouse = true;
 
@@ -13,12 +16,20 @@ public class FirstPersonController : MonoBehaviour
     private float m_XRotation = 0f;
     private byte m_ButtonMovementFlags;
 
+    //anim & sound variables
+    public Animator playerAnims;
+    public AudioSource playerSound;
+    public AudioClip[] footstepClips;
+    public float basePSoundPitch;
+    public float basePSoundVolume;
+
     // 🔹 Animal Call System Variables
     public AnimalAI[] animals; // Assign all 8 animal objects here
     public GameObject spawnMarkerPrefab; // Assign the circular spawn marker prefab
     private GameObject currentSpawnMarker;
     private int selectedAnimalIndex = -1;
     private bool isHoldingKey = false;
+
 
     void Start()
     {
@@ -50,7 +61,22 @@ public class FirstPersonController : MonoBehaviour
     {
         Vector3 movementInput = GetMovementInput();
         Vector3 move = transform.right * movementInput.x + transform.forward * movementInput.z;
-        m_CharacterController.Move(move * m_MovementSpeed * Time.deltaTime);
+
+        //add gravity
+        if (!m_CharacterController.isGrounded)
+        {
+            move.y -= m_Gravity * Time.deltaTime;
+        }
+
+        //shift to run
+        if (Input.GetKey(KeyCode.LeftShift))
+        {//apply run speed
+            m_CharacterController.Move(move * m_RunSpeed * Time.deltaTime);
+        }
+        else
+        {//or apply walk speed
+            m_CharacterController.Move(move * m_WalkSpeed * Time.deltaTime);
+        }
     }
 
     private Vector2 GetLookInput()
@@ -74,7 +100,32 @@ public class FirstPersonController : MonoBehaviour
             x = Input.GetAxis("Horizontal");
             z = Input.GetAxis("Vertical");
         }
+
+        //set animation
+        if (x != 0 || z != 0)
+        {
+            playerAnims.SetBool("IsWalking", true); 
+        }
+        else
+        {
+            playerAnims.SetBool("IsWalking", false);
+        }
         return new Vector3(x, 0, z);
+    }
+
+    //method to pick a footstep sound and add variation to it at runtime
+    public void FootstepSound()
+    {
+        if (footstepClips.Length > 0)
+        {
+            //pick a random footstep sound
+            playerSound.clip = footstepClips[Random.Range(0, footstepClips.Length)];
+            //adjust volume and pitch just slightly
+            playerSound.pitch = basePSoundPitch + Random.Range(-0.1f, 0.1f);
+            playerSound.volume = basePSoundVolume + Random.Range(0, -0.5f);
+
+            playerSound.Play();
+        }
     }
 
     // 🔹 Animal Call System (Integrated)
