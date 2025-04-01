@@ -640,7 +640,7 @@
     "hlslDeclarationOverride": 0,
     "m_Hidden": false,
     "m_Value": {
-        "m_SerializedCubemap": "{\"cubemap\":{\"fileID\":8900000,\"guid\":\"8a293ce833d584fc98516e0e74f495a4\",\"type\":3}}",
+        "m_SerializedCubemap": "{\"cubemap\":{\"fileID\":8900000,\"guid\":\"d4c8dc343ae5d4673b7720ffdb1ddf00\",\"type\":3}}",
         "m_Guid": ""
     },
     "m_Modifiable": true
@@ -1643,10 +1643,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -452.79998779296877,
-            "y": 1089.5999755859375,
-            "width": 193.60003662109376,
-            "height": 33.5999755859375
+            "x": -452.99993896484377,
+            "y": 1088.0,
+            "width": 194.0,
+            "height": 34.0
         }
     },
     "m_Slots": [
@@ -1923,7 +1923,7 @@
     "hlslDeclarationOverride": 0,
     "m_Hidden": false,
     "m_Value": {
-        "m_SerializedCubemap": "{\"cubemap\":{\"fileID\":8900000,\"guid\":\"c8f21f62fdb3e43c5b32917c84683698\",\"type\":3}}",
+        "m_SerializedCubemap": "{\"cubemap\":{\"fileID\":8900000,\"guid\":\"762f22ba43541df4e95e0e7126e8d96c\",\"type\":3}}",
         "m_Guid": ""
     },
     "m_Modifiable": true
@@ -2872,7 +2872,7 @@
     "hlslDeclarationOverride": 0,
     "m_Hidden": false,
     "m_Value": {
-        "m_SerializedCubemap": "{\"cubemap\":{\"fileID\":8900000,\"guid\":\"34a763168147f4182a21b9fd004d67de\",\"type\":3}}",
+        "m_SerializedCubemap": "{\"cubemap\":{\"fileID\":8900000,\"guid\":\"97259d0c0ea9f491692be825da27978a\",\"type\":3}}",
         "m_Guid": ""
     },
     "m_Modifiable": true
