@@ -1,118 +1,97 @@
-﻿
+﻿using System.Collections; // ✅ Required for IEnumerator
 using UnityEngine;
 
 public class HurricaneTrigger : MonoBehaviour
 {
-    [Header("Player Reference")]
-    public Transform player;
 
-    [Header("Rain System Controller")]
-    public RainFollowPlayer rainFollowPlayer; // Drag your RainFollowPlayer script here
+    [Header("🎯 Player Tag Trigger")]
+    public string playerTag = "Player";
 
-    [Header("Skybox Material")]
+    [Header("🌤 Skybox Settings")]
     public Material skyboxMaterial;
-    public string hurricaneBlendProperty = "_HurricaneBlendFactor";
+    public float hurricaneDuration = 210f; // 3:30 mins
+    public float fadeOutTime = 45f; // Last 45s fades out
+    public float hurricaneBlendStart = 1f;
+    public float hurricaneBlendEnd = 0f;
 
-    [Header("Sound Sources")]
-    public AudioSource rainSound;
-    public AudioSource windSound;
+    [Header("🌧 Particle Effects")]
+    public ParticleSystem rainParticles;
+    public ParticleSystem rippleParticles;
+    public ParticleSystem splashParticles;
 
-    [Header("Raycast Settings")]
-    public float rayDistance = 100f; // How far to raycast
-    public LayerMask hurricaneTriggerLayer; // Make sure your empty object is on this layer
-
-    [Header("Hurricane Settings")]
-    public float triggerDistance = 30f;      // Starts effect
-    public float fullStormDistance = 5f;     // Max intensity
-    public float hurricaneDuration = 120f;   // Total time
+    [Header("🎧 Audio Sources")]
+    public AudioSource rainAudio;
+    public AudioSource windAudio;
+    public float maxRainVolume = 1f;
+    public float maxWindVolume = 0.8f;
 
     private bool hurricaneActive = false;
-    private bool hurricaneTimerStarted = false;
-    private float hurricaneTimer = 0f;
 
-    void Update()
+    void OnTriggerEnter(Collider other)
     {
-        Ray ray = new Ray(player.position + Vector3.up * 1.5f, player.forward);
-        RaycastHit hit;
+        // ✅ Trigger only once by player
+        if (hurricaneActive) return;
 
-        if (Physics.Raycast(ray, out hit, rayDistance, hurricaneTriggerLayer))
+        if (other.CompareTag(playerTag))
         {
-            float distance = Vector3.Distance(player.position, hit.point);
-
-            float t = Mathf.InverseLerp(triggerDistance, fullStormDistance, distance);
-            float hurricaneBlend = 1f - t; // 0 far → 1 close
-
-            // Apply to skybox
-            if (skyboxMaterial.HasProperty(hurricaneBlendProperty))
-            {
-                skyboxMaterial.SetFloat(hurricaneBlendProperty, hurricaneBlend);
-            }
-
-            // Rain strength
-            if (rainFollowPlayer != null)
-            {
-                rainFollowPlayer.SetRainIntensity(hurricaneBlend);
-            }
-
-            // Audio volumes
-            if (rainSound != null) rainSound.volume = hurricaneBlend * 0.8f;
-            if (windSound != null) windSound.volume = hurricaneBlend * 0.7f;
-
-            // Hurricane fully triggered
-            if (hurricaneBlend >= 1f && !hurricaneTimerStarted)
-            {
-                StartHurricane();
-            }
-        }
-
-        if (hurricaneTimerStarted)
-        {
-            hurricaneTimer -= Time.deltaTime;
-
-            // Begin soft fade after 50 seconds
-            float fadeStart = hurricaneDuration - 50f;
-            if (hurricaneTimer <= fadeStart)
-            {
-                float fadeProgress = Mathf.InverseLerp(fadeStart, 0f, hurricaneTimer);
-                float inverseFade = 1f - fadeProgress;
-
-                if (skyboxMaterial.HasProperty(hurricaneBlendProperty))
-                    skyboxMaterial.SetFloat(hurricaneBlendProperty, inverseFade);
-
-                if (rainFollowPlayer != null)
-                    rainFollowPlayer.SetRainIntensity(inverseFade);
-
-                if (rainSound != null) rainSound.volume = inverseFade * 0.8f;
-                if (windSound != null) windSound.volume = inverseFade * 0.7f;
-            }
-
-            if (hurricaneTimer <= 0f)
-            {
-                EndHurricane();
-            }
+            StartCoroutine(StartHurricane());
         }
     }
 
-    void StartHurricane()
+    IEnumerator StartHurricane()
     {
-        hurricaneTimerStarted = true;
-        hurricaneTimer = hurricaneDuration;
-        Debug.Log("Hurricane sequence started!");
-    }
+        hurricaneActive = true;
 
-    void EndHurricane()
-    {
-        hurricaneTimerStarted = false;
-        Debug.Log("Hurricane finished.");
+        // 🌩 Set skybox storm mode
+        if (skyboxMaterial != null)
+            skyboxMaterial.SetFloat("_HurricaneBlendFactor", hurricaneBlendStart);
 
-        if (skyboxMaterial.HasProperty(hurricaneBlendProperty))
-            skyboxMaterial.SetFloat(hurricaneBlendProperty, 0f);
+        // 🎧 Start storm audio
+        if (rainAudio != null) rainAudio.volume = maxRainVolume;
+        if (windAudio != null) windAudio.volume = maxWindVolume;
+        if (rainAudio != null) rainAudio.Play();
+        if (windAudio != null) windAudio.Play();
 
-        if (rainFollowPlayer != null)
-            rainFollowPlayer.SetRainIntensity(0f);
+        // 🌧 Start storm particles
+        if (rainParticles != null) rainParticles.Play();
+        if (rippleParticles != null) rippleParticles.Play();
+        if (splashParticles != null) splashParticles.Play();
 
-        if (rainSound != null) rainSound.volume = 0f;
-        if (windSound != null) windSound.volume = 0f;
+        // 🕒 Wait for hurricane duration minus fade time
+        float waitTime = hurricaneDuration - fadeOutTime;
+        yield return new WaitForSeconds(waitTime);
+
+        // ⏳ Start fading out everything
+        float elapsedTime = 0f;
+        while (elapsedTime < fadeOutTime)
+        {
+            float t = elapsedTime / fadeOutTime;
+
+            // 🌤 Blend storm skybox back to clear
+            float hurricaneBlend = Mathf.Lerp(hurricaneBlendStart, hurricaneBlendEnd, t);
+            if (skyboxMaterial != null)
+                skyboxMaterial.SetFloat("_HurricaneBlendFactor", hurricaneBlend);
+
+            // 🎧 Fade audio down
+            if (rainAudio != null)
+                rainAudio.volume = Mathf.Lerp(maxRainVolume, 0f, t);
+            if (windAudio != null)
+                windAudio.volume = Mathf.Lerp(maxWindVolume, 0f, t);
+
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
+
+        // ❌ Stop sounds and effects
+        if (rainAudio != null) rainAudio.Stop();
+        if (windAudio != null) windAudio.Stop();
+
+        if (rainParticles != null) rainParticles.Stop();
+        if (rippleParticles != null) rippleParticles.Stop();
+        if (splashParticles != null) splashParticles.Stop();
+
+        // 🌤 Ensure sky is back to normal
+        if (skyboxMaterial != null)
+            skyboxMaterial.SetFloat("_HurricaneBlendFactor", hurricaneBlendEnd);
     }
 }
-

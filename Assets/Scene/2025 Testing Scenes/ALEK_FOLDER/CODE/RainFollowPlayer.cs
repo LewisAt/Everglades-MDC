@@ -1,78 +1,76 @@
-
+﻿
 using UnityEngine;
 
 public class RainFollowPlayer : MonoBehaviour
 {
-    [Header("Player Reference")]
-    public Transform player;
+    [Header("🧍‍♂️ Player Reference")]
+    public Transform player; // Assign your FirstPersonPCPlayer here
 
-    [Header("Rain Particle Systems")]
-    public ParticleSystem rainSystem;        // Main falling rain
-    public ParticleSystem rippleSystem;      // Ripples on ground
-    public ParticleSystem splashSystem;      // Splashes on impact
+    [Header("☔ Rain Effects")]
+    public ParticleSystem rainParticles;
+    public ParticleSystem rippleParticles;
+    public ParticleSystem splashParticles;
 
-    [Header("Offset Settings")]
-    public Vector3 offset = new Vector3(0, 4f, 0); // Offset above player head
+    [Header("🎧 Rain & Wind Audio")]
+    public AudioSource rainAudio;
+    public AudioSource windAudio;
 
-    void Start()
+    [Header("📍 Follow Settings")]
+    public Vector3 rainOffset = new Vector3(0, 5f, 0); // Adjust height above player
+    public bool onlyFollowWhenRaining = true;
+
+    private bool isRaining = false;
+
+    void Update()
     {
-        if (rainSystem == null) rainSystem = GetComponent<ParticleSystem>();
-        rainSystem.Stop();
+        // 🎮 Trigger Rain with Key 8
+        if (Input.GetKeyDown(KeyCode.Alpha8))
+        {
+            StartRainEffect();
+        }
 
-        // Stop ripple and splash too
-        if (rippleSystem != null) rippleSystem.Stop();
-        if (splashSystem != null) splashSystem.Stop();
+        // ☀️ Stop Rain with Key 9
+        if (Input.GetKeyDown(KeyCode.Alpha9))
+        {
+            StopRainEffect();
+        }
+
+        // 🧍‍♂️ Always follow player
+        if (player != null && (!onlyFollowWhenRaining || isRaining))
+        {
+            transform.position = player.position + rainOffset;
+        }
     }
 
-    void LateUpdate()
+    void StartRainEffect()
     {
-        if (player != null)
-        {
-            transform.position = player.position + offset;
-        }
+        if (isRaining) return;
+
+        // 🌧 Start all rain effects
+        if (rainParticles != null) rainParticles.Play();
+        if (rippleParticles != null) rippleParticles.Play();
+        if (splashParticles != null) splashParticles.Play();
+
+        // 🔊 Enable audio
+        if (rainAudio != null) rainAudio.Play();
+        if (windAudio != null) windAudio.Play();
+
+        isRaining = true;
     }
 
-    /// <summary>
-    /// Controls rain, ripple, and splash intensity (0 = off, 1 = heavy)
-    /// </summary>
-    public void SetRainIntensity(float intensity)
+    void StopRainEffect()
     {
-        intensity = Mathf.Clamp01(intensity);
+        if (!isRaining) return;
 
-        // Main Rain
-        if (rainSystem != null)
-        {
-            var mainEmission = rainSystem.emission;
-            mainEmission.rateOverTime = intensity * 100f;
+        // ❌ Stop all rain effects
+        if (rainParticles != null) rainParticles.Stop();
+        if (rippleParticles != null) rippleParticles.Stop();
+        if (splashParticles != null) splashParticles.Stop();
 
-            if (intensity > 0f && !rainSystem.isPlaying)
-                rainSystem.Play();
-            else if (intensity == 0f && rainSystem.isPlaying)
-                rainSystem.Stop();
-        }
+        // 🔇 Stop audio
+        if (rainAudio != null) rainAudio.Stop();
+        if (windAudio != null) windAudio.Stop();
 
-        // Ripple
-        if (rippleSystem != null)
-        {
-            var rippleEmission = rippleSystem.emission;
-            rippleEmission.rateOverTime = intensity * 50f;
-
-            if (intensity > 0f && !rippleSystem.isPlaying)
-                rippleSystem.Play();
-            else if (intensity == 0f && rippleSystem.isPlaying)
-                rippleSystem.Stop();
-        }
-
-        // Splash
-        if (splashSystem != null)
-        {
-            var splashEmission = splashSystem.emission;
-            splashEmission.rateOverTime = intensity * 30f;
-
-            if (intensity > 0f && !splashSystem.isPlaying)
-                splashSystem.Play();
-            else if (intensity == 0f && splashSystem.isPlaying)
-                splashSystem.Stop();
-        }
+        isRaining = false;
     }
 }
