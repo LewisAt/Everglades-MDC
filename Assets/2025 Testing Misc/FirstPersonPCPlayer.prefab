@@ -343,9 +343,11 @@ MonoBehaviour:
   m_MoveWithMouse: 1
   playerAnims: {fileID: 5245976819969687954}
   playerSound: {fileID: 4339868074934329991}
-  footstepClips: []
-  basePSoundPitch: 1
-  basePSoundVolume: 1
+  footstepClips:
+  - {fileID: 8300000, guid: 2f916c0b48a9bf0468cae1a2baff94e3, type: 3}
+  - {fileID: 8300000, guid: 07b348d4369fae642bc3de932043cbc6, type: 3}
+  basePSoundPitch: 0.5
+  basePSoundVolume: 0.5
   animals: []
   spawnMarkerPrefab: {fileID: 0}
 --- !u!114 &8095747205864004818
