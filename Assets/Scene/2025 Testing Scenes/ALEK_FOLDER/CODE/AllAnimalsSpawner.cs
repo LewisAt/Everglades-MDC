@@ -1,11 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using System.Diagnostics;
-using UnityEngine;
+﻿using UnityEngine;
 
+/// <summary>
+/// Spawns animals via key press and allows them to begin walking using their AI.
+/// </summary>
 public class AllAnimalsSpawner : MonoBehaviour
 {
-    public Transform spawnPoint; // Assign an empty GameObject in front of the player
+    public Transform spawnPoint;
 
     public GameObject alligatorPrefab;
     public GameObject rabbitPrefab;
@@ -30,15 +30,17 @@ public class AllAnimalsSpawner : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha8)) SpawnAnimal(pythonPrefab);
     }
 
+    /// <summary>
+    /// Spawns an animal prefab at the spawn point and lets it walk via AI.
+    /// </summary>
     void SpawnAnimal(GameObject animalPrefab)
     {
         if (animalPrefab == null)
         {
-            UnityEngine.Debug.LogError("No prefab assigned for this animal!");
+            Debug.LogError("No prefab assigned for this animal!");
             return;
         }
 
-        // Destroy the previous animal before spawning a new one
         if (spawnedAnimal != null)
         {
             Destroy(spawnedAnimal);
@@ -46,11 +48,10 @@ public class AllAnimalsSpawner : MonoBehaviour
 
         spawnedAnimal = Instantiate(animalPrefab, spawnPoint.position, Quaternion.identity);
 
-        // Move the spawned animal using its AI script
         AnimalAI ai = spawnedAnimal.GetComponent<AnimalAI>();
         if (ai != null)
         {
-            ai.MoveToPlayer(spawnPoint.position);
+            ai.ResumeWalking(); // start walking
         }
     }
 }
