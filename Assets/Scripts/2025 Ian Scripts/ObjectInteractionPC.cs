@@ -9,7 +9,8 @@ public class ObjectInteractionPC : MonoBehaviour
 
     private PCControls inputActions;
     public Transform grabPoint;
-    private GameObject trashObject;
+    [HideInInspector]
+    public GameObject trashObject;
     private bool hasTrash = false;
 
     private void Awake()

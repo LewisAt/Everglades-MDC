@@ -40,6 +40,8 @@ public class GameDataManager : MonoBehaviour
 
     [HideInInspector] public int trashRemaining = 0;
 
+    private bool allChecklistFilled = true;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -94,7 +96,8 @@ public class GameDataManager : MonoBehaviour
 
     private void ParseChecklist()
     {
-        bool allChecklistFilled = true;
+        //reset to true before checking if it should be false
+        allChecklistFilled = true;
         foreach( DataValues value in dataDictionary.Values)
         {
             if (value.checklistToggle.isOn != true)
@@ -102,7 +105,7 @@ public class GameDataManager : MonoBehaviour
                 allChecklistFilled = false;
             }
         }
-        if (allChecklistFilled == true)
+        if (allChecklistFilled && trashRemaining <= 0)
         {
             IanUIController.Instance.GameWin();
         }
@@ -112,5 +115,9 @@ public class GameDataManager : MonoBehaviour
     {
         trashRemaining--;
         IanUIController.Instance.trashSlider.value = trashRemaining;
+        if (trashRemaining <= 0 && allChecklistFilled)
+        {
+            IanUIController.Instance.GameWin();
+        }
     }
 }
