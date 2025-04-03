@@ -5,6 +5,7 @@
 //Let's pray: God, bless this script, and may our syntax ever be consistent. May our comments be informative, unless it is your will that our code confound the evil one.
 using System.Collections;
 using System.Collections.Generic;
+using System.Data.Common;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
@@ -50,6 +51,15 @@ public class GameDataManager : MonoBehaviour
             dataDictionary[pair.nameTag] = pair.gameData;
         }
 
+        //Set up initial values for animal sliders
+        foreach(DataValues value in dataDictionary.Values)
+        {
+            int count = GameObject.FindGameObjectsWithTag(value.spawnPrefab.tag).Length;
+            //this doesn't do anything about "ideal" population values
+            value.populationSlider.maxValue = count;
+            value.populationSlider.value = count;
+        }
+
         //FIXME: test access the values
         if (dataDictionary.ContainsKey("Alligator"))
         {
@@ -62,10 +72,45 @@ public class GameDataManager : MonoBehaviour
 
         //set trash remaining to amount of trash in scene
         trashRemaining = GameObject.FindGameObjectsWithTag("trash").Length;
+        IanUIController.Instance.trashSlider.maxValue = trashRemaining;
+        IanUIController.Instance.trashSlider.value = trashRemaining;
         Debug.Log("Trash in scene: " + trashRemaining);
     }
 
+    //call this when interactive with objects to record them
+    public void FillChecklist(string objectTag)
+    {
+        if (dataDictionary.ContainsKey(objectTag))
+        {
+            DataValues tempStruct = dataDictionary[objectTag];
+            tempStruct.checklistToggle.isOn = true;
+            ParseChecklist();
+        }
+        else
+        {
+            Debug.LogError("Invalid tag: " + objectTag);
+        }
+    }
 
+    private void ParseChecklist()
+    {
+        bool allChecklistFilled = true;
+        foreach( DataValues value in dataDictionary.Values)
+        {
+            if (value.checklistToggle.isOn != true)
+            {
+                allChecklistFilled = false;
+            }
+        }
+        if (allChecklistFilled == true)
+        {
+            IanUIController.Instance.GameWin();
+        }
+    }
 
-
+    public void ReduceTrash()
+    {
+        trashRemaining--;
+        IanUIController.Instance.trashSlider.value = trashRemaining;
+    }
 }

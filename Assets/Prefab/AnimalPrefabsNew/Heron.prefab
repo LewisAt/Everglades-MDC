@@ -447,7 +447,7 @@ GameObject:
   - component: {fileID: 8335309187549596900}
   m_Layer: 0
   m_Name: InteractableObject
-  m_TagString: Aligator
+  m_TagString: Heron
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1002,7 +1002,7 @@ GameObject:
   - component: {fileID: 5610510976574766089}
   m_Layer: 0
   m_Name: Heron
-  m_TagString: Untagged
+  m_TagString: Heron
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

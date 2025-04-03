@@ -4,6 +4,7 @@ using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class IanUIController : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class IanUIController : MonoBehaviour
     public static IanUIController Instance;
     public GameObject pauseMenu, winGameButton;
 
+    public Slider trashSlider;
 
     // Start is called before the first frame update
     void Start()
@@ -19,17 +21,29 @@ public class IanUIController : MonoBehaviour
         Instance = this;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-
     //toggle for pause menu
     public void PauseMenuToggle()
     {
+        if (pauseMenu.activeSelf)
+        {//unpause
+            Time.timeScale = 1;
+            StartCoroutine(LockCursor());
+            pauseMenu.SetActive(false);
+        }
+        else
+        {//pause
+            Time.timeScale = 0;
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+            pauseMenu.SetActive(true);
+        }
+    }
 
+    private IEnumerator LockCursor()
+    {//locks cursor one frame after you unpause the game. This just helps with stuff
+        yield return new WaitForEndOfFrame();
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
     public void GameWin()

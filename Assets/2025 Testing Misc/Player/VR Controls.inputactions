@@ -1,0 +1,34 @@
+{
+    "name": "VR Controls",
+    "maps": [
+        {
+            "name": "In Game Controls",
+            "id": "a756c0c4-073b-4bc4-b19f-17678fc82d0d",
+            "actions": [
+                {
+                    "name": "LeftHandToggle",
+                    "type": "Button",
+                    "id": "9ac03a3e-135d-433f-80a7-afdf28f77046",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "ae43be19-f484-49b0-828b-5273c57ffeac",
+                    "path": "<XRController>/primaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LeftHandToggle",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

@@ -17,6 +17,10 @@ TagManager:
   - Animal Pool
   - Mangrove
   - Skybox
+  - Egret
+  - Heron
+  - Opossum
+  - Trash
   layers:
   - Default
   - TransparentFX

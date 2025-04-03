@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3829018841287515950}
   m_Layer: 0
   m_Name: TrashPile
-  m_TagString: Untagged
+  m_TagString: Trash
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -773,7 +773,7 @@ GameObject:
   - component: {fileID: 6779609513156526819}
   m_Layer: 0
   m_Name: InteractableObject
-  m_TagString: trash
+  m_TagString: Trash
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

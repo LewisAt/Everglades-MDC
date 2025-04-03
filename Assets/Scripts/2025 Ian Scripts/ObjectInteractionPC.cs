@@ -8,6 +8,9 @@ public class ObjectInteractionPC : MonoBehaviour
 {
 
     private PCControls inputActions;
+    public Transform grabPoint;
+    private GameObject trashObject;
+    private bool hasTrash = false;
 
     private void Awake()
     {
@@ -18,38 +21,72 @@ public class ObjectInteractionPC : MonoBehaviour
     {
         inputActions.InGameControls.Interact.performed += OnClick;
         inputActions.InGameControls.Enable();
+        inputActions.InGameControls.Pause.performed += OnPauseInput;
+        inputActions.InGameControls.Enable();
     }
+
     private void OnDisable()
     {
         inputActions.InGameControls.Interact.performed -= OnClick;
+        inputActions.InGameControls.Disable();
+        inputActions.InGameControls.Pause.performed -= OnPauseInput;
         inputActions.InGameControls.Disable();
     }
 
     private void OnClick(InputAction.CallbackContext context)
     {//this should do everything that the VR version does when interacting
-        RaycastHit hit;
-        Debug.DrawRay(Camera.main.transform.position, Camera.main.transform.forward * 10, Color.red, 3f);
-        if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit, 20f))
+        if (hasTrash || trashObject != null)
         {
-            Debug.Log("RaycastTest");
-            if (hit.collider.gameObject.TryGetComponent(out Infointraction interaction))
+            trashObject.transform.parent = null;
+            trashObject.GetComponent<Rigidbody>().isKinematic = false;
+
+            trashObject = null;
+            hasTrash = false;
+        }
+        else
+        {
+            RaycastHit hit;
+            Debug.DrawRay(Camera.main.transform.position, Camera.main.transform.forward * 10, Color.red, 3f);
+            if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit, 20f))
             {
-                Debug.Log("PC player clicked " + interaction.name);
+                Debug.Log("RaycastTest");
+                if (hit.collider.gameObject.TryGetComponent(out Infointraction interaction) && Time.timeScale != 0)
+                {
+                    Debug.Log("PC player clicked " + interaction.name);
 
-                //enable infographic panel
-                interaction.enableAll();
+                    //enable infographic panel
+                    interaction.enableAll();
 
-                AudioSource audio = interaction.interactAudio;
-                if (audio != null)
-                {//play info audio
-                    Debug.Log("AudioSource found!");
-                    audio.Play();
+                    AudioSource audio = interaction.interactAudio;
+                    if (audio != null)
+                    {//play info audio
+                        Debug.Log("AudioSource found!");
+                        audio.Play();
+                    }
+                    Debug.Log("PC interact success!");
+
+                    //Add interacted item to checklist
+                    GameDataManager.Instance.FillChecklist(interaction.tag);
                 }
-                Debug.Log("PC interact success!");
+                //lowercase T "trash" is used for the small interactive trash objects
+                else if (hit.collider.tag == "trash")
+                {
+                    trashObject = hit.collider.gameObject;
+                    trashObject.transform.parent = grabPoint;
+                    trashObject.transform.localPosition = Vector3.zero;
+                    trashObject.transform.localRotation = grabPoint.localRotation;
 
-                //It is here you can interact with the GameDataManager
+                    trashObject.GetComponent<Rigidbody>().isKinematic = true;
 
+                    hasTrash = true;
+                }
             }
         }
+    }
+
+    //pause input
+    private void OnPauseInput(InputAction.CallbackContext context)
+    {
+        IanUIController.Instance.PauseMenuToggle();
     }
 }
