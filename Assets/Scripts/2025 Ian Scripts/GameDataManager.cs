@@ -1,7 +1,8 @@
 //Ian Marshburn
 //Script handles game data management
 //This includes storing important UI to be updated, objects to spawn, and the number and name of those objects
-
+//We're spitballing these functions real quick
+//Let's pray: God, bless this script, and may our syntax ever be consistent. May our comments be informative, unless it is your will that our code confound the evil one.
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -63,4 +64,8 @@ public class GameDataManager : MonoBehaviour
         trashRemaining = GameObject.FindGameObjectsWithTag("trash").Length;
         Debug.Log("Trash in scene: " + trashRemaining);
     }
+
+
+
+
 }

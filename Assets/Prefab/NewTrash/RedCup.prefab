@@ -104,7 +104,7 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 5
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: -1
   m_Mesh: {fileID: -8566773912307770976, guid: ac7a546de2cb9fa4ab4559ea3415c24b, type: 3}
 --- !u!1001 &1550953354374954774
 PrefabInstance:
@@ -119,16 +119,28 @@ PrefabInstance:
       value: RedCup
       objectReference: {fileID: 0}
     - target: {fileID: 5476063472665219180, guid: 571b351f0dae9a740bf17e4e18f1ed5a, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5476063472665219180, guid: 571b351f0dae9a740bf17e4e18f1ed5a, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5476063472665219180, guid: 571b351f0dae9a740bf17e4e18f1ed5a, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5476063472665219180, guid: 571b351f0dae9a740bf17e4e18f1ed5a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 9.34363
       objectReference: {fileID: 0}
     - target: {fileID: 5476063472665219180, guid: 571b351f0dae9a740bf17e4e18f1ed5a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.025
+      value: 0.1253
       objectReference: {fileID: 0}
     - target: {fileID: 5476063472665219180, guid: 571b351f0dae9a740bf17e4e18f1ed5a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -22.039425
       objectReference: {fileID: 0}
     - target: {fileID: 5476063472665219180, guid: 571b351f0dae9a740bf17e4e18f1ed5a, type: 3}
       propertyPath: m_LocalRotation.w

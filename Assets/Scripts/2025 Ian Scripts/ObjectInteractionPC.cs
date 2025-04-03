@@ -46,6 +46,9 @@ public class ObjectInteractionPC : MonoBehaviour
                     audio.Play();
                 }
                 Debug.Log("PC interact success!");
+
+                //It is here you can interact with the GameDataManager
+
             }
         }
     }

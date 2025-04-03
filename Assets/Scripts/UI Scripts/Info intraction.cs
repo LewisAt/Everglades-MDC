@@ -77,6 +77,7 @@ public class Infointraction : MonoBehaviour
     }
     IEnumerator Disable()
     {
+        //ALEKS! Here is where you could put a call to make an animal go Idle
         yield return new WaitForSeconds(60);
         if(canvasBase.activeSelf)
         {
@@ -84,6 +85,7 @@ public class Infointraction : MonoBehaviour
             canvasBase.transform.parent = canvasParent.transform;
             canvasBase.transform.localPosition = initalPositionInsideOfParent;
         }
+        //ALEKS! And here is where you could put a call to make an animal start walking again
     }
     private void LockInfoPanel()
     {
