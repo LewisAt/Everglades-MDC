@@ -546,6 +546,7 @@ GameObject:
   - component: {fileID: 3555368749762111925}
   - component: {fileID: 7400908269883293163}
   - component: {fileID: 5139077114184059995}
+  - component: {fileID: 9142026424314532448}
   m_Layer: 0
   m_Name: MangroveTerrainTree
   m_TagString: Untagged
@@ -622,6 +623,22 @@ MonoBehaviour:
   m_IgnoreFromBuild: 0
   m_ApplyToChildren: 1
   m_AffectedAgents: ffffffff
+--- !u!208 &9142026424314532448
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6796127754039345179}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 0
+  m_Extents: {x: 2, y: 5, z: 2}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 1, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &7155163579843712455
 GameObject:
   m_ObjectHideFlags: 0
