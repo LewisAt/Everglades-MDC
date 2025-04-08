@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2381237497489610140
+--- !u!1 &1659745494601275354
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,50 +8,50 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3965127420764717927}
-  - component: {fileID: 8427514995893087883}
-  - component: {fileID: 7334527315741905630}
+  - component: {fileID: 8729706280730675585}
+  - component: {fileID: 1397318154283838852}
+  - component: {fileID: 578759645877818517}
   m_Layer: 0
-  m_Name: Image (2)
+  m_Name: Image (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &3965127420764717927
+--- !u!224 &8729706280730675585
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2381237497489610140}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_GameObject: {fileID: 1659745494601275354}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 5172657484874153273}
+  m_Father: {fileID: 4582725605066873901}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -36.3}
-  m_SizeDelta: {x: 50, y: 20}
+  m_AnchoredPosition: {x: -23, y: -35.70001}
+  m_SizeDelta: {x: 42, y: 17}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &8427514995893087883
+--- !u!222 &1397318154283838852
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2381237497489610140}
+  m_GameObject: {fileID: 1659745494601275354}
   m_CullTransparentMesh: 1
---- !u!114 &7334527315741905630
+--- !u!114 &578759645877818517
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2381237497489610140}
+  m_GameObject: {fileID: 1659745494601275354}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f4739366f03d44041be2511b8aaff912, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 297f9b0f9d163b3439c3ec688fb3f283, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -75,7 +75,82 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!1001 &177876551708938107
+--- !u!1 &8006957933943294843
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3546672808843308782}
+  - component: {fileID: 8451258612536889199}
+  - component: {fileID: 176247557619185030}
+  m_Layer: 0
+  m_Name: Image (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &3546672808843308782
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8006957933943294843}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4582725605066873901}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 23, y: -35.7}
+  m_SizeDelta: {x: 42, y: 17}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &8451258612536889199
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8006957933943294843}
+  m_CullTransparentMesh: 1
+--- !u!114 &176247557619185030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8006957933943294843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 0b906ea649fa888478b2f5fb6e6dcd37, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!1001 &8801746658616602223
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -85,38 +160,32 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 28232800921029382, guid: 2f4d987e3e947ad4ea7d3109f029e81e, type: 3}
       propertyPath: m_Radius
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 28232800921029382, guid: 2f4d987e3e947ad4ea7d3109f029e81e, type: 3}
-      propertyPath: m_Center.y
       value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 3198921627261667112, guid: 2f4d987e3e947ad4ea7d3109f029e81e, type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 4068373912626513877, guid: d0a74e58bba3a6c43b5deb064ed7b7a0, type: 3}
+      objectReference: {fileID: -5076798556035486163, guid: d06b49d358c158c49b4bb49abefb7057, type: 3}
     - target: {fileID: 3225774331078614319, guid: 2f4d987e3e947ad4ea7d3109f029e81e, type: 3}
       propertyPath: m_Text
-      value: Mangrove Forests make up one of the most plentiful plant populations
-        in the Everglade Ecosystem. They are present near the coastal channels and
-        winding rivers around the tip of South Florida. The term "mangrove" does
-        not refer to a particular botanical relation, but rather is used to identify
-        several species of salt-tolerant trees that thrive amidst the harsh growing
-        conditions of the coast. These come in three varieties; Red mangroves (Rhizophora
-        mangle), known for their stilt-like roots, Black mangroves (Aveciennia germinans)
-        and white mangroves (Laguncularia racemosa) which thrive within tidal waters,
-        where freshwater from the Everglades mixes with saltwater. The Everglades
-        boasts the largest contigious stand of protected mangrove forest in the Western
-        Hemisphere.
+      value: This is an Oil Spill. The Florida Everglades are at risk from large
+        bodies of oil that wash up in and smother newly laid eggs. This contaminates
+        the water, vastly diminishing their living conditions. It has the potential
+        to kill a multitude of fish as well as the mangroves which lay root in these
+        waters.
       objectReference: {fileID: 0}
     - target: {fileID: 3225774331078614319, guid: 2f4d987e3e947ad4ea7d3109f029e81e, type: 3}
       propertyPath: m_FontData.m_FontSize
-      value: 75
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3673095080187436617, guid: 2f4d987e3e947ad4ea7d3109f029e81e, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3673095080187436617, guid: 2f4d987e3e947ad4ea7d3109f029e81e, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: ecd6de6257bff404d832e5a02f039e82, type: 2}
+      objectReference: {fileID: 2100000, guid: b1eb519291118904ca15f19f91f39ef1, type: 2}
     - target: {fileID: 3701068339672133801, guid: 2f4d987e3e947ad4ea7d3109f029e81e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -157,31 +226,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3942596195095193542, guid: 2f4d987e3e947ad4ea7d3109f029e81e, type: 3}
-      propertyPath: infoTodisplay
-      value: Mangrove Forests make up one of the most plentiful plant populations
-        in the Everglade Ecosystem. They are present near the coastal channels and
-        winding rivers around the tip of South Florida. The term "mangrove" does
-        not refer to a particular botanical relation, but rather is used to identify
-        several species of salt-tolerant trees that thrive amidst the harsh growing
-        conditions of the coast. These come in three varieties; Red mangroves (Rhizophora
-        mangle), known for their stilt-like roots, Black mangroves (Aveciennia germinans)
-        and white mangroves (Laguncularia racemosa) which thrive within tidal waters,
-        where freshwater from the Everglades mixes with saltwater. The Everglades
-        boasts the largest contigious stand of protected mangrove forest in the Western
-        Hemisphere.
-      objectReference: {fileID: 0}
     - target: {fileID: 4528060019859401108, guid: 2f4d987e3e947ad4ea7d3109f029e81e, type: 3}
       propertyPath: m_Name
-      value: Mangrove Variant
+      value: OilSpill Variant
       objectReference: {fileID: 0}
     - target: {fileID: 4734945262742402838, guid: 2f4d987e3e947ad4ea7d3109f029e81e, type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 3400e459373b1b240b7d1cba31a0052d, type: 3}
+      objectReference: {fileID: 8300000, guid: 374ed9f15a055324081cd16aea2c5bad, type: 3}
     - target: {fileID: 5227057861382890743, guid: 2f4d987e3e947ad4ea7d3109f029e81e, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 2.1
+      value: 0.89998627
+      objectReference: {fileID: 0}
+    - target: {fileID: 5979744115359286464, guid: 2f4d987e3e947ad4ea7d3109f029e81e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5979744115359286464, guid: 2f4d987e3e947ad4ea7d3109f029e81e, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -193,11 +252,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7289897340073864405, guid: 2f4d987e3e947ad4ea7d3109f029e81e, type: 3}
       propertyPath: m_Text
-      value: Mangroves
-      objectReference: {fileID: 0}
-    - target: {fileID: 7289897340073864405, guid: 2f4d987e3e947ad4ea7d3109f029e81e, type: 3}
-      propertyPath: m_FontData.m_MaxSize
-      value: 250
+      value: Oil Spills
       objectReference: {fileID: 0}
     - target: {fileID: 7289897340073864405, guid: 2f4d987e3e947ad4ea7d3109f029e81e, type: 3}
       propertyPath: m_FontData.m_FontSize
@@ -208,8 +263,40 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8882815339985072580, guid: 2f4d987e3e947ad4ea7d3109f029e81e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.87
+      objectReference: {fileID: 0}
+    - target: {fileID: 8882815339985072580, guid: 2f4d987e3e947ad4ea7d3109f029e81e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3
+      value: 0.77
+      objectReference: {fileID: 0}
+    - target: {fileID: 8882815339985072580, guid: 2f4d987e3e947ad4ea7d3109f029e81e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 8882815339985072580, guid: 2f4d987e3e947ad4ea7d3109f029e81e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8882815339985072580, guid: 2f4d987e3e947ad4ea7d3109f029e81e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.60876137
+      objectReference: {fileID: 0}
+    - target: {fileID: 8882815339985072580, guid: 2f4d987e3e947ad4ea7d3109f029e81e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8882815339985072580, guid: 2f4d987e3e947ad4ea7d3109f029e81e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.7933534
+      objectReference: {fileID: 0}
+    - target: {fileID: 8882815339985072580, guid: 2f4d987e3e947ad4ea7d3109f029e81e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: 8882815339985072580, guid: 2f4d987e3e947ad4ea7d3109f029e81e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -180
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -217,11 +304,14 @@ PrefabInstance:
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 5025745998246048322, guid: 2f4d987e3e947ad4ea7d3109f029e81e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 3965127420764717927}
+      addedObject: {fileID: 8729706280730675585}
+    - targetCorrespondingSourceObject: {fileID: 5025745998246048322, guid: 2f4d987e3e947ad4ea7d3109f029e81e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3546672808843308782}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f4d987e3e947ad4ea7d3109f029e81e, type: 3}
---- !u!224 &5172657484874153273 stripped
+--- !u!224 &4582725605066873901 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5025745998246048322, guid: 2f4d987e3e947ad4ea7d3109f029e81e, type: 3}
-  m_PrefabInstance: {fileID: 177876551708938107}
+  m_PrefabInstance: {fileID: 8801746658616602223}
   m_PrefabAsset: {fileID: 0}

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7661116803824828504}
   - component: {fileID: 5584172514352203182}
   - component: {fileID: 1379812918282560501}
+  - component: {fileID: 7386234070144413291}
   m_Layer: 0
   m_Name: DetailMangroveTerrainTree
   m_TagString: Untagged
@@ -81,6 +82,22 @@ CapsuleCollider:
   m_Height: 8
   m_Direction: 1
   m_Center: {x: 0, y: 2.45, z: 0}
+--- !u!208 &7386234070144413291
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2817137387553273516}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 0
+  m_Extents: {x: 1.48, y: 3.11, z: 1.48}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 1.56, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &4489581527065646907
 GameObject:
   m_ObjectHideFlags: 0
