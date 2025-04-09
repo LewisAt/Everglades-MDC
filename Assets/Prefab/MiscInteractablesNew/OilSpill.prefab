@@ -228,7 +228,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4528060019859401108, guid: 2f4d987e3e947ad4ea7d3109f029e81e, type: 3}
       propertyPath: m_Name
-      value: OilSpill Variant
+      value: OilSpill
+      objectReference: {fileID: 0}
+    - target: {fileID: 4528060019859401108, guid: 2f4d987e3e947ad4ea7d3109f029e81e, type: 3}
+      propertyPath: m_TagString
+      value: Oil
       objectReference: {fileID: 0}
     - target: {fileID: 4734945262742402838, guid: 2f4d987e3e947ad4ea7d3109f029e81e, type: 3}
       propertyPath: m_audioClip

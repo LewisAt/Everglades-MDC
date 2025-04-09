@@ -58,8 +58,11 @@ public class GameDataManager : MonoBehaviour
         {
             int count = GameObject.FindGameObjectsWithTag(value.spawnPrefab.tag).Length;
             //this doesn't do anything about "ideal" population values
-            value.populationSlider.maxValue = count;
-            value.populationSlider.value = count;
+            if (value.populationSlider != null)
+            {
+                value.populationSlider.maxValue = count;
+                value.populationSlider.value = count;
+            }
         }
 
         //FIXME: test access the values
