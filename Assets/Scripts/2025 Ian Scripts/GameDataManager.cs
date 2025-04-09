@@ -40,7 +40,7 @@ public class GameDataManager : MonoBehaviour
 
     [HideInInspector] public int trashRemaining = 0;
 
-    private bool allChecklistFilled = true;
+    private bool allChecklistFilled = false;
 
     // Start is called before the first frame update
     void Start()

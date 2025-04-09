@@ -11,7 +11,8 @@ public class ObjectInteractionPC : MonoBehaviour
     public Transform grabPoint;
     [HideInInspector]
     public GameObject trashObject;
-    private bool hasTrash = false;
+    [HideInInspector]
+    public bool hasTrash = false;
 
     private void Awake()
     {
@@ -36,7 +37,7 @@ public class ObjectInteractionPC : MonoBehaviour
 
     private void OnClick(InputAction.CallbackContext context)
     {//this should do everything that the VR version does when interacting
-        if (hasTrash || trashObject != null)
+        if ((hasTrash || trashObject != null) && Time.timeScale != 0)
         {
             trashObject.transform.parent = null;
             trashObject.GetComponent<Rigidbody>().isKinematic = false;

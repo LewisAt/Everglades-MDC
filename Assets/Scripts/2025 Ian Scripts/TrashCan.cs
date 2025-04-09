@@ -14,6 +14,17 @@ public class TrashCan : MonoBehaviour
         {
             GameDataManager.Instance.ReduceTrash();
 
+            var playerPC = FindObjectOfType<ObjectInteractionPC>();
+            if (playerPC != null)
+            {//makes sure the PC player doesn't get a null reference when throwing away trash
+                if(playerPC.trashObject == other.gameObject)
+                {
+                    playerPC.trashObject = null;
+                    playerPC.hasTrash = false;
+                }
+
+            }
+
             Destroy(other.gameObject);
         }
 
