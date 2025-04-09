@@ -21,6 +21,11 @@ TagManager:
   - Heron
   - Opossum
   - Trash
+  - Dome_EarlyDay
+  - Dome_Midday
+  - Dome_LittleCloudy
+  - Dome_VeryCloudy
+  - Dome_Night
   layers:
   - Default
   - TransparentFX
