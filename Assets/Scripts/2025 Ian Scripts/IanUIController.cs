@@ -13,19 +13,21 @@ public class IanUIController : MonoBehaviour
     public static IanUIController Instance;
     public GameObject pauseMenu, winGameButton, tutorialMenu;
 
+    //used for throw away trash remaining
     public Slider trashSlider;
 
-    public bool isVR = false, includeTutorialPC;
+    public bool isVR = false;
+    [Tooltip("Check this to use the tutorial menu and disallow unpausing at the start")]
+    public bool tutorialPC;
 
     // Start is called before the first frame update
     void Start()
     {
-        if (includeTutorialPC && !isVR)
+        if (tutorialPC && !isVR)
         {
             //pause game so the tutorial menu can be interacted with.
             Time.timeScale = 0;
-
-
+            tutorialMenu.SetActive(true);
         }
         Instance = this;
         Debug.Log("Instance = " + Instance.name);
@@ -34,18 +36,48 @@ public class IanUIController : MonoBehaviour
     //toggle for pause menu
     public void PauseMenuToggle()
     {
-        if (pauseMenu.activeSelf)
-        {//unpause
-            Time.timeScale = 1;
-            StartCoroutine(LockCursor());
-            pauseMenu.SetActive(false);
+        if (tutorialPC)
+        {
+            Debug.LogError("cannot show pause menu when tutorial is active");
         }
         else
-        {//pause
+        {
+            if (pauseMenu.activeSelf)
+            {//unpause
+                Time.timeScale = 1;
+                StartCoroutine(LockCursor());
+                pauseMenu.SetActive(false);
+            }
+            else
+            {//pause
+                Time.timeScale = 0;
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
+                pauseMenu.SetActive(true);
+            }
+        }
+    }
+
+    //toggles the tutorial menu
+    //called at the start and from a menu button
+    public void ToggleTutorialMenu()
+    {
+        if (tutorialPC)
+        {//unpause game
+            Time.timeScale = 1;
+            tutorialMenu.SetActive(false);
+            tutorialPC = !tutorialPC;
+        }
+        else
+        {
+            if (pauseMenu.activeSelf)
+            {//if this was triggered from the pause menu, disable that UI
+                pauseMenu.SetActive(false);
+            }
             Time.timeScale = 0;
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
-            pauseMenu.SetActive(true);
+            tutorialMenu.SetActive(true);
+
+            tutorialPC = !tutorialPC;
         }
     }
 
@@ -59,6 +91,7 @@ public class IanUIController : MonoBehaviour
     public void GameWin()
     {
         //I want a way to 
+        Debug.Log("player met win criteria!");
         winGameButton.SetActive(true);
     }
 

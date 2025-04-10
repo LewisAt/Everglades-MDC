@@ -38,7 +38,8 @@ public class GameDataManager : MonoBehaviour
     //...but this is what you access the data through
     private Dictionary<string, DataValues> dataDictionary = new();
 
-    [HideInInspector] public int trashRemaining = 0;
+    //[HideInInspector]
+    public int trashRemaining = 0;
 
     private bool allChecklistFilled = false;
 
@@ -72,7 +73,8 @@ public class GameDataManager : MonoBehaviour
             }
         }
 
-        //FIXME: test access the values
+        //FIXME: example of how to access values
+        /*
         if (dataDictionary.ContainsKey("Alligator"))
         {
             DataValues tempStruct = dataDictionary["Alligator"];
@@ -81,6 +83,7 @@ public class GameDataManager : MonoBehaviour
 
             tempStruct.checklistToggle.isOn = true;
         }
+        */
 
         //set trash remaining to amount of trash in scene
         trashRemaining = GameObject.FindGameObjectsWithTag("trash").Length;
