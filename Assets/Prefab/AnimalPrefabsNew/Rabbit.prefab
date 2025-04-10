@@ -1207,6 +1207,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Rabbit
       objectReference: {fileID: 0}
+    - target: {fileID: 5936964542957017051, guid: 6a3b6aa2e571ae041b78fd60af199e5e, type: 3}
+      propertyPath: m_TagString
+      value: Rabbit
+      objectReference: {fileID: 0}
     - target: {fileID: 7455714574576547646, guid: 6a3b6aa2e571ae041b78fd60af199e5e, type: 3}
       propertyPath: m_Text
       value: "The Marsh Rabbit \n(Sylvilagus palustris)"

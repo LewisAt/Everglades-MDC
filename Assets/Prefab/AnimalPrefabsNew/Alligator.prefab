@@ -1531,12 +1531,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4360620778071437951, guid: 6a3b6aa2e571ae041b78fd60af199e5e, type: 3}
       propertyPath: m_TagString
-      value: Alligator
+      value: Aligator
       objectReference: {fileID: 0}
     - target: {fileID: 4892888623895112957, guid: 6a3b6aa2e571ae041b78fd60af199e5e, type: 3}
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 0b4edebd85ec257419931443f6f9de6d, type: 3}
+    - target: {fileID: 5936964542957017051, guid: 6a3b6aa2e571ae041b78fd60af199e5e, type: 3}
+      propertyPath: m_TagString
+      value: Aligator
+      objectReference: {fileID: 0}
     - target: {fileID: 7455714574576547646, guid: 6a3b6aa2e571ae041b78fd60af199e5e, type: 3}
       propertyPath: m_Text
       value: "American alligator \n(Alligator mississippiensis)"

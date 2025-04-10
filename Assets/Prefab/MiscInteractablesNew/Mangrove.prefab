@@ -187,6 +187,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 2.1
       objectReference: {fileID: 0}
+    - target: {fileID: 5780011876150037552, guid: 2f4d987e3e947ad4ea7d3109f029e81e, type: 3}
+      propertyPath: m_TagString
+      value: Mangrove
+      objectReference: {fileID: 0}
     - target: {fileID: 5979744115359286464, guid: 2f4d987e3e947ad4ea7d3109f029e81e, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -0

@@ -61,7 +61,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   allGameData:
-  - nameTag: Alligator
+  - nameTag: Aligator
     gameData:
       checklistToggle: {fileID: 8214461284114199873}
       populationSlider: {fileID: 381653888629464991}

@@ -45,8 +45,15 @@ public class GameDataManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //singleton setup
         Instance = this;
+        StartCoroutine(DataSetup());
+    }
 
+    //initialize stuff right after the first frame
+    private IEnumerator DataSetup()
+    {
+        yield return new WaitForEndOfFrame();
         //populate dictionary
         foreach (var pair in allGameData)
         {
@@ -54,7 +61,7 @@ public class GameDataManager : MonoBehaviour
         }
 
         //Set up initial values for animal sliders
-        foreach(DataValues value in dataDictionary.Values)
+        foreach (DataValues value in dataDictionary.Values)
         {
             int count = GameObject.FindGameObjectsWithTag(value.spawnPrefab.tag).Length;
             //this doesn't do anything about "ideal" population values
@@ -77,12 +84,20 @@ public class GameDataManager : MonoBehaviour
 
         //set trash remaining to amount of trash in scene
         trashRemaining = GameObject.FindGameObjectsWithTag("trash").Length;
-        IanUIController.Instance.trashSlider.maxValue = trashRemaining;
-        IanUIController.Instance.trashSlider.value = trashRemaining;
-        Debug.Log("Trash in scene: " + trashRemaining);
+        if (IanUIController.Instance == null)
+        {
+            Debug.LogError("IanUIController Instance is not set up!");
+        }
+        else
+        {
+            IanUIController.Instance.trashSlider.maxValue = trashRemaining;
+            IanUIController.Instance.trashSlider.value = trashRemaining;
+            Debug.Log("Trash in scene: " + trashRemaining);
+        }
     }
 
-    //call this when interactive with objects to record them
+
+    //call this when interacting with objects to record them
     public void FillChecklist(string objectTag)
     {
         if (dataDictionary.ContainsKey(objectTag))

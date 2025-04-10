@@ -1831,6 +1831,10 @@ PrefabInstance:
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 4640fc7424991ee4eb98dac05d9cadec, type: 3}
+    - target: {fileID: 5936964542957017051, guid: 6a3b6aa2e571ae041b78fd60af199e5e, type: 3}
+      propertyPath: m_TagString
+      value: Egret
+      objectReference: {fileID: 0}
     - target: {fileID: 8724869525873355311, guid: 6a3b6aa2e571ae041b78fd60af199e5e, type: 3}
       propertyPath: m_LocalScale.x
       value: 11

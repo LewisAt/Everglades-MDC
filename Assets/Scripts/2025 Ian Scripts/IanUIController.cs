@@ -11,14 +11,24 @@ public class IanUIController : MonoBehaviour
     //variable declarations
     //singleton setup
     public static IanUIController Instance;
-    public GameObject pauseMenu, winGameButton;
+    public GameObject pauseMenu, winGameButton, tutorialMenu;
 
     public Slider trashSlider;
+
+    public bool isVR = false, includeTutorialPC;
 
     // Start is called before the first frame update
     void Start()
     {
+        if (includeTutorialPC && !isVR)
+        {
+            //pause game so the tutorial menu can be interacted with.
+            Time.timeScale = 0;
+
+
+        }
         Instance = this;
+        Debug.Log("Instance = " + Instance.name);
     }
 
     //toggle for pause menu
