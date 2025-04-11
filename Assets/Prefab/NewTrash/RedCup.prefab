@@ -118,6 +118,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: RedCup
       objectReference: {fileID: 0}
+    - target: {fileID: 2996660111941946222, guid: 571b351f0dae9a740bf17e4e18f1ed5a, type: 3}
+      propertyPath: m_Size.x
+      value: 0.118863486
+      objectReference: {fileID: 0}
+    - target: {fileID: 2996660111941946222, guid: 571b351f0dae9a740bf17e4e18f1ed5a, type: 3}
+      propertyPath: m_Size.y
+      value: 0.11392044
+      objectReference: {fileID: 0}
+    - target: {fileID: 2996660111941946222, guid: 571b351f0dae9a740bf17e4e18f1ed5a, type: 3}
+      propertyPath: m_Size.z
+      value: 0.17714699
+      objectReference: {fileID: 0}
+    - target: {fileID: 2996660111941946222, guid: 571b351f0dae9a740bf17e4e18f1ed5a, type: 3}
+      propertyPath: m_Center.x
+      value: -0.008305646
+      objectReference: {fileID: 0}
+    - target: {fileID: 2996660111941946222, guid: 571b351f0dae9a740bf17e4e18f1ed5a, type: 3}
+      propertyPath: m_Center.y
+      value: 0.031960197
+      objectReference: {fileID: 0}
+    - target: {fileID: 2996660111941946222, guid: 571b351f0dae9a740bf17e4e18f1ed5a, type: 3}
+      propertyPath: m_Center.z
+      value: 0.0029880882
+      objectReference: {fileID: 0}
     - target: {fileID: 5476063472665219180, guid: 571b351f0dae9a740bf17e4e18f1ed5a, type: 3}
       propertyPath: m_LocalScale.x
       value: 5
@@ -132,7 +156,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5476063472665219180, guid: 571b351f0dae9a740bf17e4e18f1ed5a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.34363
+      value: 9.503
       objectReference: {fileID: 0}
     - target: {fileID: 5476063472665219180, guid: 571b351f0dae9a740bf17e4e18f1ed5a, type: 3}
       propertyPath: m_LocalPosition.y
