@@ -12789,7 +12789,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 46}
+  m_AnchoredPosition: {x: 0, y: 67}
   m_SizeDelta: {x: 828.6598, y: 52.0056}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &406793284676846843
@@ -12822,7 +12822,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 40
+    m_FontSize: 35
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 1
@@ -12839,7 +12839,9 @@ MonoBehaviour:
     objects to learn more about them.
 
     Small trash can be picked up and disposed
-    of in nearby trash cans'
+    of in nearby trash cans.
+
+    Press [Escape] to pause.'
 --- !u!1 &7267828693854651874
 GameObject:
   m_ObjectHideFlags: 0
