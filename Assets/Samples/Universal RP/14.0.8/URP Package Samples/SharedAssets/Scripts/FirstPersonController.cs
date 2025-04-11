@@ -33,7 +33,7 @@ public class FirstPersonController : MonoBehaviour
 
     void Start()
     {
-        if (m_MoveWithMouse)
+        if (m_MoveWithMouse && IanUIController.Instance.tutorialPC == false)
         {
             Cursor.lockState = CursorLockMode.Locked;
         }

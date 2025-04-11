@@ -82,7 +82,7 @@ MonoBehaviour:
   tutorialMenu: {fileID: 3231587153482005792}
   trashSlider: {fileID: 4153953778634218890}
   isVR: 0
-  includeTutorialPC: 1
+  tutorialPC: 1
 --- !u!114 &1581185569476832026
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -471,6 +471,22 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 2072712849032058555, guid: 1af43330cc4d6ca4d9141f8763f2211c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7268271968993976540}
+    - target: {fileID: 2072712849032058555, guid: 1af43330cc4d6ca4d9141f8763f2211c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ToggleTutorialMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 2072712849032058555, guid: 1af43330cc4d6ca4d9141f8763f2211c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: IanUIController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2072712849032058555, guid: 1af43330cc4d6ca4d9141f8763f2211c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 2311909991628197429, guid: 1af43330cc4d6ca4d9141f8763f2211c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -594,6 +610,38 @@ PrefabInstance:
     - target: {fileID: 7980889363963091212, guid: 1af43330cc4d6ca4d9141f8763f2211c, type: 3}
       propertyPath: m_Name
       value: CloseButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 8367423294690919882, guid: 1af43330cc4d6ca4d9141f8763f2211c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8367423294690919882, guid: 1af43330cc4d6ca4d9141f8763f2211c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8367423294690919882, guid: 1af43330cc4d6ca4d9141f8763f2211c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 7268271968993976540}
+    - target: {fileID: 8367423294690919882, guid: 1af43330cc4d6ca4d9141f8763f2211c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8367423294690919882, guid: 1af43330cc4d6ca4d9141f8763f2211c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: ToggleTutorialMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 8367423294690919882, guid: 1af43330cc4d6ca4d9141f8763f2211c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: IanUIController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8367423294690919882, guid: 1af43330cc4d6ca4d9141f8763f2211c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8367423294690919882, guid: 1af43330cc4d6ca4d9141f8763f2211c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

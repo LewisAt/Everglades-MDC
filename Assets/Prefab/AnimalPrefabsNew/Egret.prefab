@@ -1835,6 +1835,12 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Egret
       objectReference: {fileID: 0}
+    - target: {fileID: 7455714574576547646, guid: 6a3b6aa2e571ae041b78fd60af199e5e, type: 3}
+      propertyPath: m_Text
+      value: 'Great Egret
+
+        (Ardea alba)'
+      objectReference: {fileID: 0}
     - target: {fileID: 8724869525873355311, guid: 6a3b6aa2e571ae041b78fd60af199e5e, type: 3}
       propertyPath: m_LocalScale.x
       value: 11

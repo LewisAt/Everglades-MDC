@@ -1624,6 +1624,19 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3811177503985777709, guid: 6a3b6aa2e571ae041b78fd60af199e5e, type: 3}
+      propertyPath: infoTodisplay
+      value: "The Great Blue Heron (Ardea herodias) is a majestic wading bird that
+        can be found gracing the Everglades' freshwater marshes and shallow coastal
+        waters. Renowned for its impressive size\u2014standing over 4 feet tall with
+        a wingspan that can approach 6 feet\u2014this striking bird plays a vital
+        role in the ecosystem by preying on fish, amphibians, and small mammals,
+        thereby helping regulate these populations. Its stately, blue-gray plumage,
+        elongated neck, and long legs not only make it an iconic presence in the
+        wetlands but also signal the health of these delicate habitats. Through its
+        precise hunting techniques and nesting behaviors, the Great Blue Heron contributes
+        to the ecological balance and overall resilience of the Everglades."
+      objectReference: {fileID: 0}
     - target: {fileID: 4253116125946217621, guid: 6a3b6aa2e571ae041b78fd60af199e5e, type: 3}
       propertyPath: m_Acceleration
       value: 20

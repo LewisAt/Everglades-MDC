@@ -65,6 +65,7 @@ public class IanUIController : MonoBehaviour
         if (tutorialPC)
         {//unpause game
             Time.timeScale = 1;
+            StartCoroutine(LockCursor());
             tutorialMenu.SetActive(false);
             tutorialPC = !tutorialPC;
         }
@@ -74,6 +75,7 @@ public class IanUIController : MonoBehaviour
             {//if this was triggered from the pause menu, disable that UI
                 pauseMenu.SetActive(false);
             }
+            //pause
             Time.timeScale = 0;
             tutorialMenu.SetActive(true);
 
