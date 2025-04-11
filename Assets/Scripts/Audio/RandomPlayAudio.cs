@@ -16,7 +16,7 @@ public class RandomPlayAudio : MonoBehaviour
     {
         while (true)
         {
-            float randomWaitTime = Random.Range(5, 15);
+            float randomWaitTime = Random.Range(10, 15);
 
             yield return new WaitForSeconds(randomWaitTime);
             

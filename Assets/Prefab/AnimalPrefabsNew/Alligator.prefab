@@ -1546,9 +1546,25 @@ PrefabInstance:
       value: "American alligator \n(Alligator mississippiensis)"
       objectReference: {fileID: 0}
     - target: {fileID: 7953681534321547229, guid: 6a3b6aa2e571ae041b78fd60af199e5e, type: 3}
+      propertyPath: audioClips.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7953681534321547229, guid: 6a3b6aa2e571ae041b78fd60af199e5e, type: 3}
       propertyPath: audioClips.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 8300000, guid: 1577f8221df089a49b9fe079bd9a3a83, type: 3}
+    - target: {fileID: 7953681534321547229, guid: 6a3b6aa2e571ae041b78fd60af199e5e, type: 3}
+      propertyPath: audioClips.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: a224ab8796c7351498d2b6be1e822938, type: 3}
+    - target: {fileID: 7953681534321547229, guid: 6a3b6aa2e571ae041b78fd60af199e5e, type: 3}
+      propertyPath: audioClips.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: b05ea8cb8eabe5d418f4a2472c305ed7, type: 3}
+    - target: {fileID: 7953681534321547229, guid: 6a3b6aa2e571ae041b78fd60af199e5e, type: 3}
+      propertyPath: audioClips.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: b05ea8cb8eabe5d418f4a2472c305ed7, type: 3}
     - target: {fileID: 8724869525873355311, guid: 6a3b6aa2e571ae041b78fd60af199e5e, type: 3}
       propertyPath: m_LocalScale.x
       value: 30
