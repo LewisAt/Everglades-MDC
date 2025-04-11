@@ -1320,6 +1320,22 @@ PrefabInstance:
       propertyPath: m_Text
       value: "The Oak Toad \n(Anaxyrus quercicus) "
       objectReference: {fileID: 0}
+    - target: {fileID: 7953681534321547229, guid: 6a3b6aa2e571ae041b78fd60af199e5e, type: 3}
+      propertyPath: audioClips.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7953681534321547229, guid: 6a3b6aa2e571ae041b78fd60af199e5e, type: 3}
+      propertyPath: audioClips.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 6f23010ce288eb946842074d146dfc89, type: 3}
+    - target: {fileID: 7953681534321547229, guid: 6a3b6aa2e571ae041b78fd60af199e5e, type: 3}
+      propertyPath: audioClips.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: c09d9a2b5c01d004f9068de6de3d13a9, type: 3}
+    - target: {fileID: 7953681534321547229, guid: 6a3b6aa2e571ae041b78fd60af199e5e, type: 3}
+      propertyPath: audioClips.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 8437a3a0ec1961d498e06ddc10a96e0b, type: 3}
     - target: {fileID: 8724869525873355311, guid: 6a3b6aa2e571ae041b78fd60af199e5e, type: 3}
       propertyPath: m_LocalScale.x
       value: 11

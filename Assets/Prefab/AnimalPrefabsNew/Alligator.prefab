@@ -1545,6 +1545,10 @@ PrefabInstance:
       propertyPath: m_Text
       value: "American alligator \n(Alligator mississippiensis)"
       objectReference: {fileID: 0}
+    - target: {fileID: 7953681534321547229, guid: 6a3b6aa2e571ae041b78fd60af199e5e, type: 3}
+      propertyPath: audioClips.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 8724869525873355311, guid: 6a3b6aa2e571ae041b78fd60af199e5e, type: 3}
       propertyPath: m_LocalScale.x
       value: 30

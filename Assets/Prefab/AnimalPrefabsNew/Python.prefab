@@ -789,6 +789,10 @@ PrefabInstance:
 
         (Python bivittatus)'
       objectReference: {fileID: 0}
+    - target: {fileID: 7953681534321547229, guid: 6a3b6aa2e571ae041b78fd60af199e5e, type: 3}
+      propertyPath: audioClips.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 70636a21b291831419171853e92a9a64, type: 3}
     - target: {fileID: 8724869525873355311, guid: 6a3b6aa2e571ae041b78fd60af199e5e, type: 3}
       propertyPath: m_LocalScale.x
       value: 21
