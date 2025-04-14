@@ -425,6 +425,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2385433195983609438, guid: f4afd48bb28f8ee4fb13b93f161806e4, type: 3}
+      propertyPath: m_CharacterController
+      value: 
+      objectReference: {fileID: 3627429030388570597}
     - target: {fileID: 8095747205864004818, guid: f4afd48bb28f8ee4fb13b93f161806e4, type: 3}
       propertyPath: grabPoint
       value: 
@@ -441,6 +445,11 @@ PrefabInstance:
       addedObject: {fileID: 6338540107016915816}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4afd48bb28f8ee4fb13b93f161806e4, type: 3}
+--- !u!143 &3627429030388570597 stripped
+CharacterController:
+  m_CorrespondingSourceObject: {fileID: 1693837958753440419, guid: f4afd48bb28f8ee4fb13b93f161806e4, type: 3}
+  m_PrefabInstance: {fileID: 2726524807441173318}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4360704230134484335 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1824761289112012329, guid: f4afd48bb28f8ee4fb13b93f161806e4, type: 3}

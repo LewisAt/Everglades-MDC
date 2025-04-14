@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 using Cursor = UnityEngine.Cursor;
 
 [RequireComponent(typeof(CharacterController))]
@@ -12,7 +13,7 @@ public class FirstPersonController : MonoBehaviour
     [SerializeField] private Transform m_PlayerCamera = null;
     [SerializeField] private bool m_MoveWithMouse = true;
 
-    private CharacterController m_CharacterController;
+    public CharacterController m_CharacterController;
     private float m_XRotation = 0f;
     private byte m_ButtonMovementFlags;
 
@@ -33,11 +34,20 @@ public class FirstPersonController : MonoBehaviour
 
     void Start()
     {
+        StartCoroutine(DelayStartInitialize());
+    }
+
+    private IEnumerator DelayStartInitialize()
+    {
+        yield return new WaitForEndOfFrame();
         if (m_MoveWithMouse && IanUIController.Instance.tutorialPC == false)
         {
             Cursor.lockState = CursorLockMode.Locked;
         }
-        m_CharacterController = GetComponent<CharacterController>();
+        if (m_CharacterController == null)
+        {
+            m_CharacterController = GetComponent<CharacterController>();
+        }
     }
 
     void Update()
