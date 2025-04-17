@@ -9,6 +9,7 @@ public class BasicAnimal : MonoBehaviour
     private GameObject ModelToMove;
     private Vector3 DefaultModelPositon;
     public int navMeshMaskNumber;
+    [Tooltip("Controls the Waddle animation bob.")]
     public float MovementStrength = 1f;
     public bool waddle = false;
 
@@ -34,8 +35,11 @@ public class BasicAnimal : MonoBehaviour
     }
     private void Update()
     {
-        CalculateDirection();
-        waddleAnimation();
+        if (waddle)
+        {
+            CalculateDirection();
+            waddleAnimation();
+        }
     }
 
     float temp = 0f;
@@ -61,17 +65,17 @@ public class BasicAnimal : MonoBehaviour
         MovementDirection = temp;
     }
     void waddleAnimation()
-    {
-        if(agent.velocity.sqrMagnitude > 0.1f)
-        {
-            // up motion
-            float MotionAdition = (Time.deltaTime * (MovementStrength * MovementDirection)) ;
-            ModelToMove.transform.localPosition = new Vector3(DefaultModelPositon.x,DefaultModelPositon.y + MotionAdition,DefaultModelPositon.z);     
-        }
-        else
-        {
-            return;
-        }
+    {       
+            if (agent.velocity.sqrMagnitude > 0.1f)
+            {
+                // up motion
+                float MotionAdition = (Time.fixedDeltaTime * (MovementStrength * MovementDirection));
+                ModelToMove.transform.localPosition = new Vector3(DefaultModelPositon.x, DefaultModelPositon.y + MotionAdition, DefaultModelPositon.z);
+            }
+            else
+            {
+                return;
+            }
     }
     IEnumerator startRoam()
     {
@@ -84,8 +88,8 @@ public class BasicAnimal : MonoBehaviour
     
     private void Roam()
     {
-        float randomX = Random.Range(-75, 75) + transform.position.x;
-        float randomZ = Random.Range(-75, 75) + transform.position.z;
+        float randomX = Random.Range(-5, 5) + transform.position.x;
+        float randomZ = Random.Range(-5, 5) + transform.position.z;
         Vector3 randomPointInBounds = new Vector3(randomX, 0, randomZ);
         NavMeshHit navHit;
 

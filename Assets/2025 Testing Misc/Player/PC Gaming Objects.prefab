@@ -429,6 +429,10 @@ PrefabInstance:
       propertyPath: m_CharacterController
       value: 
       objectReference: {fileID: 3627429030388570597}
+    - target: {fileID: 3570128739580946789, guid: f4afd48bb28f8ee4fb13b93f161806e4, type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 863
+      objectReference: {fileID: 0}
     - target: {fileID: 8095747205864004818, guid: f4afd48bb28f8ee4fb13b93f161806e4, type: 3}
       propertyPath: grabPoint
       value: 
@@ -527,6 +531,10 @@ PrefabInstance:
     - target: {fileID: 3716768721242269814, guid: 1af43330cc4d6ca4d9141f8763f2211c, type: 3}
       propertyPath: m_Name
       value: PCMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 6314986022198243729, guid: 1af43330cc4d6ca4d9141f8763f2211c, type: 3}
+      propertyPath: m_Text
+      value: Controls
       objectReference: {fileID: 0}
     - target: {fileID: 6343230345823157287, guid: 1af43330cc4d6ca4d9141f8763f2211c, type: 3}
       propertyPath: m_IsActive

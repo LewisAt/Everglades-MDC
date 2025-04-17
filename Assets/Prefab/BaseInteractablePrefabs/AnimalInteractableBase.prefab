@@ -50,7 +50,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4528060019859401108, guid: 2f4d987e3e947ad4ea7d3109f029e81e, type: 3}
       propertyPath: m_Name
-      value: AnimalInteractableBase Variant
+      value: AnimalInteractableBase
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -109,7 +109,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   navMeshMaskNumber: 0
-  MovementStrength: 100
+  MovementStrength: 50
   waddle: 0
 --- !u!114 &1569618839251578884
 MonoBehaviour:
