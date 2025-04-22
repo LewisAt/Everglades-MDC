@@ -46,6 +46,8 @@ public class GameDataManager : MonoBehaviour
     private bool allChecklistFilled = false;
 
     public CollectionManager collection;
+    public AudioSource collectionAudio;
+
 
     // Start is called before the first frame update
     void Start()
@@ -106,7 +108,7 @@ public class GameDataManager : MonoBehaviour
 
     //call this when interacting with objects to record them
     //also add new items to the collection if applicable
-    public void FillChecklist(string objectTag)
+    public void FillChecklist(string objectTag, AudioClip collectionPrompt = null)
     {
         if (dataDictionary.ContainsKey(objectTag))
         {
@@ -115,6 +117,8 @@ public class GameDataManager : MonoBehaviour
             if (tempStruct.checklistToggle.isOn == false)
             {
                 collection.AddToCollection(tempStruct.collectionFigure, tempStruct.collectionInfo);
+                collectionAudio.clip = collectionPrompt;
+                collectionAudio.Play();
             }
 
             tempStruct.checklistToggle.isOn = true;

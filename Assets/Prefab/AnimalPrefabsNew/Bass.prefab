@@ -620,6 +620,10 @@ PrefabInstance:
         job at maintaining the food webs balance. Without bass, the minnow population
         would soar out of control, and there would be overconsumption of zooplankton.
       objectReference: {fileID: 0}
+    - target: {fileID: 3811177503985777709, guid: 6a3b6aa2e571ae041b78fd60af199e5e, type: 3}
+      propertyPath: newSystemAudioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 429160e2a7d30a64283fd09c68b9981f, type: 3}
     - target: {fileID: 4360620778071437951, guid: 6a3b6aa2e571ae041b78fd60af199e5e, type: 3}
       propertyPath: m_Name
       value: Bass

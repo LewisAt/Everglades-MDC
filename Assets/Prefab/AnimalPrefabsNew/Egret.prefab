@@ -2059,6 +2059,10 @@ PrefabInstance:
         its adept hunting skills but also underscore the interconnected roles that
         each species plays in sustaining the rich biodiversity of the Everglades.
       objectReference: {fileID: 0}
+    - target: {fileID: 3811177503985777709, guid: 6a3b6aa2e571ae041b78fd60af199e5e, type: 3}
+      propertyPath: newSystemAudioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: d3efec2a0bf94684bb3fdcf8cd9e5045, type: 3}
     - target: {fileID: 4253116125946217621, guid: 6a3b6aa2e571ae041b78fd60af199e5e, type: 3}
       propertyPath: m_Acceleration
       value: 20

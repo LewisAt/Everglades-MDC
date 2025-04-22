@@ -1283,6 +1283,10 @@ PrefabInstance:
         By four weeks of age, the young rabbits are weaned and are foraging for themselves.
         As nocturnal creatures their most active at dusk and night.
       objectReference: {fileID: 0}
+    - target: {fileID: 3811177503985777709, guid: 6a3b6aa2e571ae041b78fd60af199e5e, type: 3}
+      propertyPath: newSystemAudioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: bca9e9f174670434e8b0a76be567b1db, type: 3}
     - target: {fileID: 4360620778071437951, guid: 6a3b6aa2e571ae041b78fd60af199e5e, type: 3}
       propertyPath: m_Name
       value: Rabbit

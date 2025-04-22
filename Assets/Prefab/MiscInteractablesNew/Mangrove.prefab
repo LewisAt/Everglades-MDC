@@ -171,6 +171,10 @@ PrefabInstance:
         boasts the largest contigious stand of protected mangrove forest in the Western
         Hemisphere.
       objectReference: {fileID: 0}
+    - target: {fileID: 3942596195095193542, guid: 2f4d987e3e947ad4ea7d3109f029e81e, type: 3}
+      propertyPath: newSystemAudioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 5e04dd068e5c2fd4ebb28c3cc9c08768, type: 3}
     - target: {fileID: 4528060019859401108, guid: 2f4d987e3e947ad4ea7d3109f029e81e, type: 3}
       propertyPath: m_Name
       value: Mangrove

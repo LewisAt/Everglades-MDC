@@ -69,31 +69,39 @@ public class CollectionManager : MonoBehaviour
     //should we instantiate or enable?
     public void CycleCollectionList(bool moveListForward)
     {
-        if (moveListForward)
+        if (collection.Count <= 0)
         {
-            //deactivate the prior collectable
-            collection[currentCollectionIndex].DeactivateCollectable();
-            //move index forward
-            currentCollectionIndex++;
-            if (currentCollectionIndex > collection.Count - 1)
-            {//cycle back to beginning of list if at end
-                currentCollectionIndex = 0;
-            }
-            //activate new current item
-            collection[currentCollectionIndex].ActivateCollectable();
+            return;
         }
         else
         {
-            //deactivate the prior collectable
-            collection[currentCollectionIndex].DeactivateCollectable();
-            //move index back
-            currentCollectionIndex--;
-            if (currentCollectionIndex < 0)
-            {//cycle back to end of list if at beginning
-                currentCollectionIndex = collection.Count - 1;
+            if (moveListForward)
+            {
+                //deactivate the prior collectable
+                collection[currentCollectionIndex].DeactivateCollectable();
+                //move index forward
+                currentCollectionIndex++;
+                if (currentCollectionIndex > collection.Count - 1)
+                {//cycle back to beginning of list if at end
+                    currentCollectionIndex = 0;
+                }
+                //activate new current item
+                collection[currentCollectionIndex].ActivateCollectable();
             }
-            //activate new current item
-            collection[currentCollectionIndex].ActivateCollectable();
+            else
+            {
+                //deactivate the prior collectable
+                collection[currentCollectionIndex].DeactivateCollectable();
+                //move index back
+                currentCollectionIndex--;
+                if (currentCollectionIndex < 0)
+                {//cycle back to end of list if at beginning
+                    currentCollectionIndex = collection.Count - 1;
+                }
+                //activate new current item
+                collection[currentCollectionIndex].ActivateCollectable();
+            }
         }
+
     }
 }

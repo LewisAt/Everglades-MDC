@@ -1509,6 +1509,10 @@ PrefabInstance:
         many animals to lay their eggs. Their roles as important consumers in the
         ecosystems food web also solidifies their importance to the enviornment.
       objectReference: {fileID: 0}
+    - target: {fileID: 3811177503985777709, guid: 6a3b6aa2e571ae041b78fd60af199e5e, type: 3}
+      propertyPath: newSystemAudioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3f146a52d198bf547839604c4e2a2353, type: 3}
     - target: {fileID: 4253116125946217621, guid: 6a3b6aa2e571ae041b78fd60af199e5e, type: 3}
       propertyPath: m_Radius
       value: 2.6

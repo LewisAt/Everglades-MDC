@@ -59,6 +59,8 @@ MonoBehaviour:
   interactAudio: {fileID: 667070739198947350}
   idlePrefab: {fileID: 0}
   canvasPopupHeight: 5
+  newSystemAudioClip: {fileID: 0}
+  useNewSystem: 1
 --- !u!54 &7018428640458346354
 Rigidbody:
   m_ObjectHideFlags: 0

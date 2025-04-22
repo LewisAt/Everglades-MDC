@@ -1552,6 +1552,10 @@ PrefabInstance:
         take matters to solve these problems to ensure the Everglades remain a balanced
         Ecosystem.
       objectReference: {fileID: 0}
+    - target: {fileID: 3811177503985777709, guid: 6a3b6aa2e571ae041b78fd60af199e5e, type: 3}
+      propertyPath: newSystemAudioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: f4bf7134ed9a5e245b66ce72c053e738, type: 3}
     - target: {fileID: 4360620778071437951, guid: 6a3b6aa2e571ae041b78fd60af199e5e, type: 3}
       propertyPath: m_Name
       value: Cat

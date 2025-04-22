@@ -1662,6 +1662,10 @@ PrefabInstance:
         also accelerating the decomposition process, thereby contributing significantly
         to the nutrient cycling and overall ecological balance of the Everglades.
       objectReference: {fileID: 0}
+    - target: {fileID: 3811177503985777709, guid: 6a3b6aa2e571ae041b78fd60af199e5e, type: 3}
+      propertyPath: newSystemAudioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: c8411d96f3d97e348a86f11eaf5af0da, type: 3}
     - target: {fileID: 4253116125946217621, guid: 6a3b6aa2e571ae041b78fd60af199e5e, type: 3}
       propertyPath: m_Height
       value: 0.84
