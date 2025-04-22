@@ -1,0 +1,138 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &1907912587861411057
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 645102143289129742, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 624d83601702a924a81220d2b4919ec0, type: 3}
+    - target: {fileID: 710098293550316855, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: fa477d50845492945af3c03f29f4b280, type: 3}
+    - target: {fileID: 710098293550316855, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1723144154508341746, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c02bfde07d9cbbd44adc51a933e72e8b, type: 3}
+    - target: {fileID: 5244680637628496109, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_Name
+      value: ToadInfoPanel Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 6163876341813508865, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_Text
+      value: "The Oak Toad (Anaxyrus quercicus) can be found quite commonly throughout
+        Florida, except for the Florida Keys. They are a smaller species of Toad
+        which comes in at a tiny .75\u201D to 1.5\u201D in length. They make their
+        homes among the sandy soils by costal areas. They can be distinguished by
+        their signature bright white, yellowish, or orange stripe that runs from
+        its snout to its tail. Common colors for them are brown, grey, or almost
+        black, often with scattered reddish warts and mottled black spots across
+        their back in sets of 3 or 5. Their diet consists mainly of insects such
+        as beetles, centipedes, spiders, and other invertebrates; although they mainly
+        prefer ants. They are nocturnal creatures spending most of their time chirping
+        away as their ovular vocal sacs inflate, usually serving an indication of
+        breeding season."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 373.0255
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 410.9845
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.000061035156
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7102499831729527284, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_Text
+      value: "The Oak Toad \n(Anaxyrus quercicus) "
+      objectReference: {fileID: 0}
+    - target: {fileID: 8596762880444740742, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2581ef1f53094e6418b55d9429061f2a, type: 3}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}

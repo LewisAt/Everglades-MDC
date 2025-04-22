@@ -1,0 +1,177 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &8477968992100450708
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 645102143289129742, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f07973060a96c534bbeaf063727d60cb, type: 3}
+    - target: {fileID: 710098293550316855, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 269d98ab9f9583b4395ea58080a149e4, type: 3}
+    - target: {fileID: 710098293550316855, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 869336701014772767, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -342.5742
+      objectReference: {fileID: 0}
+    - target: {fileID: 869336701014772767, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -396.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 869336701014772767, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 119.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 869336701014772767, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -187.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1723144154508341746, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 8b0110487269fcb4caa9156b54b90a5f, type: 3}
+    - target: {fileID: 2240380445106999572, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -409.0432
+      objectReference: {fileID: 0}
+    - target: {fileID: 2240380445106999572, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -118.399994
+      objectReference: {fileID: 0}
+    - target: {fileID: 2240380445106999572, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -193.72162
+      objectReference: {fileID: 0}
+    - target: {fileID: 5244680637628496109, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_Name
+      value: EgretInfoPanel Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 6163876341813508865, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_Text
+      value: The Great Egret (Ardea alba) is a striking wading bird in the heron
+        family that graces the Everglades with both elegance and ecological importance.
+        Sometimes thought to be merely a color morph of other herons, scientific
+        research confirms that the Great Egret is a distinct species, renowned for
+        its unique traits and behaviors. As a key indicator of wetland health, this
+        species plays a crucial role in maintaining the balance of the ecosystem
+        by preying on small fish, amphibians, and invertebrates, thereby regulating
+        their populations. Notable for its long, slender legs and sharp, pointed
+        bill, the Great Egret typically stands around 3 to 4 feet tall and boasts
+        an impressive wingspan reaching 5 to 6 feet. Its precise, measured movements
+        through shallow waters and swift strikes at unsuspecting prey not only highlight
+        its adept hunting skills but also underscore the interconnected roles that
+        each species plays in sustaining the rich biodiversity of the Everglades.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 373.0255
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 410.9845
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.000061035156
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096505035730559289, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -224.4603
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096505035730559289, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 12.963791
+      objectReference: {fileID: 0}
+    - target: {fileID: 7102499831729527284, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_Text
+      value: 'Great Egret
+
+        (Ardea alba)'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8596762880444740742, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1eab48bd2b5c5bd4a84a9827a67b1003, type: 3}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}

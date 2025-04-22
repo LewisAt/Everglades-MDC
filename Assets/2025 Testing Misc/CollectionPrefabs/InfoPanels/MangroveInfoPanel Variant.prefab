@@ -1,0 +1,139 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &7899669669412027323
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 26025697828464335, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 19.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 710098293550316855, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3400e459373b1b240b7d1cba31a0052d, type: 3}
+    - target: {fileID: 710098293550316855, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2240380445106999572, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 2.800003
+      objectReference: {fileID: 0}
+    - target: {fileID: 5244680637628496109, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_Name
+      value: MangroveInfoPanel Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 6163876341813508865, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_Text
+      value: Mangrove Forests make up one of the most plentiful plant populations
+        in the Everglade Ecosystem. They are present near the coastal channels and
+        winding rivers around the tip of South Florida. The term "mangrove" does
+        not refer to a particular botanical relation, but rather is used to identify
+        several species of salt-tolerant trees that thrive amidst the harsh growing
+        conditions of the coast. These come in three varieties; Red mangroves (Rhizophora
+        mangle), known for their stilt-like roots, Black mangroves (Aveciennia germinans)
+        and white mangroves (Laguncularia racemosa) which thrive within tidal waters,
+        where freshwater from the Everglades mixes with saltwater. The Everglades
+        boasts the largest contigious stand of protected mangrove forest in the Western
+        Hemisphere.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 373.0255
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 410.9845
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.000061035156
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7102499831729527284, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_Text
+      value: Mangroves
+      objectReference: {fileID: 0}
+    - target: {fileID: 8596762880444740742, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f4739366f03d44041be2511b8aaff912, type: 3}
+    m_RemovedComponents: []
+    m_RemovedGameObjects:
+    - {fileID: 8767463236593283989, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+    - {fileID: 4122953920588216941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}

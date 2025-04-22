@@ -1,0 +1,139 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &4643284288950376632
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 645102143289129742, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c5f535370fa55294f8e42b90c9d9f4c4, type: 3}
+    - target: {fileID: 710098293550316855, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 5c6fc8cd42288a14eb7b36ae18b087d0, type: 3}
+    - target: {fileID: 710098293550316855, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1723144154508341746, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 17b4a3d8f299cb54db803bacc1b0009e, type: 3}
+    - target: {fileID: 5244680637628496109, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_Name
+      value: InfoPanel Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 6163876341813508865, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_Text
+      value: The Largemouth Bass (Micropterus salmoides) is one of the most important
+        freshwater gamefish in the United States. A member of the sunfish family
+        and a species of black bass native to North america. Able to live for up
+        to 16 years and distinguished by their longer upper jaw, which, when closed,
+        extends beyond the eye. They are the largest of the black basses, with the
+        largest recorded overall length reaching 29.5 inches. Residing in the water
+        of the Everglades their diet consists mainly of smaller fish, snails, crawfish,
+        frogs, snakes, salamanders, bats, and even small water birds, mammals, and
+        baby alligators. As one of the top predators in the waters they play an important
+        job at maintaining the food webs balance. Without bass, the minnow population
+        would soar out of control, and there would be overconsumption of zooplankton.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 373.0255
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 410.9845
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.000061035156
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7102499831729527284, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_Text
+      value: 'Largemouth Bass
+
+        (Micropterus salmoides)'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8596762880444740742, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: dabe6e9fffd302d48ac427a252070c55, type: 3}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}

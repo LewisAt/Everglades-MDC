@@ -16,6 +16,8 @@ public struct DataValues
     public Toggle checklistToggle;
     public Slider populationSlider;
     public GameObject spawnPrefab;
+    public GameObject collectionFigure;
+    public GameObject collectionInfo;
     [HideInInspector] public int objectCount;
 }
 
@@ -42,6 +44,8 @@ public class GameDataManager : MonoBehaviour
     public int trashRemaining = 0;
 
     private bool allChecklistFilled = false;
+
+    public CollectionManager collection;
 
     // Start is called before the first frame update
     void Start()
@@ -101,11 +105,18 @@ public class GameDataManager : MonoBehaviour
 
 
     //call this when interacting with objects to record them
+    //also add new items to the collection if applicable
     public void FillChecklist(string objectTag)
     {
         if (dataDictionary.ContainsKey(objectTag))
         {
             DataValues tempStruct = dataDictionary[objectTag];
+            //add to collection only if the checklist toggle is off at this point, indicating a first interaction
+            if (tempStruct.checklistToggle.isOn == false)
+            {
+                collection.AddToCollection(tempStruct.collectionFigure, tempStruct.collectionInfo);
+            }
+
             tempStruct.checklistToggle.isOn = true;
             ParseChecklist();
         }

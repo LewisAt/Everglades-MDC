@@ -1,0 +1,191 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &8061118013349325787
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 645102143289129742, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a45a0a35892f0304e82e4ba818ca2160, type: 3}
+    - target: {fileID: 869336701014772767, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -242.9709
+      objectReference: {fileID: 0}
+    - target: {fileID: 869336701014772767, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -407.5557
+      objectReference: {fileID: 0}
+    - target: {fileID: 869336701014772767, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 101.731285
+      objectReference: {fileID: 0}
+    - target: {fileID: 869336701014772767, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -192.2779
+      objectReference: {fileID: 0}
+    - target: {fileID: 1196674129533330342, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -323.6274
+      objectReference: {fileID: 0}
+    - target: {fileID: 1196674129533330342, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 118.61129
+      objectReference: {fileID: 0}
+    - target: {fileID: 1723144154508341746, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 5d7ae8128a1c5634eb53f994a2f8c92f, type: 3}
+    - target: {fileID: 2240380445106999572, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -366.0256
+      objectReference: {fileID: 0}
+    - target: {fileID: 2240380445106999572, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -323.5182
+      objectReference: {fileID: 0}
+    - target: {fileID: 2240380445106999572, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.70710677
+      objectReference: {fileID: 0}
+    - target: {fileID: 2240380445106999572, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 2240380445106999572, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -121.888794
+      objectReference: {fileID: 0}
+    - target: {fileID: 2240380445106999572, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -189.21684
+      objectReference: {fileID: 0}
+    - target: {fileID: 2240380445106999572, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 5244680637628496109, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_Name
+      value: OpossumInfoPanel Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 6163876341813508865, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_Text
+      value: The Virginia Opossum (Didelphis virginiana) is a distinctive marsupial
+        found in the Everglades. In fact, the Opossum is North America's only marsupial,
+        a unique characteristic that underscores its singular place in the continent's
+        fauna. Highly adaptable, these creatures thrive in diverse environments ranging
+        from woodlands to urban areas. Adult Virginia Opossums typically measure
+        between 2 to 3 feet in length (including their tails) and weigh roughly 4
+        to 14 pounds. They maintain an omnivorous diet that includes fruits, insects,
+        small mammals, birds, and carrion. By scavenging and preying on various species,
+        these nocturnal animals help regulate insect and rodent populations while
+        also accelerating the decomposition process, thereby contributing significantly
+        to the nutrient cycling and overall ecological balance of the Everglades.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 373.0255
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 410.9845
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.000061035156
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704863155957341941, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096505035730559289, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -231.2803
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096505035730559289, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 16.373806
+      objectReference: {fileID: 0}
+    - target: {fileID: 7102499831729527284, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_Text
+      value: 'Virginia Opossum
+
+        (Didelphis virginiana)'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8596762880444740742, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9e7344ca563c5d94db95ebd964307c77, type: 3}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
