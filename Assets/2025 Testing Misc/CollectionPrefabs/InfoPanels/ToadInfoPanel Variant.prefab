@@ -16,10 +16,6 @@ PrefabInstance:
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: fa477d50845492945af3c03f29f4b280, type: 3}
-    - target: {fileID: 710098293550316855, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
-      propertyPath: m_PlayOnAwake
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1723144154508341746, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
       propertyPath: m_Sprite
       value: 

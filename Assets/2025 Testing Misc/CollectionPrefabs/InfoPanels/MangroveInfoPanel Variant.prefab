@@ -10,19 +10,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 26025697828464335, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 19.9
+      value: 19.900024
+      objectReference: {fileID: 0}
+    - target: {fileID: 26025697828464335, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 200.20001
       objectReference: {fileID: 0}
     - target: {fileID: 710098293550316855, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 3400e459373b1b240b7d1cba31a0052d, type: 3}
-    - target: {fileID: 710098293550316855, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
-      propertyPath: m_PlayOnAwake
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2240380445106999572, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 2.800003
+      value: 2.8000488
       objectReference: {fileID: 0}
     - target: {fileID: 5244680637628496109, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
       propertyPath: m_Name

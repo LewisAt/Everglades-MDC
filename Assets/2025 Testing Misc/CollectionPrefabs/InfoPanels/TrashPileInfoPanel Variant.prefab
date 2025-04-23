@@ -10,7 +10,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 26025697828464335, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.80000305
+      value: -0.8000488
+      objectReference: {fileID: 0}
+    - target: {fileID: 26025697828464335, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 200.20001
       objectReference: {fileID: 0}
     - target: {fileID: 645102143289129742, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
       propertyPath: m_Sprite
@@ -20,10 +24,6 @@ PrefabInstance:
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 698d430e98a084a41be9e1045ae2b3ce, type: 3}
-    - target: {fileID: 710098293550316855, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
-      propertyPath: m_PlayOnAwake
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5244680637628496109, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
       propertyPath: m_Name
       value: TrashPileInfoPanel Variant

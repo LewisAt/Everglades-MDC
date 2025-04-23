@@ -16,10 +16,6 @@ PrefabInstance:
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 269d98ab9f9583b4395ea58080a149e4, type: 3}
-    - target: {fileID: 710098293550316855, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
-      propertyPath: m_PlayOnAwake
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 869336701014772767, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
       propertyPath: m_SizeDelta.x
       value: -342.5742
@@ -158,7 +154,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7096505035730559289, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 12.963791
+      value: 12.963806
       objectReference: {fileID: 0}
     - target: {fileID: 7102499831729527284, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
       propertyPath: m_Text

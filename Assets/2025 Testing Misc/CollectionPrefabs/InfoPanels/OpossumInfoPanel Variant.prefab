@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: a45a0a35892f0304e82e4ba818ca2160, type: 3}
+    - target: {fileID: 710098293550316855, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 7fb75fd8d4de16947bc2c7559ffa642e, type: 3}
     - target: {fileID: 869336701014772767, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
       propertyPath: m_SizeDelta.x
       value: -242.9709
@@ -172,7 +176,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7096505035730559289, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 16.373806
+      value: 16.37378
       objectReference: {fileID: 0}
     - target: {fileID: 7102499831729527284, guid: 32cf0b5af8e50674fa364e0526edb2dc, type: 3}
       propertyPath: m_Text

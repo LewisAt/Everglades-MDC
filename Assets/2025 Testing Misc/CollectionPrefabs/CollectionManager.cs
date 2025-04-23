@@ -63,6 +63,9 @@ public class CollectionManager : MonoBehaviour
         //make a new collection pair with instances in the scene
         CollectablesPair newPair = new CollectablesPair(Instantiate(figure, figureSpawn.transform), Instantiate(infoPanel, panelSpawn.transform));
 
+        //disable new pair
+        newPair.DeactivateCollectable();
+
         collection.Add(newPair);
     }
 
