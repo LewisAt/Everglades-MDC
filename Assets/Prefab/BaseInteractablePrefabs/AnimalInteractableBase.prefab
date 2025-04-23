@@ -52,6 +52,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AnimalInteractableBase
       objectReference: {fileID: 0}
+    - target: {fileID: 7047842366759767751, guid: 2f4d987e3e947ad4ea7d3109f029e81e, type: 3}
+      propertyPath: m_Volume
+      value: 0.299
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
