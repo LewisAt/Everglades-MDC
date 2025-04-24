@@ -478,7 +478,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 50, y: -71.70909}
+  m_AnchoredPosition: {x: 50, y: -15.506496}
   m_SizeDelta: {x: 213.3557, y: 56.2026}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4441294102232951140
@@ -2303,6 +2303,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 40.696102
       objectReference: {fileID: 0}
+    - target: {fileID: 816630908585777870, guid: 1af43330cc4d6ca4d9141f8763f2211c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 84
+      objectReference: {fileID: 0}
+    - target: {fileID: 1334094499455941405, guid: 1af43330cc4d6ca4d9141f8763f2211c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 175
+      objectReference: {fileID: 0}
     - target: {fileID: 2072712849032058555, guid: 1af43330cc4d6ca4d9141f8763f2211c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -2347,6 +2355,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 2431479670747487179, guid: 1af43330cc4d6ca4d9141f8763f2211c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2955942562484963833, guid: 1af43330cc4d6ca4d9141f8763f2211c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3716768721242269814, guid: 1af43330cc4d6ca4d9141f8763f2211c, type: 3}
       propertyPath: m_Name
       value: PCMenu
@@ -2360,6 +2376,18 @@ PrefabInstance:
       value: Controls
       objectReference: {fileID: 0}
     - target: {fileID: 6343230345823157287, guid: 1af43330cc4d6ca4d9141f8763f2211c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6678068387433547316, guid: 1af43330cc4d6ca4d9141f8763f2211c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6698875910501624249, guid: 1af43330cc4d6ca4d9141f8763f2211c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6728368033642613602, guid: 1af43330cc4d6ca4d9141f8763f2211c, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -2475,6 +2503,35 @@ PrefabInstance:
       propertyPath: m_Name
       value: CloseButton
       objectReference: {fileID: 0}
+    - target: {fileID: 8021600208228589485, guid: 1af43330cc4d6ca4d9141f8763f2211c, type: 3}
+      propertyPath: m_Text
+      value: 'Use [WASD] to move and [Shift] to run.
+
+        Left click on animals
+        and objects to learn more about them.
+
+        Small trash can be picked
+        up and
+
+        disposed of in nearby trash cans.
+
+        Press [Escape]
+        to pause.
+
+
+        Complete the Checklist and
+
+        throw away all small
+        trash to win!'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8021600208228589485, guid: 1af43330cc4d6ca4d9141f8763f2211c, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 8021600208228589485, guid: 1af43330cc4d6ca4d9141f8763f2211c, type: 3}
+      propertyPath: m_FontData.m_HorizontalOverflow
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8238263263145339202, guid: 1af43330cc4d6ca4d9141f8763f2211c, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -2497,7 +2554,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8238263263145339202, guid: 1af43330cc4d6ca4d9141f8763f2211c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -184.1143
+      value: -127.9117
       objectReference: {fileID: 0}
     - target: {fileID: 8367423294690919882, guid: 1af43330cc4d6ca4d9141f8763f2211c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -2553,7 +2610,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8633341755355147980, guid: 1af43330cc4d6ca4d9141f8763f2211c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -127.9117
+      value: -71.70909
       objectReference: {fileID: 0}
     - target: {fileID: 8681413791762053169, guid: 1af43330cc4d6ca4d9141f8763f2211c, type: 3}
       propertyPath: m_AnchorMax.x
@@ -2579,6 +2636,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 96.8987
       objectReference: {fileID: 0}
+    - target: {fileID: 8939853543945533341, guid: 1af43330cc4d6ca4d9141f8763f2211c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b85509484b3b7ad4c9d162a7a9302e22, type: 3}
     - target: {fileID: 9072757710779296247, guid: 1af43330cc4d6ca4d9141f8763f2211c, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
