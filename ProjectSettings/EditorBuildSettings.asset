@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scene/2025 Testing Scenes/NewTitleScreen.unity
+    guid: 8ddcd7b6037e0de45840b900609d822a
+  - enabled: 1
     path: Assets/Scene/2025 Testing Scenes/NewSmallTerrain.unity
     guid: 7b34d4d3eb218d748805172ee860f263
   - enabled: 0

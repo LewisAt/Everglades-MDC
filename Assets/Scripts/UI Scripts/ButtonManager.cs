@@ -15,6 +15,11 @@ public class ButtonManager : MonoBehaviour
         SceneManager.LoadScene(sceneNum);
     }
 
+    public void SceneSwitch(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
+    }
+
     public void menuTransition()
     {
         currMenu.SetActive(false);
