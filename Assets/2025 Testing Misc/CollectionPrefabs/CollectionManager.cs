@@ -57,6 +57,19 @@ public class CollectionManager : MonoBehaviour
 
     }
 
+    //double check that the objects properly disabled
+    private void OnDisable()
+    {
+        if (collection.Count <= 0)
+        {
+            defaultValue.DeactivateCollectable();
+        }
+        else
+        {
+            collection[currentCollectionIndex].DeactivateCollectable();
+        }
+    }
+
     //only call this on the first interaction with each object
     public void AddToCollection(GameObject figure, GameObject infoPanel)
     {

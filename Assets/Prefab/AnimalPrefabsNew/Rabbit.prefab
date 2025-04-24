@@ -1232,7 +1232,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3534826448338987842, guid: 6a3b6aa2e571ae041b78fd60af199e5e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -10.75
       objectReference: {fileID: 0}
     - target: {fileID: 3534826448338987842, guid: 6a3b6aa2e571ae041b78fd60af199e5e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1248,15 +1248,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3534826448338987842, guid: 6a3b6aa2e571ae041b78fd60af199e5e, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3534826448338987842, guid: 6a3b6aa2e571ae041b78fd60af199e5e, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3534826448338987842, guid: 6a3b6aa2e571ae041b78fd60af199e5e, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3534826448338987842, guid: 6a3b6aa2e571ae041b78fd60af199e5e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1306,6 +1306,10 @@ PrefabInstance:
     - target: {fileID: 7455714574576547646, guid: 6a3b6aa2e571ae041b78fd60af199e5e, type: 3}
       propertyPath: m_Text
       value: "The Marsh Rabbit \n(Sylvilagus palustris)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7953681534321547229, guid: 6a3b6aa2e571ae041b78fd60af199e5e, type: 3}
+      propertyPath: audioClips.Array.data[0]
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8724869525873355311, guid: 6a3b6aa2e571ae041b78fd60af199e5e, type: 3}
       propertyPath: m_LocalScale.x
