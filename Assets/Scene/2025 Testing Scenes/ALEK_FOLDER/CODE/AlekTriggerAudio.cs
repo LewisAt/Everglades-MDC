@@ -11,6 +11,7 @@ public class AlekTriggerAudio : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+        Debug.Log(other.name + " collided! Has tag" + other.tag);
         if (!hasPlayed && other.CompareTag("Player"))
         {
             hasPlayed = true;

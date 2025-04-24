@@ -974,7 +974,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.45
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -3274,6 +3274,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2908663139160666905, guid: ed6258626ec2bf84d9135f211cd30b3d, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 3026308480056564915, guid: ed6258626ec2bf84d9135f211cd30b3d, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -3353,6 +3357,10 @@ PrefabInstance:
     - target: {fileID: 3629293061992577489, guid: ed6258626ec2bf84d9135f211cd30b3d, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4098863359518607282, guid: ed6258626ec2bf84d9135f211cd30b3d, type: 3}
+      propertyPath: m_MaxRaycastDistance
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4207025647360685199, guid: ed6258626ec2bf84d9135f211cd30b3d, type: 3}
       propertyPath: m_IsActive
@@ -3478,6 +3486,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8216615540066274704, guid: ed6258626ec2bf84d9135f211cd30b3d, type: 3}
+      propertyPath: m_MoveSpeed
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8663369876479559175, guid: ed6258626ec2bf84d9135f211cd30b3d, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -3577,6 +3589,12 @@ PrefabInstance:
       insertIndex: 1
       addedObject: {fileID: 4700155929595984623}
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2908663139160666905, guid: ed6258626ec2bf84d9135f211cd30b3d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4943387778972936057}
+    - targetCorrespondingSourceObject: {fileID: 2908663139160666905, guid: ed6258626ec2bf84d9135f211cd30b3d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3128984189216660576}
     - targetCorrespondingSourceObject: {fileID: 8278895373040344244, guid: ed6258626ec2bf84d9135f211cd30b3d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 6775311963458290104}
@@ -3801,6 +3819,61 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3026308480056564915, guid: ed6258626ec2bf84d9135f211cd30b3d, type: 3}
   m_PrefabInstance: {fileID: 7159472648380094270}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &5406056532865688615 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2908663139160666905, guid: ed6258626ec2bf84d9135f211cd30b3d, type: 3}
+  m_PrefabInstance: {fileID: 7159472648380094270}
+  m_PrefabAsset: {fileID: 0}
+--- !u!136 &4943387778972936057
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5406056532865688615}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.1
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.5, z: 0}
+--- !u!54 &3128984189216660576
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5406056532865688615}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!114 &6445094634052908093 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4191194413607543555, guid: ed6258626ec2bf84d9135f211cd30b3d, type: 3}
