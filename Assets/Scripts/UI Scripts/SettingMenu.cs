@@ -1,3 +1,5 @@
+//A NOTE FROM IAN MARSHBURN
+//I didn't make this script, but I'm repurposing it purely for its ability to make a worldspace canvas follow the player's line of sight
 using System.Collections;
 using System.Collections.Generic;
 using Unity.Mathematics;
@@ -24,7 +26,7 @@ public class SettingMenu : MonoBehaviour
 
         player = Camera.main.gameObject;
         settingMenu = gameObject.transform.GetChild(0).gameObject;
-        settingMenu.SetActive(false);
+        //settingMenu.SetActive(false);
         
     }
     void FixedUpdate()
@@ -34,6 +36,7 @@ public class SettingMenu : MonoBehaviour
     }
     void Update()
     {
+        /*
         if (Input.GetKeyDown(KeyCode.Space))
         {
             CloseSettingMenu();
@@ -42,6 +45,7 @@ public class SettingMenu : MonoBehaviour
         {
             OpenSettingMenu();
         }
+        */
     }
 
     public void OpenSettingMenu()

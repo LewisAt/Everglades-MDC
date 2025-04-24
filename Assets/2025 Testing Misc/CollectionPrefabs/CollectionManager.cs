@@ -72,6 +72,7 @@ public class CollectionManager : MonoBehaviour
     //should we instantiate or enable?
     public void CycleCollectionList(bool moveListForward)
     {
+        Debug.Log("Button worked!");
         if (collection.Count <= 0)
         {
             return;
