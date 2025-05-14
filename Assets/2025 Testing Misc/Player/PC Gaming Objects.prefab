@@ -1060,7 +1060,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5713729269143601145
 Transform:
   m_ObjectHideFlags: 0
@@ -2067,7 +2067,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1824761289112012329, guid: f4afd48bb28f8ee4fb13b93f161806e4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.15
+      value: 0.03
       objectReference: {fileID: 0}
     - target: {fileID: 1824761289112012329, guid: f4afd48bb28f8ee4fb13b93f161806e4, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2075,7 +2075,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1824761289112012329, guid: f4afd48bb28f8ee4fb13b93f161806e4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -14.48
+      value: -0.15
       objectReference: {fileID: 0}
     - target: {fileID: 1824761289112012329, guid: f4afd48bb28f8ee4fb13b93f161806e4, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2113,6 +2113,34 @@ PrefabInstance:
       propertyPath: m_CullingMask.m_Bits
       value: 863
       objectReference: {fileID: 0}
+    - target: {fileID: 3726996531301955734, guid: f4afd48bb28f8ee4fb13b93f161806e4, type: 3}
+      propertyPath: startDelay.scalar
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3726996531301955734, guid: f4afd48bb28f8ee4fb13b93f161806e4, type: 3}
+      propertyPath: TrailModule.lifetime.scalar
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3726996531301955734, guid: f4afd48bb28f8ee4fb13b93f161806e4, type: 3}
+      propertyPath: InitialModule.maxNumParticles
+      value: 5000
+      objectReference: {fileID: 0}
+    - target: {fileID: 3726996531301955734, guid: f4afd48bb28f8ee4fb13b93f161806e4, type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3726996531301955734, guid: f4afd48bb28f8ee4fb13b93f161806e4, type: 3}
+      propertyPath: InitialModule.startLifetime.minScalar
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3726996531301955734, guid: f4afd48bb28f8ee4fb13b93f161806e4, type: 3}
+      propertyPath: startDelay.maxCurve.m_Curve.Array.data[0].value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3726996531301955734, guid: f4afd48bb28f8ee4fb13b93f161806e4, type: 3}
+      propertyPath: startDelay.maxCurve.m_Curve.Array.data[1].value
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7027383960227789998, guid: f4afd48bb28f8ee4fb13b93f161806e4, type: 3}
       propertyPath: m_Cameras.Array.size
       value: 1
@@ -2125,6 +2153,18 @@ PrefabInstance:
       propertyPath: grabPoint
       value: 
       objectReference: {fileID: 6338540107016915816}
+    - target: {fileID: 8105077846832185664, guid: f4afd48bb28f8ee4fb13b93f161806e4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -11.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 8105077846832185664, guid: f4afd48bb28f8ee4fb13b93f161806e4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 42.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 8105077846832185664, guid: f4afd48bb28f8ee4fb13b93f161806e4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 10.94
+      objectReference: {fileID: 0}
     - target: {fileID: 8134148367094348343, guid: f4afd48bb28f8ee4fb13b93f161806e4, type: 3}
       propertyPath: m_Name
       value: FirstPersonPCPlayer
@@ -2222,7 +2262,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7980429851525443262, guid: 8e58a2dba19847e42afcc450e5c6d380, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.000061035156
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7980429851525443262, guid: 8e58a2dba19847e42afcc450e5c6d380, type: 3}
       propertyPath: m_AnchoredPosition.y
